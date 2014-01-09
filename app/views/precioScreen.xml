@@ -1,0 +1,18 @@
+<Alloy>
+	<View id='inicioScreen'>						
+			<View id="main">
+				<ImageView id="menuBtn" ></ImageView>
+				<ImageView id="logoImg"></ImageView>
+				<ImageView id="carritoBtn"></ImageView>	
+			</View>
+			
+			
+				<SearchBar id="search" barColor="#e4e4e4" showCancel="false" width="Ti.UI.FILL" height="43" top="65"  hintText="Palabra Clave" />
+				
+				<ImageView id="palabraClave"></ImageView>
+				<ImageView id="codigoBarra" onClick="openCamera"></ImageView>
+				
+			
+			
+	</View>
+</Alloy>

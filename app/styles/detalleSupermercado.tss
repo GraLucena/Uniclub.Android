@@ -1,0 +1,145 @@
+"#inicioScreen": {
+	backgroundColor: "#9C213F",
+	height : '100%',
+	width : '100%'
+},
+
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#9C213F",
+	height:"130px",
+	top:"0"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : 130,
+	image :"/unicasaIcon.png"
+},
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE"
+},
+"#categoria":{
+	width:Ti.UI.FILL,
+	height:"100px",
+	backgroundColor:"#f6923a",
+},
+"#atrasBtn":{
+	left : "10px",
+	image :"/atras.png",
+},
+"#supermercados":{
+	backgroundColor:"white",
+	width:Ti.UI.FILL,
+	height:"600px"
+},
+"#tittle":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	top:"10",
+	left:"60px"
+},
+"#info":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	},
+	top:"30",
+	left:"60px"
+},
+"#tittle1":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	top:"80",
+	left:"60px"
+},
+"#info1":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	},
+	top:"100",
+	left:"60px"
+},
+"#tittle2":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	top:"140",
+	left:"60px"
+},
+"#info2":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	},
+	top:"160",
+	left:"60px"
+},
+"#tittle3":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	top:"180",
+	left:"60px"
+},
+"#info3":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	},
+	top:"200",
+	left:"60px"
+},
+"#socialBtn":{
+	image:"/socialWhite.png",
+	right:"50",
+	top:"15",
+	width:"49px",
+	height:"39px"	
+},
+"#mailBtn":{
+	image:"/mailWhite.png",
+	right:"20",
+	top:"15",
+	width:"49px",
+	height:"39px"		
+}

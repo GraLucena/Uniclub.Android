@@ -1,0 +1,162 @@
+"#inicioScreen": {
+	backgroundColor: "#9C213F",
+	height : '100%',
+	width : '100%'
+},
+
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#9C213F",
+	height:"130px",
+	top:"0"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : 130,
+	image :"/unicasaIcon.png"
+},
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+".productosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE"
+},
+"#recetas":{
+	backgroundColor :"white",
+	width:Ti.UI.FILL,
+	height : "215px"
+},
+"#categoria":{
+	width:Ti.UI.FILL,
+	height:"100px",
+	backgroundColor:"#f6923a",
+},
+"#atrasBtn":{
+	left : "10px",
+	image :"/atras.png",
+},
+"#filtrarBtn":{
+	width:"125px",
+	height:"68px",
+	right : "10px",
+	image :"/filtrar.png",
+},
+"#nvaRecetaImg":{
+	image:"/nuevaReceta.png",
+	width:"20",
+	height:"20",
+	right:"60",
+	top:"10"
+},
+"#relojImg":{
+	image:"/tiempoImg.png",
+	width:"20",
+	height:"20",
+	right:"60",
+	top:"45"
+},
+"#porcion":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt",
+		fontWeight:"Bold"
+	},
+	right:"40",
+	top:"80"
+},
+"#nvaReceta":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt",
+		fontWeight:"Bold"
+	},
+	right:"20",
+	top:"10"
+},
+"#reloj":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt",
+		fontWeight:"Bold"
+	},
+	right:"20",
+	top:"45"
+},
+"#porcionImg":{
+	image:"/porcionesImg.png",
+	width:"20",
+	height:"20",
+	right:"60",
+	top:"80"
+},
+"#recetaImg1":{
+	width:"106",
+	height:"106",
+	image :"/recetaImg1.png",
+	left:"5",
+	top:"0"
+},
+"#recetaImg2":{
+	width:"106",
+	height:"106",
+	image :"/recetaImg2.png",
+	left:"5",
+	top:"0"
+},
+"#recetaImg3":{
+	width:"106",
+	height:"106",
+	image :"/recetaImg3.png",
+	left:"5",
+	top:"0"
+},
+"#recetaImg4":{
+	width:"106",
+	height:"106",
+	image :"/recetaImg4.png",
+	left:"5",
+	top:"0"
+}
+"#label":{
+	left:"50px",
+	color:"white",
+	font:{
+	font:"Helvetica",
+	fontSize:"15pt"
+	},
+},
+"#infoReceta":{
+	color:"555454",
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt"
+	},
+	left:"110"
+}

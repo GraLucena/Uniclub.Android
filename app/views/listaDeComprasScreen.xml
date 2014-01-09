@@ -1,0 +1,67 @@
+<Alloy>
+	<View id='inicioScreen'>						
+			<View id="main">
+				<ImageView id="menuBtn" ></ImageView>
+				<ImageView id="logoImg"></ImageView>
+				<ImageView id="carritoBtn"></ImageView>	
+			</View>
+			
+			<TableView class="preciosUnicosList">
+											
+			<TableViewRow id="list">
+				<SearchBar id="search" barColor="#e4e4e4" showCancel="false" width="Ti.UI.FILL" height="43" top="0"  hintText="Palabra Clave" />
+			</TableViewRow>
+			
+			
+			<TableViewRow id="list">
+    			<View id="categoria">
+    				<Label font="Helvetica" size="5pt" color="white" left="50px">Descripción</Label>
+    				<Label font="Helvetica" size="5pt" color="white" right="30px">Precio</Label>
+    				<Label id="label">El monto total de esta lista es un precio estimado</Label>
+					<ImageView id="filtrarBtn"></ImageView>
+    			</View>	
+    		</TableViewRow>
+    		
+    			<TableViewRow id="list">
+					<View id="productos">
+						<ImageView id="productoImg1"></ImageView>
+						<Label id="productoInfo1"></Label>
+						
+						<Label id="productoPrecio1"></Label>
+						<ImageView id="eliminarBtn"></ImageView>
+					</View>
+    			</TableViewRow>
+    			
+    			<TableViewRow id="list">
+					<View id="productos">
+						<ImageView id="productoImg2"></ImageView>
+						<Label id="productoInfo2"></Label>
+						
+						<Label id="productoPrecio2"></Label>
+						<ImageView id="eliminarBtn"></ImageView>
+					</View>
+    			</TableViewRow>
+    			
+    			<TableViewRow id="list">
+					<View id="productos">
+						<ImageView id="productoImg3"></ImageView>
+						<Label id="productoInfo3"></Label>
+						
+						<Label id="productoPrecio3"></Label>
+						<ImageView id="eliminarBtn"></ImageView>
+					</View>
+    			</TableViewRow>
+    			
+    			<TableViewRow id="list">
+					<View id="resumenLista">
+						<ImageView id="checkImg"></ImageView>
+						<Label id="selecionadoLabel"></Label>
+						<Label id="estimadoLabel"></Label>
+					</View>
+    			</TableViewRow>
+    	
+    		
+    		</TableView>
+    	
+    	</View>
+</Alloy>

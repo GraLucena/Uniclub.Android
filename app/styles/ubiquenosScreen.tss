@@ -1,0 +1,41 @@
+"#inicioScreen": {
+	backgroundColor: "#9C213F",
+	height : '100%',
+	width : '100%'
+},
+
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#9C213F",
+	height:"130px",
+	top:"0"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : 130,
+	image :"/unicasaIcon.png"
+},
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE"
+}

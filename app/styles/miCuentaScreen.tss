@@ -1,0 +1,94 @@
+"#inicioScreen": {
+	backgroundColor: "#bebcbc",
+	height : '100%',
+	width : '100%'
+},
+
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#9C213F",
+	height:"130px",
+	top:"0"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : 130,
+	image :"/unicasaIcon.png"
+},
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"white",
+	top:"131px",
+	separatorColor:"e4e4e4",
+},
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE",
+	separatorColor:"e4e4e4"
+},
+"#categoria":{
+	width:Ti.UI.FILL,
+	height:"100px",
+	backgroundColor:"#f6923a",
+},
+"#label":{
+	left:"40px",
+	color:"white",
+	font:{
+	font:"Helvetica",
+	fontSize:"14pt"
+	},
+},
+"#labelPuntos":{
+	right:"35px",
+	color:"ee5041",
+	top:"19",
+	font:{
+	font:"Helvetica",
+	fontSize:"16pt"
+	},
+},
+"#misPuntos":{
+	width:"169px",
+	height:"80px",
+	right : "140px",
+	image :"/misPuntosImg.png",
+},
+"#datos":{
+	width:Ti.UI.FILL,
+	height:"50",
+	backgroundColor:"white",
+	
+},
+"#labelMisDatos":{
+	left: "40px",
+		height:"50",
+	color:"999999",
+	font:{
+	font:"Helvetica",
+	fontSize:"12pt"
+	},	
+},
+"#labelDatos":{
+	left: "40px",
+	height:"50",
+	color:"black",
+	font:{
+	font:"Helvetica",
+	fontSize:"12pt"
+	},
+}

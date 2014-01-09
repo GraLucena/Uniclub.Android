@@ -1,0 +1,95 @@
+<Alloy>
+	<View id='inicioScreen'>						
+		<View id="main">
+			<ImageView id="menuBtn" ></ImageView>
+			<ImageView id="logoImg"></ImageView>
+			<ImageView id="carritoBtn"></ImageView>	
+		</View>
+			
+		<TableView class="preciosUnicosList">
+											
+			<TableViewRow id="list">
+				<SearchBar id="search" barColor="#e4e4e4" showCancel="false" width="Ti.UI.FILL" height="43" top="0"  hintText="Palabra Clave" />
+			</TableViewRow>
+			
+			<TableViewRow id="list">
+    			<View id="categoria">
+    				<Label id="label"> Mi Cuenta</Label>
+					<ImageView id="misPuntos"></ImageView>
+					<Label id="labelPuntos"> 15.000</Label>
+    			</View>	
+    		</TableViewRow>
+			
+			<TableViewRow id="list">				
+				<Label id="labelMisDatos">Mis Datos</Label>				
+   			</TableViewRow>
+			
+			<TableViewRow id="list">		
+				<Label id="labelDatos">Código Tarjeta:</Label>
+				<Label></Label>
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">				
+				<Label id="labelDatos">Nombre y Apellido:</Label>
+				<Label></Label>
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">				
+				<Label id="labelDatos">Estado de Cliente:</Label>
+				<Label></Label>				
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">				
+				<Label id="labelDatos">Tipo de Cliente:</Label>
+				<Label></Label>
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">
+				<Label id="labelDatos">Cédula de Identidad:</Label>
+				<Label></Label>				
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">				
+				<Label id="labelDatos">Fecha de Nacimiento:</Label>
+				<Label></Label>				
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">				
+				<Label id="labelDatos">Lugar de Nacimiento:</Label>
+				<Label></Label>				
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">				
+				<Label id="labelDatos">Sexo:</Label>
+				<Label></Label>				
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">				
+				<Label id="labelDatos">Nacionalidad:</Label>
+				<Label></Label>				
+    		</TableViewRow>
+			
+			<TableViewRow id="list">				
+				<Label id="labelDatos">Estado Civil:</Label>
+				<Label></Label>
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">				
+				<Label id="labelDatos">Grado de Instrucción:</Label>
+				<Label></Label>				
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">				
+				<Label id="labelDatos">Profesión:</Label>
+				<Label></Label>				
+    		</TableViewRow>
+    			
+    		<TableViewRow id="list">				
+				<Label id="labelDatos">Hijos:</Label>
+				<Label></Label>				
+    		</TableViewRow>
+    			
+		</TableView>
+			
+	</View>
+</Alloy>

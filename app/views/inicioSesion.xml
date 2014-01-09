@@ -1,0 +1,12 @@
+<Alloy>
+	
+		<View id="container2">
+			<ImageView id="uniclubImg" onClick="inicie"></ImageView>
+			<TextArea class="TextoUsuario" hintText="Cédula"></TextArea>
+			<TextArea class="TextoClave" hintText="Contraseña"></TextArea>
+			<Label class="LabelOlvido">Olvidó Su Contraseña?</Label>
+			<ImageView id="inicioSesionImg" onClick="inicie"></ImageView>
+			
+		</View>
+	
+</Alloy>

@@ -1,0 +1,63 @@
+"#inicioScreen": {
+	backgroundColor: "#9C213F",
+	height : '100%',
+	width : '100%'
+},
+
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#9C213F",
+	height:"130px",
+	top:"0"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : 130,
+	image :"/unicasaIcon.png"
+},
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"white",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE"
+},
+"#categoria":{
+	width:Ti.UI.FILL,
+	height:"100px",
+	backgroundColor:"#f6923a",
+},
+"#atrasBtn":{
+	left : "10px",
+	image :"/atras.png",
+},
+"#productos":{
+	backgroundColor :"white",
+	width:Ti.UI.FILL,
+	height : "100px"
+},
+"#listaProductos":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+	},
+	left:"80px"
+}

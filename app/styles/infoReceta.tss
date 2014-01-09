@@ -1,0 +1,133 @@
+"#inicioScreen": {
+	backgroundColor: "#9C213F",
+	height : '100%',
+	width : '100%'
+},
+
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#9C213F",
+	height:"130px",
+	top:"0"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : 130,
+	image :"/unicasaIcon.png"
+},
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	separatorStyle: "NONE",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE"
+},
+"#categoria":{
+	width:Ti.UI.FILL,
+	height:"100px",
+	backgroundColor:"#f6923a",
+},
+"#filtrarBtn":{
+	width:"125px",
+	height:"68px",
+	right : "10px",
+	image :"/filtrar.png",
+},
+"#imgReceta":{
+	image:"/imgReceta.png",
+	width:"251",
+	height:"138",
+	top:"10"
+},
+"#nombreReceta":{
+	color:"black",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	},
+	top:"5",
+	text:"Aguacate relleno con cangrejo, \npiña y mayonesa de cilantro",
+	left:"35"
+},
+"#socialBtn":{
+	image:"/socialImg.png",
+	right:"70",
+	top:"5",
+	width:"49px",
+	height:"39px"	
+},
+"#mailBtn":{
+	image:"/mailImg.png",
+	right:"35",
+	top:"5",
+	width:"49px",
+	height:"39px"		
+},
+"#preparacion":{
+	color:"838282",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	},
+	top:"40",
+	text:"Preparación: 15min",
+	left:"55"
+},
+"#relojImg":{
+	image:"/tiempoImg.png",
+	top:"40",
+	left:"35",
+	width:"30px",
+	height:"29px"		
+},
+"#porciones":{
+	color:"838282",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	},
+	top:"40",
+	text:"Porciones: 6",
+	right:"35"
+},
+"#porcionImg":{
+	image:"/porcionesImg.png",
+	top:"40",
+	right:"110",
+	width:"30px",
+	height:"29px"		
+},
+"#infoReceta":{
+	width: Ti.UI.FILL,
+	height:"500px",
+	backgroundColor:"white",
+	top:"10"
+},
+"#datosReceta":{
+	left:"35",
+	top:"5",
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	},
+	color:"black",
+	text:"Ingredientes: \n•   3 aguacates \n•   250gr de cangrejo (surimi) \n•   1 Célery \n•   1 paquete de cebollines \n•   1 lata de piña picadita \n\n\nMayonesa de cilantro: \n•   1 taza de mayonesa \n•   3cdas. de mostaza con miel \n•   1 taza de cilantro fresco \n•   1 bolsa de Natuchips \n•   Jugo de Limón"
+}

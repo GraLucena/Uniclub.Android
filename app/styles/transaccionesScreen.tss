@@ -1,0 +1,102 @@
+"#inicioScreen": {
+	backgroundColor: "#9C213F",
+	height : '100%',
+	width : '100%'
+},
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#9C213F",
+	height:"130px",
+	top:"0"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : 130,
+	image :"/unicasaIcon.png"
+},
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE"
+},
+"#categoria":{
+	width:Ti.UI.FILL,
+	height:"100px",
+	backgroundColor:"#f6923a",
+},
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+"#columnas":{
+	width:Ti.UI.FILL,
+	height:"100px",
+	backgroundColor:"#a5a5a5",
+},
+"#sucursal":{
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	}, 
+	color:"white",
+	left:"1%",
+	text:"Sucursal",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#fecha":{
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	}, 
+	color:"white",
+	left:"25%",
+	text:"Fecha",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#puntosG":{
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	}, 
+	color:"white",
+	left:"41%",
+	text:"Puntos \nGanados",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#puntosR":{
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	}, 
+	color:"white",
+	left:"60%",
+	text:"Puntos \nRedimidos",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+
+},
+"#saldo":{
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt"
+	}, 
+	color:"white",
+	left:"83%",
+	text:"Saldo \nFinal",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+
+}

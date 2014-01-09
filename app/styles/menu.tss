@@ -1,0 +1,143 @@
+
+".container" : {
+  backgroundColor :"white",
+  orientationModes: [Ti.UI.PORTRAIT, Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT, Ti.UI.UPSIDE_PORTRAIT]
+},
+
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#9C213F",
+	height:"130px",
+	top:"0"
+},
+
+"#iconBar":{
+	backgroundColor : "#9C213F",
+	width : Ti.UI.FILL,
+	height : "60px"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : 130,
+	image :"/unicasaIcon.png"
+}
+".promociones":{
+	backgroundColor :"white",
+	width :Ti.UI.FILL,
+	height: "267px",
+	top : 0
+},
+"#img1":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	image :"/slideImg1.png"
+}
+".promociones2":{
+	backgroundColor : "#dddddd",
+	width : Ti.UI.FILL,
+	height : "230px"	 
+}
+"#recetaImg":{
+	width:"285px",
+	height:"186px",
+	top: "22px",
+	left :"22px",
+	image :"/recetasImg.png"
+},
+"#carreraImg":{
+	width:"285px",
+	height:"186px",
+	top: "22px",
+	right :"22px",
+	image :"/carreraImg.png"
+}
+".preciosUnicos":{
+	width : Ti.UI.FILL,
+	height : "63px",
+	backgroundColor :"white",
+	backgroundImage :"/preciosUnicos.png"
+}
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	separatorStyle: "NONE",
+	top:"131px"
+}
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE"
+},
+"#rowContainer":{
+	width:Ti.UI.FILL,
+},
+"#rowContainer2":{
+	width:Ti.UI.FILL,
+	height:"151px"
+},
+"#rowContainerSocial":{
+	width:Ti.UI.FILL,
+	height:"151px",
+	backgroundColor:"white",
+	top: "25px"
+},
+"#facebookImg":{
+	width:"52px",
+	height:"52px",
+	top: "40",
+	left :"10",
+	image :"/facebook.png"
+},
+"#twitterImg":{
+	width:"52px",
+	height:"52px",
+	top: "40",
+	left :"50",
+	image :"/twitter.png"
+},
+"#youTubeImg":{
+	width:"52px",
+	height:"52px",
+	top: "40",
+	left :"90",
+	image :"/youTube.png"
+},
+"#preciosUnicosImg":{
+	width:Ti.UI.FILL,
+	height:"151px",
+	image:"/preciosUnicosImg.png"
+},
+"#preciosUnicosImg2":{
+	width:Ti.UI.FILL,
+	height:"151px",
+	image:"/preciosUnicosImg2.png"
+},
+"#preciosUnicosImg3":{
+	width:Ti.UI.FILL,
+	height:"151px",
+	image:"/preciosUnicosImg3.png"
+},
+"#preciosUnicosImg4":{
+	width:Ti.UI.FILL,
+	height:"151px",
+	image:"/preciosUnicosImg4.png"
+},
+"#preciosUnicosImg5":{
+	width:Ti.UI.FILL,
+	height:"151px",
+	image:"/preciosUnicosImg5.png"
+}
+

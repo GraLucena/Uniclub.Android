@@ -1,0 +1,308 @@
+".container" : {
+  backgroundColor :"white",
+  orientationModes: [Ti.UI.PORTRAIT, Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT, Ti.UI.UPSIDE_PORTRAIT]
+},
+
+"#inicioScreen": {
+	//backgroundColor: "blue",
+	//height : '100%',
+	//width : '100%'
+},
+
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#yellow",
+	height:"10px",
+	top:"0"
+},
+
+"#iconBar":{
+	//backgroundColor : "#9C213F",
+	width : Ti.UI.FILL,
+	height : "60px"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : "50%",
+	image :"/unicasaIcon.png"
+}
+".promociones":{
+	backgroundColor :"white",
+	width :Ti.UI.FILL,
+	height: "360px",
+	top : 0
+},
+"#img1":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	image :"/slideImg1.png"
+}
+".promociones2":{
+	backgroundColor : "#dddddd",
+	width : Ti.UI.FILL,
+	height : "230px"	 
+}
+"#recetaImg":{
+	width:"285px",
+	height:"186px",
+	image :"/recetasImg.png"
+},
+"#carreraImg":{
+	width:"285px",
+	height:"186px",
+	top: "22px",
+	right :"22px",
+	image :"/carreraImg.png"
+}
+".preciosUnicos":{
+	width : Ti.UI.FILL,
+	height : "63px",
+	backgroundColor :"white",
+	backgroundImage :"/preciosUnicos.png"
+}
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	top:"20px"
+}
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE"
+},
+"#rowContainer2":{
+	width:Ti.UI.FILL,
+	height:"210px",
+	backgroundColor:"white"
+},
+"#rowContainerSocial":{
+	width:Ti.UI.FILL,
+	height:"151px",
+	backgroundColor:"white",
+	top: "25px"
+},
+"#facebookImg":{
+	width:"52px",
+	height:"52px",
+	top: "40",
+	left :"10",
+	image :"/facebook.png"
+},
+"#twitterImg":{
+	width:"52px",
+	height:"52px",
+	top: "40",
+	left :"50",
+	image :"/twitter.png"
+},
+"#youTubeImg":{
+	width:"52px",
+	height:"52px",
+	top: "40",
+	left :"90",
+	image :"/youTube.png"
+},
+"#preciosUnicos":{
+	backgroundColor:"f79323",
+	width:Ti.UI.FILL,
+	height:"43"
+},
+"#preciosUnicosLabel":{
+	color:"white",
+	font:{
+		font:"Helvetica",
+		fontSize:"17pt"
+	},
+	left:"15"
+},
+"#productoImg":{
+	image:"/productoImg1.png",
+	width:"96",
+	height:"96",
+	left:"20"
+},
+"#infoProducto":{
+	text:"Galleta Mantequilla \nCosta 810555 (140gr)",
+	font:{
+		font:"Helvetica",
+		fontSize:"16pt",
+		fontWeight:"Bold"
+	},
+	color:"black",
+	right:"10",
+	top:"6"
+},
+"#precioUnico":{
+	backgroundColor:"ff5400",
+	borderRadius:"4",
+	width:"160",
+	height:"48",
+	top:"50",
+	right:"10"
+},
+"#precioUnicoLabel":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	color:"black",
+	text:"Precio Único",
+	top:"4",
+	left:"4"
+},
+"#precio":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	color:"white",
+	text:"Bs.F 18,70",
+	top:"4",
+	right:"4"
+},
+"#agregarBtn":{
+	image:"/agregarBtn.png",
+	top:"17",
+	left:"4",
+	width:"30",
+	height:"30"
+},
+"#agregarLista":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt"
+	},
+	color:"white",
+	left:"35",
+	top:"25",
+	text:"Agregar a lista"	
+},
+"#productoImg2":{
+	image:"/productoImg2.png",
+	width:"96",
+	height:"96",
+	left:"20"
+},
+"#infoProducto2":{
+	text:"Galleta Chocolate \nCosta 810555 (140gr)",
+	font:{
+		font:"Helvetica",
+		fontSize:"15pt",
+		fontWeight:"Bold"
+	},
+	color:"black",
+	right:"10",
+	top:"6"
+},
+"#precio2":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	color:"white",
+	text:"Bs.F 18,70",
+	top:"4",
+	right:"4"
+},
+"#productoImg3":{
+	image:"/productoImg3.png",
+	width:"96",
+	height:"96",
+	left:"20"
+},
+"#infoProducto3":{
+	text:"Galleta Coco \nCosta (125gr)",
+	font:{
+		font:"Helvetica",
+		fontSize:"15pt",
+		fontWeight:"Bold"
+	},
+	color:"black",
+	right:"10",
+	top:"6"
+},
+"#precio3":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	color:"white",
+	text:"Bs.F 18,90",
+	top:"4",
+	right:"4"
+},
+"#productoImg4":{
+	image:"/productoImg4.png",
+	width:"96",
+	height:"96",
+	left:"20"
+},
+"#infoProducto4":{
+	text:"Galleta Limón \nCosta 810557 (125gr)",
+	font:{
+		font:"Helvetica",
+		fontSize:"15pt",
+		fontWeight:"Bold"
+	},
+	color:"black",
+	right:"10",
+	top:"6"
+},
+"#precio4":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	color:"white",
+	text:"Bs.F 18,90",
+	top:"4",
+	right:"4"
+},
+"#productoImg5":{
+	image:"/productoNoImg.png",
+	width:"96",
+	height:"96",
+	left:"20"
+},
+"#infoProducto5":{
+	text:"Galleta rellena choco \nGretel Costa (85gr)",
+	font:{
+		font:"Helvetica",
+		fontSize:"15pt",
+		fontWeight:"Bold"
+	},
+	color:"black",
+	right:"10",
+	top:"6"
+},
+"#precio5":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	color:"white",
+	text:"Bs.F 21,90",
+	top:"4",
+	right:"4"
+}
+
+

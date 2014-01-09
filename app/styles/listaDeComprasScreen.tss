@@ -1,0 +1,192 @@
+"#inicioScreen": {
+	backgroundColor: "#9C213F",
+	height : '100%',
+	width : '100%'
+},
+
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#9C213F",
+	height:"130px",
+	top:"0"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : 130,
+	image :"/unicasaIcon.png"
+},
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	separatorStyle: "NONE",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+".productosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	separatorStyle: "NONE",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE"
+},
+"#productos":{
+	backgroundColor :"e4e4e4",
+	width:Ti.UI.FILL,
+	height : "215px"
+},
+"#categoria":{
+	width:Ti.UI.FILL,
+	height:"100px",
+	backgroundColor:"#f6923a",
+},
+"#label":{
+	left:"50px",
+	top:"70px", 
+	color:"white",
+	font:{
+	font:"Helvetica",
+	fontSize:"10pt"
+	},
+},
+"#productos":{
+	backgroundColor :"white",
+	width:Ti.UI.FILL,
+	height : "180px"
+},
+"#productoImg1":{
+	image:"/productoImg7.png",
+	//width:"96",
+	//height:"96",
+	left:"0px"
+},
+"#productoInfo1":{
+	font:{
+		font: "Helvetica",
+		fontSize:"13pt",
+	},
+	left:"180px",
+	top:"30",
+	color:"#555454",
+	text:"Chuleta Caramelizada \nPlumrose (Kg)"	
+},
+"#productoPrecio1":{
+	font:{
+		font: "Helvetica",
+		fontSize:"13pt",
+
+	},
+	right:"30px",
+	top:"30",
+	color:"black",
+	text:"BsF. 205,00"	
+},
+"#eliminarBtn":{
+	image:"/eliminarBtn.png",
+	top:"50",
+	right:"30px"
+},
+"#productoImg2":{
+	image:"/brownieImg.png",
+	//width:"96",
+	//height:"96",
+	left:"0px"
+},
+"#productoInfo2":{
+	font:{
+		font: "Helvetica",
+		fontSize:"13pt",
+	},
+	left:"180px",
+	top:"30",
+	color:"#555454",
+	text:"Brownies Dany's \n480 (gr)"	
+},
+"#productoPrecio2":{
+	font:{
+		font: "Helvetica",
+		fontSize:"13pt",
+
+	},
+	right:"30px",
+	top:"30",
+	color:"black",
+	text:"BsF. 96,90"	
+},
+"#productoImg3":{
+	image:"/productoImg2.png",
+	//width:"96",
+	//height:"96",
+	left:"0px"
+},
+"#productoInfo3":{
+	font:{
+		font: "Helvetica",
+		fontSize:"13pt",
+	},
+	left:"180px",
+	top:"30",
+	color:"#555454",
+	text:"Galleta Chocolate \nCosta 140 (gr)"	
+},
+"#productoPrecio3":{
+	font:{
+		font: "Helvetica",
+		fontSize:"13pt",
+
+	},
+	right:"30px",
+	top:"30",
+	color:"black",
+	text:"BsF. 18,70"	
+},
+"#resumenLista":{
+	backgroundColor:"white",
+	top:"10",
+	height:"170px"
+},
+"#checkImg":{
+	image:"/checkImg.png",
+	left:"5",
+	top:"25",
+	width:"26",
+	height:"25"
+	
+},
+"#selecionadoLabel":{
+	color:"9c213f",
+	left:"36",
+	font:{
+		font: "Helvetica",
+		fontSize:"15pt",
+
+	},
+	text:"Seleccionado (0)"
+},
+"#estimadoLabel":{
+	color:"9c213f",
+	right:"10",
+	font:{
+		font: "Helvetica",
+		fontSize:"15pt",
+
+	},
+	text:"Est. Total: Bs.F 320,60"
+}

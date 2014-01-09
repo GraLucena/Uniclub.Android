@@ -1,0 +1,21 @@
+"#container": {
+	backgroundColor:"#9C213F",
+	backgroundImage:'Default.png',
+},
+"#invitadoBtn":{
+	top : 600,
+	width : "169px",
+	height : "56px",
+	left : 60,
+	image : "/invitadoBtn.png"
+},
+"#uniclubBtn":{
+	top : 600,
+	width : "169px",
+	height : "56px",
+	right : 60,
+	image : "/uniclubBtn.png"
+}
+
+
+

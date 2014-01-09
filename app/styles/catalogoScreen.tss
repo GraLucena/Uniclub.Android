@@ -1,0 +1,201 @@
+"#inicioScreen": {
+	backgroundColor: "#9C213F",
+	height : '100%',
+	width : '100%'
+},
+
+"#main":{
+	width : Ti.UI.FILL,
+	backgroundColor : "#9C213F",
+	height:"130px",
+	top:"0"
+},
+"#menuBtn":{
+	left : 7,
+	top : 25,
+	width :"65px",
+	height :"65px",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : 25,
+	right: 7,
+	width :"65px",
+	height :"65px",
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : 17,
+	right : 130,
+	image :"/unicasaIcon.png"
+},
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+".productosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	top:"131px",
+	separatorColor:"e4e4e4"
+},
+"#list":{
+	width:Ti.UI.FILL,
+	selectionStyle:"NONE"
+},
+"#rowContainer2":{
+	width:Ti.UI.FILL,
+	height:"210px",
+	backgroundColor:"white"
+},
+"#productos":{
+	backgroundColor :"e4e4e4",
+	width:Ti.UI.FILL,
+	height : "215px"
+},
+"#categoria":{
+	width:Ti.UI.FILL,
+	height:"100px",
+	backgroundColor:"#f6923a",
+},
+"#atrasBtn":{
+	left : "10px",
+	image :"/atras.png",
+},
+"#filtrarBtn":{
+	width:"125px",
+	height:"68px",
+	right : "10px",
+	image :"/filtrar.png",
+},
+"#label":{
+	left:"110px",
+	top:"70px", 
+	color:"black",
+	font:{
+	font:"Helvetica",
+	fontSize:"10pt"
+	},
+},
+"#productoImg":{
+	image:"/productoImg7.png",
+	width:"96",
+	height:"96",
+	left:"20"
+},
+"#infoProducto":{
+	text:"Chuleta Caramelizada \nPlumrose (Kg)",
+	font:{
+		font:"Helvetica",
+		fontSize:"16pt",
+		fontWeight:"Bold"
+	},
+	color:"black",
+	right:"10",
+	top:"6"
+},
+"#precioUnico":{
+	backgroundColor:"ff5400",
+	borderRadius:"4",
+	width:"160",
+	height:"48",
+	top:"50",
+	right:"10"
+},
+"#precioUnicoLabel":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	color:"black",
+	text:"Precio Único",
+	top:"4",
+	left:"4"
+},
+"#precio":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	color:"white",
+	text:"Bs.F 205,00",
+	top:"4",
+	right:"4"
+},
+"#agregarBtn":{
+	image:"/agregarBtn.png",
+	top:"17",
+	left:"4",
+	width:"30",
+	height:"30"
+},
+"#agregarLista":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt"
+	},
+	color:"white",
+	left:"35",
+	top:"25",
+	text:"Agregar a lista"	
+},
+"#productoImg2":{
+	image:"/productoImg6.png",
+	width:"96",
+	height:"96",
+	left:"20"
+},
+"#infoProducto2":{
+	text:"Costilla Salsa Bbq \nPlumrose (Kg)",
+	font:{
+		font:"Helvetica",
+		fontSize:"15pt",
+		fontWeight:"Bold"
+	},
+	color:"black",
+	right:"10",
+	top:"6"
+},
+"#precio2":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	color:"white",
+	text:"Bs.F 303,00",
+	top:"4",
+	right:"4"
+},
+"#productoImg3":{
+	image:"/productoNoImg.png",
+	width:"96",
+	height:"96",
+	left:"20"
+},
+"#infoProducto3":{
+	text:"Costilla de Pollo \nPlumrose (Kg)",
+	font:{
+		font:"Helvetica",
+		fontSize:"15pt",
+		fontWeight:"Bold"
+	},
+	color:"black",
+	right:"10",
+	top:"6"
+},
+"#precio3":{
+	font:{
+		font:"Helvetica",
+		fontSize:"13pt",
+		fontWeight:"Bold"
+	},
+	color:"white",
+	text:"Bs.F 303,00",
+	top:"4",
+	right:"4"
+}

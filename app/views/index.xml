@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="container">
+		<View>	
+			<ImageView id="unicasaLogo"></ImageView>
+			<ImageView id="invitadoBtn" onClick="registroUsuario"></ImageView>
+			<ImageView id="uniclubBtn" onClick="inicioSesion"></ImageView>
+		
+		</View>
+	</Window>
+</Alloy>
