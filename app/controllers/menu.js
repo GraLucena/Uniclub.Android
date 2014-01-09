@@ -1,34 +1,23 @@
 // create menu view and table view
 var v1 = Ti.UI.createView({
-	height : '100%',
-	width : '100%',
+	//height : '100%',
+	//width : '100%',
 	left : '0%',
-	backgroundColor : '#9C213F'
+	backgroundColor : '#9c213f'
 });
 
 $.drawermenu.drawermenuview.add(v1);
 
 var tableView = Ti.UI.createTableView({
-	height : '100%',
-	width : '80%',
+	//height : '100%',
+	//width : '80%',
 	left : 0,
-	top :65,
-	backgroundColor:"#9C213F",
+	top :"90",
+	backgroundColor:"#9c213f",
 	//separatorColor : 'white'
 });
 v1.add(tableView);
 
-//BORDE
-var sectionBorde = Ti.UI.createView({
-	width : Ti.UI.FILL,
-	height : "42px",
-	touchEnabled : false,
-	backgroundColor:"#9C213F",
-	top: 0
-
-});
-
-v1.add(sectionBorde);
 
 
 //OPCIONES MENU PRINCIPAL
@@ -39,9 +28,9 @@ v1.add(sectionBorde);
 									//INICIO//
 var sectionInicio = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var inicioLabel = Ti.UI.createLabel({
@@ -51,7 +40,7 @@ var inicioLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"17pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -70,9 +59,9 @@ sectionInicio.add(inicioImg);
 									//CATALOGO//
 var sectionCatalogo = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var catalogoLabel = Ti.UI.createLabel({
@@ -82,7 +71,7 @@ var catalogoLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"17pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -101,9 +90,9 @@ sectionCatalogo.add(catalogoImg);
 									//LISTA//
 var sectionLista = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var listaLabel = Ti.UI.createLabel({
@@ -113,7 +102,7 @@ var listaLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"17pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -132,9 +121,9 @@ sectionLista.add(listaImg);
 									//RECETAS//
 var sectionRecetas = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var recetasLabel = Ti.UI.createLabel({
@@ -144,7 +133,7 @@ var recetasLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"17pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -164,9 +153,9 @@ sectionRecetas.add(recetasImg);
 									//PRECIOS//
 var sectionPrecios = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var preciosLabel = Ti.UI.createLabel({
@@ -176,7 +165,7 @@ var preciosLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"17pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -196,9 +185,9 @@ sectionPrecios.add(preciosImg);
 									//PROMOCIONES//
 var sectionPromociones = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var promocionesLabel = Ti.UI.createLabel({
@@ -208,7 +197,7 @@ var promocionesLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"17pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -227,9 +216,9 @@ sectionPromociones.add(promocionesImg);
 									//MICUENTA//
 var sectionMiCuenta = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var miCuentaLabel = Ti.UI.createLabel({
@@ -239,7 +228,7 @@ var miCuentaLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"17pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -258,9 +247,9 @@ sectionMiCuenta.add(miCuentaImg);
 									//UBIQUENOS//
 var sectionUbiquenos = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var ubiquenosLabel = Ti.UI.createLabel({
@@ -270,7 +259,7 @@ var ubiquenosLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"17pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -289,9 +278,9 @@ sectionUbiquenos.add(ubiquenosImg);
 									//PASILLOS//
 var sectionPasillos = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var pasillosLabel = Ti.UI.createLabel({
@@ -301,7 +290,7 @@ var pasillosLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"17pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -321,9 +310,9 @@ sectionPasillos.add(pasillosImg);
 
 var sectionMenu = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"f6923a"
+	backgroundColor:"#f6923a"
 });
 
 var menuLabel = Ti.UI.createLabel({
@@ -333,7 +322,7 @@ var menuLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"9pt"
 	}
 	
 });
@@ -348,9 +337,9 @@ sectionMenu.add(menuLabel);
 
 var sectionCatalogo1 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var catalogoLabel1 = Ti.UI.createLabel({
@@ -360,7 +349,7 @@ var catalogoLabel1 = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -378,20 +367,20 @@ sectionCatalogo1.add(catalogoLabel1);
 
 var sectionCarniceria = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var carniceriaLabel = Ti.UI.createLabel({
 	text:"Carnicería",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -400,20 +389,20 @@ sectionCarniceria.add(carniceriaLabel);
 
 var sectionCharcuteria = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var charcuteriaLabel = Ti.UI.createLabel({
 	text:"Charcutería",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -422,20 +411,20 @@ sectionCharcuteria.add(charcuteriaLabel);
 
 var sectionFruteria = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var fruteriaLabel = Ti.UI.createLabel({
 	text:"Frutería",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -444,20 +433,20 @@ sectionFruteria.add(fruteriaLabel);
 
 var sectionLimpieza = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var limpiezaLabel = Ti.UI.createLabel({
 	text:"Limpieza",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -466,20 +455,20 @@ sectionLimpieza.add(limpiezaLabel);
 
 var sectionPerfumeria = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var perfumeriaLabel = Ti.UI.createLabel({
 	text:"Perfumería",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -488,20 +477,20 @@ sectionPerfumeria.add(perfumeriaLabel);
 
 var sectionPescaderia = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var pescaderiaLabel = Ti.UI.createLabel({
 	text:"Pescadería",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -510,20 +499,20 @@ sectionPescaderia.add(pescaderiaLabel);
 
 var sectionQuincalla = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var quincallaLabel = Ti.UI.createLabel({
 	text:"Quincalla",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -532,20 +521,20 @@ sectionQuincalla.add(quincallaLabel);
 
 var sectionViveres = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var viveresLabel = Ti.UI.createLabel({
 	text:"Víveres",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -793,7 +782,7 @@ var sectionMenu = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
 	height : "43",
 	touchEnabled : false,
-	backgroundColor:"f6923a"
+	backgroundColor:"#f6923a"
 });
 
 var menuLabel = Ti.UI.createLabel({
@@ -803,7 +792,7 @@ var menuLabel = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"10pt"
 	}
 	
 });
@@ -818,9 +807,9 @@ sectionMenu.add(menuLabel);
 
 var sectionMiCuenta1 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
 var miCuentaLabel1 = Ti.UI.createLabel({
@@ -830,7 +819,7 @@ var miCuentaLabel1 = Ti.UI.createLabel({
 	left:"90px",
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -848,20 +837,20 @@ sectionMiCuenta1.add(miCuentaLabel1);
 
 var sectionMisDatos = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var misDatosLabel = Ti.UI.createLabel({
 	text:"Mis Datos",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -870,20 +859,20 @@ sectionMisDatos.add(misDatosLabel);
 
 var sectionTransacciones = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var transaccionesLabel = Ti.UI.createLabel({
 	text:"Mis Transacciones",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -915,7 +904,7 @@ Ti.App.addEventListener('menuBtn', function(data) {
 Ti.App.addEventListener('submenuCarniceria', function(dataCatalogo){
 	
 	var dataCatalogo = [];
-	dataCatalogo.push(sectionMenu);
+	//dataCatalogo.push(sectionMenu);
 	dataCatalogo.push(sectionCatalogo1);
 	dataCatalogo.push(sectionCarniceria);
 	dataCatalogo.push(sectionCharcuteria);
@@ -969,8 +958,7 @@ tableView.addEventListener('click', function(e) {
 		$.drawermenu.showhidemenu();
 		
 	} else if (e.row.children[0].text == 'Catálogo de Productos') {
-			Ti.App.fireEvent('submenuCarniceria');
-			
+			Ti.App.fireEvent('submenuCarniceria');			
 			tableView.addEventListener('click', function(e){
 				if (e.row.children[0].text == 'Carnicería') {
 					var catalogoScreen = Alloy.createController('catalogoScreen').getView();

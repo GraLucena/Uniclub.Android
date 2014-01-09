@@ -51,8 +51,8 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    var __alloyId59 = [];
-    __alloyId59.push($.__views.list);
+    var __alloyId58 = [];
+    __alloyId58.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -63,15 +63,15 @@ function Controller() {
         hintText: "Palabra Clave"
     });
     $.__views.list.add($.__views.search);
-    $.__views.__alloyId58 = Ti.UI.createTableView({
+    $.__views.__alloyId57 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         top: "131px",
         separatorColor: "e4e4e4",
-        data: __alloyId59,
-        id: "__alloyId58"
+        data: __alloyId58,
+        id: "__alloyId57"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId58);
+    $.__views.inicioScreen.add($.__views.__alloyId57);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

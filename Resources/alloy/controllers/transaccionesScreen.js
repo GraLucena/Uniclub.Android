@@ -153,8 +153,8 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    var __alloyId55 = [];
-    __alloyId55.push($.__views.list);
+    var __alloyId54 = [];
+    __alloyId54.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -170,7 +170,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId55.push($.__views.list);
+    __alloyId54.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "100px",
@@ -178,21 +178,21 @@ function Controller() {
         id: "categoria"
     });
     $.__views.list.add($.__views.categoria);
-    $.__views.__alloyId56 = Ti.UI.createLabel({
+    $.__views.__alloyId55 = Ti.UI.createLabel({
         text: "Mis Transacciones",
         font: "Helvetica",
         size: "5pt",
         color: "white",
         left: "40px",
-        id: "__alloyId56"
+        id: "__alloyId55"
     });
-    $.__views.categoria.add($.__views.__alloyId56);
+    $.__views.categoria.add($.__views.__alloyId55);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId55.push($.__views.list);
+    __alloyId54.push($.__views.list);
     $.__views.columnas = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "100px",
@@ -260,24 +260,24 @@ function Controller() {
         id: "saldo"
     });
     $.__views.columnas.add($.__views.saldo);
-    $.__views.__alloyId54 = Ti.UI.createTableView({
+    $.__views.__alloyId53 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         top: "131px",
         separatorColor: "e4e4e4",
-        data: __alloyId55,
-        id: "__alloyId54"
+        data: __alloyId54,
+        id: "__alloyId53"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId54);
-    $.__views.__alloyId57 = Ti.UI.createView({
+    $.__views.inicioScreen.add($.__views.__alloyId53);
+    $.__views.__alloyId56 = Ti.UI.createView({
         top: "210",
-        id: "__alloyId57"
+        id: "__alloyId56"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId57);
+    $.__views.inicioScreen.add($.__views.__alloyId56);
     $.__views.myTable = Ti.UI.createTableView({
         id: "myTable"
     });
-    $.__views.__alloyId57.add($.__views.myTable);
+    $.__views.__alloyId56.add($.__views.myTable);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

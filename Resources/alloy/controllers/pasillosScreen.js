@@ -51,8 +51,8 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    var __alloyId47 = [];
-    __alloyId47.push($.__views.list);
+    var __alloyId46 = [];
+    __alloyId46.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -68,7 +68,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId47.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "100px",
@@ -82,21 +82,21 @@ function Controller() {
         id: "atrasBtn"
     });
     $.__views.categoria.add($.__views.atrasBtn);
-    $.__views.__alloyId48 = Ti.UI.createLabel({
+    $.__views.__alloyId47 = Ti.UI.createLabel({
         text: "Pasillo 1",
         font: "Helvetica",
         size: "5pt",
         color: "white",
         left: "110px",
-        id: "__alloyId48"
+        id: "__alloyId47"
     });
-    $.__views.categoria.add($.__views.__alloyId48);
+    $.__views.categoria.add($.__views.__alloyId47);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId47.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.productos = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
@@ -120,7 +120,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId47.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.productos = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
@@ -144,7 +144,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId47.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.productos = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
@@ -168,7 +168,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId47.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.productos = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
@@ -192,7 +192,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId47.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.productos = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
@@ -211,15 +211,15 @@ function Controller() {
         id: "listaProductos"
     });
     $.__views.productos.add($.__views.listaProductos);
-    $.__views.__alloyId46 = Ti.UI.createTableView({
+    $.__views.__alloyId45 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "white",
         top: "131px",
         separatorColor: "e4e4e4",
-        data: __alloyId47,
-        id: "__alloyId46"
+        data: __alloyId46,
+        id: "__alloyId45"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId46);
+    $.__views.inicioScreen.add($.__views.__alloyId45);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {
