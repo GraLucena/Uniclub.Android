@@ -46,7 +46,7 @@ function Controller() {
         showCancel: "false",
         width: Ti.UI.FILL,
         height: "70",
-        top: "30",
+        top: "20",
         hintText: "Palabra Clave"
     });
     $.__views.list.add($.__views.search);

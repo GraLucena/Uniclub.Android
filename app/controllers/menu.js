@@ -9,12 +9,9 @@ var v1 = Ti.UI.createView({
 $.drawermenu.drawermenuview.add(v1);
 
 var tableView = Ti.UI.createTableView({
-	//height : '100%',
-	//width : '80%',
 	left : 0,
 	top :"90",
 	backgroundColor:"#9c213f",
-	//separatorColor : 'white'
 });
 v1.add(tableView);
 
@@ -48,8 +45,6 @@ var inicioLabel = Ti.UI.createLabel({
 var inicioImg = Ti.UI.createImageView({
 	image: "/inicioImg.png",
 	left: "10px",
-	width:"75px",
-	height:"65px"
 });
 
 sectionInicio.add(inicioLabel);
@@ -68,7 +63,7 @@ var catalogoLabel = Ti.UI.createLabel({
 	text:"Catálogo de Productos",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
 		fontSize:"8pt"
@@ -79,8 +74,6 @@ var catalogoLabel = Ti.UI.createLabel({
 var catalogoImg = Ti.UI.createImageView({
 	image: "/catalogoImg.png",
 	left: "10px",
-	width:"75px",
-	height:"65px"
 });
 
 sectionCatalogo.add(catalogoLabel);
@@ -99,7 +92,7 @@ var listaLabel = Ti.UI.createLabel({
 	text:"Lista de Compras",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
 		fontSize:"8pt"
@@ -110,8 +103,6 @@ var listaLabel = Ti.UI.createLabel({
 var listaImg = Ti.UI.createImageView({
 	image: "/listaImg.png",
 	left: "10px",
-	width:"75px",
-	height:"65px"
 });
 
 sectionLista.add(listaLabel);
@@ -130,7 +121,7 @@ var recetasLabel = Ti.UI.createLabel({
 	text:"Recetas",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
 		fontSize:"8pt"
@@ -141,8 +132,6 @@ var recetasLabel = Ti.UI.createLabel({
 var recetasImg = Ti.UI.createImageView({
 	image: "/recetaImg.png",
 	left: "10px",
-	width:"75px",
-	height:"65px"
 });
 
 sectionRecetas.add(recetasLabel);
@@ -162,7 +151,7 @@ var preciosLabel = Ti.UI.createLabel({
 	text:"Consulta de Precios",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
 		fontSize:"8pt"
@@ -173,8 +162,6 @@ var preciosLabel = Ti.UI.createLabel({
 var preciosImg = Ti.UI.createImageView({
 	image: "/preciosImg.png",
 	left: "10px",
-	width:"75px",
-	height:"65px"
 });
 
 sectionPrecios.add(preciosLabel);
@@ -194,7 +181,7 @@ var promocionesLabel = Ti.UI.createLabel({
 	text:"Promociones",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
 		fontSize:"8pt"
@@ -204,9 +191,7 @@ var promocionesLabel = Ti.UI.createLabel({
 
 var promocionesImg = Ti.UI.createImageView({
 	image: "/promocionesImg.png",
-	left: "10px",
-	width:"75px",
-	height:"65px"
+	left: "10px"
 });
 
 sectionPromociones.add(promocionesLabel);
@@ -225,7 +210,7 @@ var miCuentaLabel = Ti.UI.createLabel({
 	text:"Mi Cuenta",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
 		fontSize:"8pt"
@@ -235,9 +220,7 @@ var miCuentaLabel = Ti.UI.createLabel({
 
 var miCuentaImg = Ti.UI.createImageView({
 	image: "/miCuentaImg.png",
-	left: "10px",
-	width:"75px",
-	height:"65px"
+	left: "10px"
 });
 
 sectionMiCuenta.add(miCuentaLabel);
@@ -256,7 +239,7 @@ var ubiquenosLabel = Ti.UI.createLabel({
 	text:"Ubíquenos",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
 		fontSize:"8pt"
@@ -266,9 +249,7 @@ var ubiquenosLabel = Ti.UI.createLabel({
 
 var ubiquenosImg = Ti.UI.createImageView({
 	image: "/ubiquenosImg.png",
-	left: "10px",
-	width:"75px",
-	height:"65px"
+	left: "10px"
 });
 
 sectionUbiquenos.add(ubiquenosLabel);
@@ -287,7 +268,7 @@ var pasillosLabel = Ti.UI.createLabel({
 	text:"Pasillos",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
 		fontSize:"8pt"
@@ -297,9 +278,7 @@ var pasillosLabel = Ti.UI.createLabel({
 
 var pasillosImg = Ti.UI.createImageView({
 	image: "/pasillosImg.png",
-	left: "10px",
-	width:"75px",
-	height:"65px"
+	left: "10px"
 });
 
 sectionPasillos.add(pasillosLabel);
@@ -308,45 +287,45 @@ sectionPasillos.add(pasillosImg);
 
 //OPCIONES SUBMENU CATALOGO//
 
-var sectionMenu = Ti.UI.createTableViewRow({
+var sectionCatalogo1 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
 	height : "63",
 	touchEnabled : false,
 	backgroundColor:"#f6923a"
 });
 
-var menuLabel = Ti.UI.createLabel({
+var catalogoLabel1 = Ti.UI.createLabel({
 	text:"Menú",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
-		fontSize:"9pt"
+		fontSize:"8pt"
 	}
 	
 });
 
 var atrasBtn = Ti.UI.createImageView({
 	image: "/atras.png",
-	left: "0"
+	left: "10"
 });
 
-sectionMenu.add(atrasBtn);
-sectionMenu.add(menuLabel);
+sectionCatalogo1.add(atrasBtn);
+sectionCatalogo1.add(catalogoLabel1);
 
-var sectionCatalogo1 = Ti.UI.createTableViewRow({
+var sectionCatalogo2 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
 	height : "63",
 	touchEnabled : false,
 	backgroundColor:"#9c213f"
 });
 
-var catalogoLabel1 = Ti.UI.createLabel({
+var catalogoLabel2 = Ti.UI.createLabel({
 	text:"Catálogo de Productos",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
 		fontSize:"8pt"
@@ -356,13 +335,11 @@ var catalogoLabel1 = Ti.UI.createLabel({
 
 var catalogoImg = Ti.UI.createImageView({
 	image: "/catalogoImg.png",
-	left: "10px",
-	width:"75px",
-	height:"65px"
+	left: "10px"
 });
 
-sectionCatalogo1.add(catalogoImg);
-sectionCatalogo1.add(catalogoLabel1);
+sectionCatalogo2.add(catalogoImg);
+sectionCatalogo2.add(catalogoLabel2);
 
 
 var sectionCarniceria = Ti.UI.createTableViewRow({
@@ -543,79 +520,77 @@ sectionViveres.add(viveresLabel);
 
 //OPCIONES SUBMENU PASILLOS//
 
-var sectionMenu = Ti.UI.createTableViewRow({
+var sectionPasillos1 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"f6923a"
+	backgroundColor:"#f6923a"
 });
 
-var menuLabel = Ti.UI.createLabel({
+var pasillosLabel1 = Ti.UI.createLabel({
 	text:"Menú",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
 
 var atrasBtn = Ti.UI.createImageView({
 	image: "/atras.png",
-	left: "0"
+	left: "10"
 });
 
-sectionMenu.add(atrasBtn);
-sectionMenu.add(menuLabel);
+sectionPasillos1.add(atrasBtn);
+sectionPasillos1.add(pasillosLabel1);
 
-var sectionPasillos1 = Ti.UI.createTableViewRow({
+var sectionPasillos2 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
-	backgroundColor:"9c213f"
+	backgroundColor:"#9c213f"
 });
 
-var pasillosLabel1 = Ti.UI.createLabel({
+var pasillosLabel2 = Ti.UI.createLabel({
 	text:"Pasillos",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
 
 var pasillosImg = Ti.UI.createImageView({
 	image: "/pasillosImg.png",
-	left: "10px",
-	width:"75px",
-	height:"65px"
+	left: "10px"
 });
 
-sectionPasillos1.add(pasillosImg);
-sectionPasillos1.add(pasillosLabel1);
+sectionPasillos2.add(pasillosImg);
+sectionPasillos2.add(pasillosLabel2);
 
 
 var sectionPasillo1 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var pasillo1Label = Ti.UI.createLabel({
 	text:"Pasillo 1",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -624,20 +599,20 @@ sectionPasillo1.add(pasillo1Label);
 
 var sectionPasillo2 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var pasillo2Label = Ti.UI.createLabel({
 	text:"Pasillo 2",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -646,20 +621,20 @@ sectionPasillo2.add(pasillo2Label);
 
 var sectionPasillo3 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var pasillo3Label = Ti.UI.createLabel({
 	text:"Pasillo 3",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -668,20 +643,20 @@ sectionPasillo3.add(pasillo3Label);
 
 var sectionPasillo4 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var pasillo4Label = Ti.UI.createLabel({
 	text:"Pasillo 4",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -690,20 +665,20 @@ sectionPasillo4.add(pasillo4Label);
 
 var sectionPasillo5 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var pasillo5Label = Ti.UI.createLabel({
 	text:"Pasillo 5",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -712,20 +687,20 @@ sectionPasillo5.add(pasillo5Label);
 
 var sectionPasillo6 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var pasillo6Label = Ti.UI.createLabel({
 	text:"Pasillo 6",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -734,20 +709,20 @@ sectionPasillo6.add(pasillo6Label);
 
 var sectionPasillo7 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var pasillo7Label = Ti.UI.createLabel({
 	text:"Pasillo 7",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -756,20 +731,20 @@ sectionPasillo7.add(pasillo7Label);
 
 var sectionPasillo8 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	left:"4px",
 	touchEnabled : false,
-	backgroundColor:"e4e4e4"
+	backgroundColor:"#e4e4e4"
 });
 
 var pasillo8Label = Ti.UI.createLabel({
 	text:"Pasillo8",
-	color:"6d6969",
+	color:"#6d6969",
 	left:"40px",
 	touchEnabled : false,
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -778,21 +753,21 @@ sectionPasillo8.add(pasillo8Label);
 
 //OPCIONES SUBMENU MI CUENTA//
 
-var sectionMenu = Ti.UI.createTableViewRow({
+var sectionMiCuenta1 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
-	height : "43",
+	height : "63",
 	touchEnabled : false,
 	backgroundColor:"#f6923a"
 });
 
-var menuLabel = Ti.UI.createLabel({
-	text:"Menú",
+var miCuentaLabel1 = Ti.UI.createLabel({
+	text:"Mi Cuenta",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
-		fontSize:"10pt"
+		fontSize:"8pt"
 	}
 	
 });
@@ -802,21 +777,21 @@ var atrasBtn = Ti.UI.createImageView({
 	left: "0"
 });
 
-sectionMenu.add(atrasBtn);
-sectionMenu.add(menuLabel);
+sectionMiCuenta1.add(atrasBtn);
+sectionMiCuenta1.add(miCuentaLabel1);
 
-var sectionMiCuenta1 = Ti.UI.createTableViewRow({
+var sectionMiCuenta2 = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
 	height : "63",
 	touchEnabled : false,
 	backgroundColor:"#9c213f"
 });
 
-var miCuentaLabel1 = Ti.UI.createLabel({
+var miCuentaLabel2 = Ti.UI.createLabel({
 	text:"Mi Cuenta",
 	color:"white",
 	touchEnabled : false,
-	left:"90px",
+	left:"80px",
 	font:{
 		font:"Helvetica",
 		fontSize:"8pt"
@@ -826,13 +801,11 @@ var miCuentaLabel1 = Ti.UI.createLabel({
 
 var miCuentaImg = Ti.UI.createImageView({
 	image: "/miCuentaImg.png",
-	left: "10px",
-	width:"75px",
-	height:"65px"
+	left: "10px"
 });
 
-sectionMiCuenta1.add(miCuentaImg);
-sectionMiCuenta1.add(miCuentaLabel1);
+sectionMiCuenta2.add(miCuentaImg);
+sectionMiCuenta2.add(miCuentaLabel2);
 
 
 var sectionMisDatos = Ti.UI.createTableViewRow({
@@ -904,8 +877,8 @@ Ti.App.addEventListener('menuBtn', function(data) {
 Ti.App.addEventListener('submenuCarniceria', function(dataCatalogo){
 	
 	var dataCatalogo = [];
-	//dataCatalogo.push(sectionMenu);
 	dataCatalogo.push(sectionCatalogo1);
+	dataCatalogo.push(sectionCatalogo2);
 	dataCatalogo.push(sectionCarniceria);
 	dataCatalogo.push(sectionCharcuteria);
 	dataCatalogo.push(sectionFruteria);
@@ -923,8 +896,8 @@ Ti.App.addEventListener('submenuCarniceria', function(dataCatalogo){
 //EVENTS FOR PASILLOS
 Ti.App.addEventListener('submenuPasillos', function(dataPasillos){
 	var dataPasillos = [];
-	dataPasillos.push(sectionMenu);
 	dataPasillos.push(sectionPasillos1);
+	dataPasillos.push(sectionPasillos2);
 	dataPasillos.push(sectionPasillo1);
 	dataPasillos.push(sectionPasillo2);
 	dataPasillos.push(sectionPasillo3);
@@ -941,8 +914,8 @@ Ti.App.addEventListener('submenuPasillos', function(dataPasillos){
 //EVENTS FOR MI CUENTA
 Ti.App.addEventListener('submenuMiCuenta', function(dataMiCuenta){
 	var dataMiCuenta = [];
-	dataMiCuenta.push(sectionMenu);
 	dataMiCuenta.push(sectionMiCuenta1);
+	dataMiCuenta.push(sectionMiCuenta2);
 	dataMiCuenta.push(sectionMisDatos);
 	dataMiCuenta.push(sectionTransacciones);
 	

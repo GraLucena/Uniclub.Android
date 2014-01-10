@@ -20,7 +20,7 @@
 	top : 17,
 	right : "45%",
 	image :"/unicasaIcon.png"
-}
+},
 ".promociones":{
 	backgroundColor :"white",
 	width :Ti.UI.FILL,
@@ -54,7 +54,7 @@
 	backgroundColor :"#dddddd",
 	top:"90",
 	separatorStyle:"NONE"
-}
+},
 "#list":{
 	width:Ti.UI.FILL,
 	selectionStyle:"NONE",

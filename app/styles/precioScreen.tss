@@ -1,42 +1,36 @@
 "#inicioScreen": {
-	backgroundColor: "#bebcbc",
-	height : '100%',
-	width : '100%'
-},
-
-"#main":{
-	width : Ti.UI.FILL,
-	backgroundColor : "#9C213F",
-	height:"130px",
-	top:"0"
+	backgroundColor: "#9C213F"
 },
 "#menuBtn":{
 	left : 7,
 	top : 25,
-	width :"65px",
-	height :"65px",
 	image :"/menuIcon.png"
+},
+"#view":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#bebcbc",
+	top:"90",
+	//separatorStyle:"NONE"
 },
 "#carritoBtn":{
 	top : 25,
-	right: 7,
-	width :"65px",
-	height :"65px",
+	right: 7,	
 	image :"/carritoIcon.png"
 },
 "#logoImg":{
 	top : 17,
-	right : 130,
+	right : "45%",
 	image :"/unicasaIcon.png"
 },
 "#palabraClave":{
 	image: "/palabraClaveBtn.png",
-	width:"510px",
+	top:"230",
+	width:"410px",
 	height:"104px"
 },
 "#codigoBarra":{
 	image: "/codigoBarraBtn.png",
-	width:"510px",
+	width:"410px",
 	height:"104px",
-	top:"280"
+	top:"360"
 }

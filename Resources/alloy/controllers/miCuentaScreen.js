@@ -7,32 +7,24 @@ function Controller() {
     var $ = this;
     var exports = {};
     $.__views.inicioScreen = Ti.UI.createView({
-        backgroundColor: "#bebcbc",
-        height: "100%",
-        width: "100%",
+        backgroundColor: "#9C213F",
         id: "inicioScreen"
     });
     $.__views.inicioScreen && $.addTopLevelView($.__views.inicioScreen);
     $.__views.main = Ti.UI.createView({
-        width: Ti.UI.FILL,
-        backgroundColor: "#9C213F",
-        height: "130px",
-        top: "0",
         id: "main"
     });
     $.__views.inicioScreen.add($.__views.main);
     $.__views.menuBtn = Ti.UI.createImageView({
         left: 7,
         top: 25,
-        width: "65px",
-        height: "65px",
         image: "/menuIcon.png",
         id: "menuBtn"
     });
     $.__views.main.add($.__views.menuBtn);
     $.__views.logoImg = Ti.UI.createImageView({
         top: 17,
-        right: 130,
+        right: "45%",
         image: "/unicasaIcon.png",
         id: "logoImg"
     });
@@ -40,8 +32,6 @@ function Controller() {
     $.__views.carritoBtn = Ti.UI.createImageView({
         top: 25,
         right: 7,
-        width: "65px",
-        height: "65px",
         image: "/carritoIcon.png",
         id: "carritoBtn"
     });
@@ -59,8 +49,8 @@ function Controller() {
         barColor: "#e4e4e4",
         showCancel: "false",
         width: Ti.UI.FILL,
-        height: "43",
-        top: "0",
+        height: "70",
+        top: "20",
         hintText: "Palabra Clave"
     });
     $.__views.list.add($.__views.search);
@@ -73,25 +63,23 @@ function Controller() {
     __alloyId31.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
-        height: "100px",
+        height: "73",
         backgroundColor: "#f6923a",
         id: "categoria"
     });
     $.__views.list.add($.__views.categoria);
     $.__views.label = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         color: "white",
         font: {
             font: "Helvetica",
-            fontSize: "14pt"
+            fontSize: "9pt"
         },
         text: "Mi Cuenta",
         id: "label"
     });
     $.__views.categoria.add($.__views.label);
     $.__views.misPuntos = Ti.UI.createImageView({
-        width: "169px",
-        height: "80px",
         right: "140px",
         image: "/misPuntosImg.png",
         id: "misPuntos"
@@ -99,11 +87,11 @@ function Controller() {
     $.__views.categoria.add($.__views.misPuntos);
     $.__views.labelPuntos = Ti.UI.createLabel({
         right: "35px",
-        color: "ee5041",
+        color: "#ee5041",
         top: "19",
         font: {
             font: "Helvetica",
-            fontSize: "16pt"
+            fontSize: "9pt"
         },
         text: "15.000",
         id: "labelPuntos"
@@ -117,12 +105,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelMisDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
-        color: "999999",
+        color: "#999999",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "8pt"
         },
         text: "Mis Datos",
         id: "labelMisDatos"
@@ -136,12 +124,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Código Tarjeta:",
         id: "labelDatos"
@@ -159,12 +147,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Nombre y Apellido:",
         id: "labelDatos"
@@ -182,12 +170,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Estado de Cliente:",
         id: "labelDatos"
@@ -205,12 +193,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Tipo de Cliente:",
         id: "labelDatos"
@@ -228,12 +216,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Cédula de Identidad:",
         id: "labelDatos"
@@ -251,12 +239,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Fecha de Nacimiento:",
         id: "labelDatos"
@@ -274,12 +262,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Lugar de Nacimiento:",
         id: "labelDatos"
@@ -297,12 +285,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Sexo:",
         id: "labelDatos"
@@ -320,12 +308,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Nacionalidad:",
         id: "labelDatos"
@@ -343,12 +331,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Estado Civil:",
         id: "labelDatos"
@@ -366,12 +354,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Grado de Instrucción:",
         id: "labelDatos"
@@ -389,12 +377,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Profesión:",
         id: "labelDatos"
@@ -412,12 +400,12 @@ function Controller() {
     });
     __alloyId31.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
-        left: "40px",
+        left: "30px",
         height: "50",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
         text: "Hijos:",
         id: "labelDatos"
@@ -429,9 +417,9 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId44);
     $.__views.__alloyId30 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
-        backgroundColor: "white",
-        top: "131px",
-        separatorColor: "e4e4e4",
+        backgroundColor: "#dddddd",
+        top: "90",
+        separatorStyle: "NONE",
         data: __alloyId31,
         id: "__alloyId30"
     });

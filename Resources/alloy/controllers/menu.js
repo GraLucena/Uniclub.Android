@@ -48,9 +48,7 @@ function Controller() {
     });
     var inicioImg = Ti.UI.createImageView({
         image: "/inicioImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
     sectionInicio.add(inicioLabel);
     sectionInicio.add(inicioImg);
@@ -64,7 +62,7 @@ function Controller() {
         text: "Catálogo de Productos",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
             fontSize: "8pt"
@@ -72,9 +70,7 @@ function Controller() {
     });
     var catalogoImg = Ti.UI.createImageView({
         image: "/catalogoImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
     sectionCatalogo.add(catalogoLabel);
     sectionCatalogo.add(catalogoImg);
@@ -88,7 +84,7 @@ function Controller() {
         text: "Lista de Compras",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
             fontSize: "8pt"
@@ -96,9 +92,7 @@ function Controller() {
     });
     var listaImg = Ti.UI.createImageView({
         image: "/listaImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
     sectionLista.add(listaLabel);
     sectionLista.add(listaImg);
@@ -112,7 +106,7 @@ function Controller() {
         text: "Recetas",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
             fontSize: "8pt"
@@ -120,9 +114,7 @@ function Controller() {
     });
     var recetasImg = Ti.UI.createImageView({
         image: "/recetaImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
     sectionRecetas.add(recetasLabel);
     sectionRecetas.add(recetasImg);
@@ -136,7 +128,7 @@ function Controller() {
         text: "Consulta de Precios",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
             fontSize: "8pt"
@@ -144,9 +136,7 @@ function Controller() {
     });
     var preciosImg = Ti.UI.createImageView({
         image: "/preciosImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
     sectionPrecios.add(preciosLabel);
     sectionPrecios.add(preciosImg);
@@ -160,7 +150,7 @@ function Controller() {
         text: "Promociones",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
             fontSize: "8pt"
@@ -168,9 +158,7 @@ function Controller() {
     });
     var promocionesImg = Ti.UI.createImageView({
         image: "/promocionesImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
     sectionPromociones.add(promocionesLabel);
     sectionPromociones.add(promocionesImg);
@@ -184,7 +172,7 @@ function Controller() {
         text: "Mi Cuenta",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
             fontSize: "8pt"
@@ -192,9 +180,7 @@ function Controller() {
     });
     var miCuentaImg = Ti.UI.createImageView({
         image: "/miCuentaImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
     sectionMiCuenta.add(miCuentaLabel);
     sectionMiCuenta.add(miCuentaImg);
@@ -208,7 +194,7 @@ function Controller() {
         text: "Ubíquenos",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
             fontSize: "8pt"
@@ -216,9 +202,7 @@ function Controller() {
     });
     var ubiquenosImg = Ti.UI.createImageView({
         image: "/ubiquenosImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
     sectionUbiquenos.add(ubiquenosLabel);
     sectionUbiquenos.add(ubiquenosImg);
@@ -232,7 +216,7 @@ function Controller() {
         text: "Pasillos",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
             fontSize: "8pt"
@@ -240,45 +224,43 @@ function Controller() {
     });
     var pasillosImg = Ti.UI.createImageView({
         image: "/pasillosImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
     sectionPasillos.add(pasillosLabel);
     sectionPasillos.add(pasillosImg);
-    var sectionMenu = Ti.UI.createTableViewRow({
+    var sectionCatalogo1 = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         height: "63",
         touchEnabled: false,
         backgroundColor: "#f6923a"
     });
-    var menuLabel = Ti.UI.createLabel({
+    var catalogoLabel1 = Ti.UI.createLabel({
         text: "Menú",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
-            fontSize: "9pt"
+            fontSize: "8pt"
         }
     });
     var atrasBtn = Ti.UI.createImageView({
         image: "/atras.png",
-        left: "0"
+        left: "10"
     });
-    sectionMenu.add(atrasBtn);
-    sectionMenu.add(menuLabel);
-    var sectionCatalogo1 = Ti.UI.createTableViewRow({
+    sectionCatalogo1.add(atrasBtn);
+    sectionCatalogo1.add(catalogoLabel1);
+    var sectionCatalogo2 = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         height: "63",
         touchEnabled: false,
         backgroundColor: "#9c213f"
     });
-    var catalogoLabel1 = Ti.UI.createLabel({
+    var catalogoLabel2 = Ti.UI.createLabel({
         text: "Catálogo de Productos",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
             fontSize: "8pt"
@@ -286,12 +268,10 @@ function Controller() {
     });
     var catalogoImg = Ti.UI.createImageView({
         image: "/catalogoImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
-    sectionCatalogo1.add(catalogoImg);
-    sectionCatalogo1.add(catalogoLabel1);
+    sectionCatalogo2.add(catalogoImg);
+    sectionCatalogo2.add(catalogoLabel2);
     var sectionCarniceria = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         height: "63",
@@ -436,229 +416,227 @@ function Controller() {
         }
     });
     sectionViveres.add(viveresLabel);
-    var sectionMenu = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        height: "43",
-        touchEnabled: false,
-        backgroundColor: "f6923a"
-    });
-    var menuLabel = Ti.UI.createLabel({
-        text: "Menú",
-        color: "white",
-        touchEnabled: false,
-        left: "90px",
-        font: {
-            font: "Helvetica",
-            fontSize: "16pt"
-        }
-    });
-    var atrasBtn = Ti.UI.createImageView({
-        image: "/atras.png",
-        left: "0"
-    });
-    sectionMenu.add(atrasBtn);
-    sectionMenu.add(menuLabel);
     var sectionPasillos1 = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        height: "43",
-        touchEnabled: false,
-        backgroundColor: "9c213f"
-    });
-    var pasillosLabel1 = Ti.UI.createLabel({
-        text: "Pasillos",
-        color: "white",
-        touchEnabled: false,
-        left: "90px",
-        font: {
-            font: "Helvetica",
-            fontSize: "16pt"
-        }
-    });
-    var pasillosImg = Ti.UI.createImageView({
-        image: "/pasillosImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
-    });
-    sectionPasillos1.add(pasillosImg);
-    sectionPasillos1.add(pasillosLabel1);
-    var sectionPasillo1 = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        height: "43",
-        left: "4px",
-        touchEnabled: false,
-        backgroundColor: "e4e4e4"
-    });
-    var pasillo1Label = Ti.UI.createLabel({
-        text: "Pasillo 1",
-        color: "6d6969",
-        left: "40px",
-        touchEnabled: false,
-        font: {
-            font: "Helvetica",
-            fontSize: "16pt"
-        }
-    });
-    sectionPasillo1.add(pasillo1Label);
-    var sectionPasillo2 = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        height: "43",
-        left: "4px",
-        touchEnabled: false,
-        backgroundColor: "e4e4e4"
-    });
-    var pasillo2Label = Ti.UI.createLabel({
-        text: "Pasillo 2",
-        color: "6d6969",
-        left: "40px",
-        touchEnabled: false,
-        font: {
-            font: "Helvetica",
-            fontSize: "16pt"
-        }
-    });
-    sectionPasillo2.add(pasillo2Label);
-    var sectionPasillo3 = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        height: "43",
-        left: "4px",
-        touchEnabled: false,
-        backgroundColor: "e4e4e4"
-    });
-    var pasillo3Label = Ti.UI.createLabel({
-        text: "Pasillo 3",
-        color: "6d6969",
-        left: "40px",
-        touchEnabled: false,
-        font: {
-            font: "Helvetica",
-            fontSize: "16pt"
-        }
-    });
-    sectionPasillo3.add(pasillo3Label);
-    var sectionPasillo4 = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        height: "43",
-        left: "4px",
-        touchEnabled: false,
-        backgroundColor: "e4e4e4"
-    });
-    var pasillo4Label = Ti.UI.createLabel({
-        text: "Pasillo 4",
-        color: "6d6969",
-        left: "40px",
-        touchEnabled: false,
-        font: {
-            font: "Helvetica",
-            fontSize: "16pt"
-        }
-    });
-    sectionPasillo4.add(pasillo4Label);
-    var sectionPasillo5 = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        height: "43",
-        left: "4px",
-        touchEnabled: false,
-        backgroundColor: "e4e4e4"
-    });
-    var pasillo5Label = Ti.UI.createLabel({
-        text: "Pasillo 5",
-        color: "6d6969",
-        left: "40px",
-        touchEnabled: false,
-        font: {
-            font: "Helvetica",
-            fontSize: "16pt"
-        }
-    });
-    sectionPasillo5.add(pasillo5Label);
-    var sectionPasillo6 = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        height: "43",
-        left: "4px",
-        touchEnabled: false,
-        backgroundColor: "e4e4e4"
-    });
-    var pasillo6Label = Ti.UI.createLabel({
-        text: "Pasillo 6",
-        color: "6d6969",
-        left: "40px",
-        touchEnabled: false,
-        font: {
-            font: "Helvetica",
-            fontSize: "16pt"
-        }
-    });
-    sectionPasillo6.add(pasillo6Label);
-    var sectionPasillo7 = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        height: "43",
-        left: "4px",
-        touchEnabled: false,
-        backgroundColor: "e4e4e4"
-    });
-    var pasillo7Label = Ti.UI.createLabel({
-        text: "Pasillo 7",
-        color: "6d6969",
-        left: "40px",
-        touchEnabled: false,
-        font: {
-            font: "Helvetica",
-            fontSize: "16pt"
-        }
-    });
-    sectionPasillo7.add(pasillo7Label);
-    var sectionPasillo8 = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        height: "43",
-        left: "4px",
-        touchEnabled: false,
-        backgroundColor: "e4e4e4"
-    });
-    var pasillo8Label = Ti.UI.createLabel({
-        text: "Pasillo8",
-        color: "6d6969",
-        left: "40px",
-        touchEnabled: false,
-        font: {
-            font: "Helvetica",
-            fontSize: "16pt"
-        }
-    });
-    sectionPasillo8.add(pasillo8Label);
-    var sectionMenu = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        height: "43",
+        height: "63",
         touchEnabled: false,
         backgroundColor: "#f6923a"
     });
-    var menuLabel = Ti.UI.createLabel({
+    var pasillosLabel1 = Ti.UI.createLabel({
         text: "Menú",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
         font: {
             font: "Helvetica",
-            fontSize: "10pt"
+            fontSize: "8pt"
         }
     });
     var atrasBtn = Ti.UI.createImageView({
         image: "/atras.png",
-        left: "0"
+        left: "10"
     });
-    sectionMenu.add(atrasBtn);
-    sectionMenu.add(menuLabel);
-    var sectionMiCuenta1 = Ti.UI.createTableViewRow({
+    sectionPasillos1.add(atrasBtn);
+    sectionPasillos1.add(pasillosLabel1);
+    var sectionPasillos2 = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         height: "63",
         touchEnabled: false,
         backgroundColor: "#9c213f"
     });
+    var pasillosLabel2 = Ti.UI.createLabel({
+        text: "Pasillos",
+        color: "white",
+        touchEnabled: false,
+        left: "80px",
+        font: {
+            font: "Helvetica",
+            fontSize: "8pt"
+        }
+    });
+    var pasillosImg = Ti.UI.createImageView({
+        image: "/pasillosImg.png",
+        left: "10px"
+    });
+    sectionPasillos2.add(pasillosImg);
+    sectionPasillos2.add(pasillosLabel2);
+    var sectionPasillo1 = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        height: "63",
+        left: "4px",
+        touchEnabled: false,
+        backgroundColor: "#e4e4e4"
+    });
+    var pasillo1Label = Ti.UI.createLabel({
+        text: "Pasillo 1",
+        color: "#6d6969",
+        left: "40px",
+        touchEnabled: false,
+        font: {
+            font: "Helvetica",
+            fontSize: "8pt"
+        }
+    });
+    sectionPasillo1.add(pasillo1Label);
+    var sectionPasillo2 = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        height: "63",
+        left: "4px",
+        touchEnabled: false,
+        backgroundColor: "#e4e4e4"
+    });
+    var pasillo2Label = Ti.UI.createLabel({
+        text: "Pasillo 2",
+        color: "#6d6969",
+        left: "40px",
+        touchEnabled: false,
+        font: {
+            font: "Helvetica",
+            fontSize: "8pt"
+        }
+    });
+    sectionPasillo2.add(pasillo2Label);
+    var sectionPasillo3 = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        height: "63",
+        left: "4px",
+        touchEnabled: false,
+        backgroundColor: "#e4e4e4"
+    });
+    var pasillo3Label = Ti.UI.createLabel({
+        text: "Pasillo 3",
+        color: "#6d6969",
+        left: "40px",
+        touchEnabled: false,
+        font: {
+            font: "Helvetica",
+            fontSize: "8pt"
+        }
+    });
+    sectionPasillo3.add(pasillo3Label);
+    var sectionPasillo4 = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        height: "63",
+        left: "4px",
+        touchEnabled: false,
+        backgroundColor: "#e4e4e4"
+    });
+    var pasillo4Label = Ti.UI.createLabel({
+        text: "Pasillo 4",
+        color: "#6d6969",
+        left: "40px",
+        touchEnabled: false,
+        font: {
+            font: "Helvetica",
+            fontSize: "8pt"
+        }
+    });
+    sectionPasillo4.add(pasillo4Label);
+    var sectionPasillo5 = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        height: "63",
+        left: "4px",
+        touchEnabled: false,
+        backgroundColor: "#e4e4e4"
+    });
+    var pasillo5Label = Ti.UI.createLabel({
+        text: "Pasillo 5",
+        color: "#6d6969",
+        left: "40px",
+        touchEnabled: false,
+        font: {
+            font: "Helvetica",
+            fontSize: "8pt"
+        }
+    });
+    sectionPasillo5.add(pasillo5Label);
+    var sectionPasillo6 = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        height: "63",
+        left: "4px",
+        touchEnabled: false,
+        backgroundColor: "#e4e4e4"
+    });
+    var pasillo6Label = Ti.UI.createLabel({
+        text: "Pasillo 6",
+        color: "#6d6969",
+        left: "40px",
+        touchEnabled: false,
+        font: {
+            font: "Helvetica",
+            fontSize: "8pt"
+        }
+    });
+    sectionPasillo6.add(pasillo6Label);
+    var sectionPasillo7 = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        height: "63",
+        left: "4px",
+        touchEnabled: false,
+        backgroundColor: "#e4e4e4"
+    });
+    var pasillo7Label = Ti.UI.createLabel({
+        text: "Pasillo 7",
+        color: "#6d6969",
+        left: "40px",
+        touchEnabled: false,
+        font: {
+            font: "Helvetica",
+            fontSize: "8pt"
+        }
+    });
+    sectionPasillo7.add(pasillo7Label);
+    var sectionPasillo8 = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        height: "63",
+        left: "4px",
+        touchEnabled: false,
+        backgroundColor: "#e4e4e4"
+    });
+    var pasillo8Label = Ti.UI.createLabel({
+        text: "Pasillo8",
+        color: "#6d6969",
+        left: "40px",
+        touchEnabled: false,
+        font: {
+            font: "Helvetica",
+            fontSize: "8pt"
+        }
+    });
+    sectionPasillo8.add(pasillo8Label);
+    var sectionMiCuenta1 = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        height: "63",
+        touchEnabled: false,
+        backgroundColor: "#f6923a"
+    });
     var miCuentaLabel1 = Ti.UI.createLabel({
         text: "Mi Cuenta",
         color: "white",
         touchEnabled: false,
-        left: "90px",
+        left: "80px",
+        font: {
+            font: "Helvetica",
+            fontSize: "8pt"
+        }
+    });
+    var atrasBtn = Ti.UI.createImageView({
+        image: "/atras.png",
+        left: "0"
+    });
+    sectionMiCuenta1.add(atrasBtn);
+    sectionMiCuenta1.add(miCuentaLabel1);
+    var sectionMiCuenta2 = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        height: "63",
+        touchEnabled: false,
+        backgroundColor: "#9c213f"
+    });
+    var miCuentaLabel2 = Ti.UI.createLabel({
+        text: "Mi Cuenta",
+        color: "white",
+        touchEnabled: false,
+        left: "80px",
         font: {
             font: "Helvetica",
             fontSize: "8pt"
@@ -666,12 +644,10 @@ function Controller() {
     });
     var miCuentaImg = Ti.UI.createImageView({
         image: "/miCuentaImg.png",
-        left: "10px",
-        width: "75px",
-        height: "65px"
+        left: "10px"
     });
-    sectionMiCuenta1.add(miCuentaImg);
-    sectionMiCuenta1.add(miCuentaLabel1);
+    sectionMiCuenta2.add(miCuentaImg);
+    sectionMiCuenta2.add(miCuentaLabel2);
     var sectionMisDatos = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         height: "63",
@@ -725,6 +701,7 @@ function Controller() {
     Ti.App.addEventListener("submenuCarniceria", function(dataCatalogo) {
         var dataCatalogo = [];
         dataCatalogo.push(sectionCatalogo1);
+        dataCatalogo.push(sectionCatalogo2);
         dataCatalogo.push(sectionCarniceria);
         dataCatalogo.push(sectionCharcuteria);
         dataCatalogo.push(sectionFruteria);
@@ -737,8 +714,8 @@ function Controller() {
     });
     Ti.App.addEventListener("submenuPasillos", function(dataPasillos) {
         var dataPasillos = [];
-        dataPasillos.push(sectionMenu);
         dataPasillos.push(sectionPasillos1);
+        dataPasillos.push(sectionPasillos2);
         dataPasillos.push(sectionPasillo1);
         dataPasillos.push(sectionPasillo2);
         dataPasillos.push(sectionPasillo3);
@@ -751,8 +728,8 @@ function Controller() {
     });
     Ti.App.addEventListener("submenuMiCuenta", function(dataMiCuenta) {
         var dataMiCuenta = [];
-        dataMiCuenta.push(sectionMenu);
         dataMiCuenta.push(sectionMiCuenta1);
+        dataMiCuenta.push(sectionMiCuenta2);
         dataMiCuenta.push(sectionMisDatos);
         dataMiCuenta.push(sectionTransacciones);
         tableView.setData(dataMiCuenta);

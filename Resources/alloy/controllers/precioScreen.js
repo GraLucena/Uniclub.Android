@@ -34,70 +34,64 @@ function Controller() {
     var exports = {};
     var __defers = {};
     $.__views.inicioScreen = Ti.UI.createView({
-        backgroundColor: "#bebcbc",
-        height: "100%",
-        width: "100%",
+        backgroundColor: "#9C213F",
         id: "inicioScreen"
     });
     $.__views.inicioScreen && $.addTopLevelView($.__views.inicioScreen);
-    $.__views.main = Ti.UI.createView({
-        width: Ti.UI.FILL,
-        backgroundColor: "#9C213F",
-        height: "130px",
-        top: "0",
-        id: "main"
-    });
-    $.__views.inicioScreen.add($.__views.main);
     $.__views.menuBtn = Ti.UI.createImageView({
         left: 7,
         top: 25,
-        width: "65px",
-        height: "65px",
         image: "/menuIcon.png",
         id: "menuBtn"
     });
-    $.__views.main.add($.__views.menuBtn);
+    $.__views.inicioScreen.add($.__views.menuBtn);
     $.__views.logoImg = Ti.UI.createImageView({
         top: 17,
-        right: 130,
+        right: "45%",
         image: "/unicasaIcon.png",
         id: "logoImg"
     });
-    $.__views.main.add($.__views.logoImg);
+    $.__views.inicioScreen.add($.__views.logoImg);
     $.__views.carritoBtn = Ti.UI.createImageView({
         top: 25,
         right: 7,
-        width: "65px",
-        height: "65px",
         image: "/carritoIcon.png",
         id: "carritoBtn"
     });
-    $.__views.main.add($.__views.carritoBtn);
+    $.__views.inicioScreen.add($.__views.carritoBtn);
+    $.__views.view = Ti.UI.createView({
+        width: Ti.UI.FILL,
+        backgroundColor: "#bebcbc",
+        top: "90",
+        id: "view"
+    });
+    $.__views.inicioScreen.add($.__views.view);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
         showCancel: "false",
         width: Ti.UI.FILL,
-        height: "43",
-        top: "65",
+        height: "70",
+        top: "20",
         hintText: "Palabra Clave"
     });
-    $.__views.inicioScreen.add($.__views.search);
+    $.__views.view.add($.__views.search);
     $.__views.palabraClave = Ti.UI.createImageView({
         image: "/palabraClaveBtn.png",
-        width: "510px",
+        top: "230",
+        width: "410px",
         height: "104px",
         id: "palabraClave"
     });
-    $.__views.inicioScreen.add($.__views.palabraClave);
+    $.__views.view.add($.__views.palabraClave);
     $.__views.codigoBarra = Ti.UI.createImageView({
         image: "/codigoBarraBtn.png",
-        width: "510px",
+        width: "410px",
         height: "104px",
-        top: "280",
+        top: "360",
         id: "codigoBarra"
     });
-    $.__views.inicioScreen.add($.__views.codigoBarra);
+    $.__views.view.add($.__views.codigoBarra);
     openCamera ? $.__views.codigoBarra.addEventListener("click", openCamera) : __defers["$.__views.codigoBarra!click!openCamera"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
