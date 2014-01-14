@@ -1,39 +1,27 @@
 "#inicioScreen": {
-	backgroundColor: "#9C213F",
-	height : '100%',
-	width : '100%'
-},
-
-"#main":{
-	width : Ti.UI.FILL,
-	backgroundColor : "#9C213F",
-	height:"130px",
-	top:"0"
+	backgroundColor: "#9C213F"
 },
 "#menuBtn":{
 	left : 7,
 	top : 25,
-	width :"65px",
-	height :"65px",
 	image :"/menuIcon.png"
 },
 "#carritoBtn":{
 	top : 25,
-	right: 7,
-	width :"65px",
-	height :"65px",
+	right: 7,	
 	image :"/carritoIcon.png"
 },
 "#logoImg":{
 	top : 17,
-	right : 130,
+	right : "45%",
 	image :"/unicasaIcon.png"
 },
 ".preciosUnicosList":{
 	width:Ti.UI.FILL,
 	backgroundColor :"#dddddd",
-	top:"131px",
-	separatorColor:"e4e4e4"
+	top:"90",
+	separatorStyle:"NONE",
+	separatorColor:"#e4e4e4"
 },
 "#list":{
 	width:Ti.UI.FILL,
@@ -41,7 +29,7 @@
 },
 "#categoria":{
 	width:Ti.UI.FILL,
-	height:"100px",
+	height:"73",
 	backgroundColor:"#f6923a",
 },
 "#atrasBtn":{
@@ -57,7 +45,7 @@
 	color:"black",
 	font:{
 		font:"Helvetica",
-		fontSize:"13pt",
+		fontSize:"5pt",
 		fontWeight:"Bold"
 	},
 	top:"10",
@@ -67,79 +55,85 @@
 	color:"black",
 	font:{
 		font:"Helvetica",
-		fontSize:"12pt"
+		fontSize:"5pt"
 	},
-	top:"30",
+	top:"40",
 	left:"60px"
 },
 "#tittle1":{
 	color:"black",
 	font:{
 		font:"Helvetica",
-		fontSize:"13pt",
+		fontSize:"5pt",
 		fontWeight:"Bold"
 	},
-	top:"80",
+	top:"100",
 	left:"60px"
 },
 "#info1":{
 	color:"black",
 	font:{
 		font:"Helvetica",
-		fontSize:"12pt"
+		fontSize:"5pt"
 	},
-	top:"100",
+	top:"130",
 	left:"60px"
 },
 "#tittle2":{
 	color:"black",
 	font:{
 		font:"Helvetica",
-		fontSize:"13pt",
+		fontSize:"5pt",
 		fontWeight:"Bold"
 	},
-	top:"140",
+	top:"180",
 	left:"60px"
 },
 "#info2":{
 	color:"black",
 	font:{
 		font:"Helvetica",
-		fontSize:"12pt"
+		fontSize:"5pt"
 	},
-	top:"160",
+	top:"200",
 	left:"60px"
 },
 "#tittle3":{
 	color:"black",
 	font:{
 		font:"Helvetica",
-		fontSize:"13pt",
+		fontSize:"5pt",
 		fontWeight:"Bold"
 	},
-	top:"180",
+	top:"230",
 	left:"60px"
 },
 "#info3":{
 	color:"black",
 	font:{
 		font:"Helvetica",
-		fontSize:"12pt"
+		fontSize:"5pt"
 	},
-	top:"200",
+	top:"260",
 	left:"60px"
 },
 "#socialBtn":{
 	image:"/socialWhite.png",
-	right:"50",
-	top:"15",
-	width:"49px",
-	height:"39px"	
+	right:"80",
+	top:"15"
+	
 },
 "#mailBtn":{
 	image:"/mailWhite.png",
 	right:"20",
-	top:"15",
-	width:"49px",
-	height:"39px"		
+	top:"15"
+	
+},
+"#label":{
+	left:"60px",
+	color:"white",
+	font:{
+	font:"Helvetica",
+	fontSize:"6pt"
+	},
 }

@@ -17,19 +17,19 @@ function Controller() {
         });
         var puntosGView = Ti.UI.createView({
             left: "44%",
-            width: "18%",
+            width: "20%",
             height: Ti.UI.Size,
             backgroundColor: "white"
         });
         var puntosRView = Ti.UI.createView({
             left: "64%",
-            width: "18%",
+            width: "20%",
             height: Ti.UI.Size,
             backgroundColor: "white"
         });
         var saldoView = Ti.UI.createView({
             left: "83%",
-            width: "18%",
+            width: "19%",
             height: Ti.UI.Size,
             backgroundColor: "white"
         });
@@ -39,10 +39,10 @@ function Controller() {
             bottom: 5,
             left: 5,
             text: sucursal,
-            color: "4d4d4d",
+            color: "#4d4d4d",
             font: {
                 font: "Helvetica",
-                fontSize: "12pt"
+                fontSize: "4pt"
             }
         }));
         fechaView.add(Ti.UI.createLabel({
@@ -51,10 +51,10 @@ function Controller() {
             bottom: 5,
             left: 5,
             text: fecha,
-            color: "4d4d4d",
+            color: "#4d4d4d",
             font: {
                 font: "Helvetica",
-                fontSize: "12pt"
+                fontSize: "4pt"
             }
         }));
         puntosGView.add(Ti.UI.createLabel({
@@ -63,10 +63,10 @@ function Controller() {
             bottom: 5,
             left: 5,
             text: puntosG,
-            color: "4d4d4d",
+            color: "#4d4d4d",
             font: {
                 font: "Helvetica",
-                fontSize: "12pt"
+                fontSize: "4pt"
             }
         }));
         puntosRView.add(Ti.UI.createLabel({
@@ -75,10 +75,10 @@ function Controller() {
             bottom: 5,
             left: 5,
             text: puntosR,
-            color: "4d4d4d",
+            color: "#4d4d4d",
             font: {
                 font: "Helvetica",
-                fontSize: "12pt"
+                fontSize: "4pt"
             }
         }));
         saldoView.add(Ti.UI.createLabel({
@@ -87,10 +87,10 @@ function Controller() {
             bottom: 5,
             left: 5,
             text: saldo,
-            color: "4d4d4d",
+            color: "#4d4d4d",
             font: {
                 font: "Helvetica",
-                fontSize: "12pt"
+                fontSize: "4pt"
             }
         }));
         tableRow.add(sucursalView);
@@ -110,58 +110,44 @@ function Controller() {
     var exports = {};
     $.__views.inicioScreen = Ti.UI.createView({
         backgroundColor: "#9C213F",
-        height: "100%",
-        width: "100%",
         id: "inicioScreen"
     });
     $.__views.inicioScreen && $.addTopLevelView($.__views.inicioScreen);
-    $.__views.main = Ti.UI.createView({
-        width: Ti.UI.FILL,
-        backgroundColor: "#9C213F",
-        height: "130px",
-        top: "0",
-        id: "main"
-    });
-    $.__views.inicioScreen.add($.__views.main);
     $.__views.menuBtn = Ti.UI.createImageView({
         left: 7,
         top: 25,
-        width: "65px",
-        height: "65px",
         image: "/menuIcon.png",
         id: "menuBtn"
     });
-    $.__views.main.add($.__views.menuBtn);
+    $.__views.inicioScreen.add($.__views.menuBtn);
     $.__views.logoImg = Ti.UI.createImageView({
         top: 17,
-        right: 130,
+        right: "45%",
         image: "/unicasaIcon.png",
         id: "logoImg"
     });
-    $.__views.main.add($.__views.logoImg);
+    $.__views.inicioScreen.add($.__views.logoImg);
     $.__views.carritoBtn = Ti.UI.createImageView({
         top: 25,
         right: 7,
-        width: "65px",
-        height: "65px",
         image: "/carritoIcon.png",
         id: "carritoBtn"
     });
-    $.__views.main.add($.__views.carritoBtn);
+    $.__views.inicioScreen.add($.__views.carritoBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
         id: "list"
     });
-    var __alloyId48 = [];
-    __alloyId48.push($.__views.list);
+    var __alloyId44 = [];
+    __alloyId44.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
         showCancel: "false",
         width: Ti.UI.FILL,
-        height: "43",
-        top: "0",
+        height: "70",
+        top: "20",
         hintText: "Palabra Clave"
     });
     $.__views.list.add($.__views.search);
@@ -170,32 +156,34 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId48.push($.__views.list);
+    __alloyId44.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
-        height: "100px",
+        height: "73",
         backgroundColor: "#f6923a",
         id: "categoria"
     });
     $.__views.list.add($.__views.categoria);
-    $.__views.__alloyId49 = Ti.UI.createLabel({
-        text: "Mis Transacciones",
-        font: "Helvetica",
-        size: "5pt",
-        color: "white",
+    $.__views.label = Ti.UI.createLabel({
         left: "40px",
-        id: "__alloyId49"
+        color: "white",
+        font: {
+            font: "Helvetica",
+            fontSize: "6pt"
+        },
+        text: "Mis Transacciones",
+        id: "label"
     });
-    $.__views.categoria.add($.__views.__alloyId49);
+    $.__views.categoria.add($.__views.label);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId48.push($.__views.list);
+    __alloyId44.push($.__views.list);
     $.__views.columnas = Ti.UI.createView({
         width: Ti.UI.FILL,
-        height: "100px",
+        height: "73",
         backgroundColor: "#a5a5a5",
         id: "columnas"
     });
@@ -203,7 +191,7 @@ function Controller() {
     $.__views.sucursal = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "4pt"
         },
         color: "white",
         left: "1%",
@@ -215,7 +203,7 @@ function Controller() {
     $.__views.fecha = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "4pt"
         },
         color: "white",
         left: "25%",
@@ -227,7 +215,7 @@ function Controller() {
     $.__views.puntosG = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "4pt"
         },
         color: "white",
         left: "41%",
@@ -239,7 +227,7 @@ function Controller() {
     $.__views.puntosR = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "4pt"
         },
         color: "white",
         left: "60%",
@@ -251,7 +239,7 @@ function Controller() {
     $.__views.saldo = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "4pt"
         },
         color: "white",
         left: "83%",
@@ -260,30 +248,45 @@ function Controller() {
         id: "saldo"
     });
     $.__views.columnas.add($.__views.saldo);
-    $.__views.__alloyId47 = Ti.UI.createTableView({
+    $.__views.__alloyId43 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
-        top: "131px",
-        separatorColor: "e4e4e4",
-        data: __alloyId48,
-        id: "__alloyId47"
+        top: "90",
+        separatorStyle: "NONE",
+        separatorColor: "#e4e4e4",
+        data: __alloyId44,
+        id: "__alloyId43"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId47);
-    $.__views.__alloyId50 = Ti.UI.createView({
-        top: "210",
-        id: "__alloyId50"
+    $.__views.inicioScreen.add($.__views.__alloyId43);
+    $.__views.__alloyId45 = Ti.UI.createView({
+        top: "330",
+        id: "__alloyId45"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId50);
+    $.__views.inicioScreen.add($.__views.__alloyId45);
     $.__views.myTable = Ti.UI.createTableView({
-        id: "myTable"
+        id: "myTable",
+        separatorColor: "#e4e4e4"
     });
-    $.__views.__alloyId50.add($.__views.myTable);
+    $.__views.__alloyId45.add($.__views.myTable);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {
         Ti.App.fireEvent("menuBtn");
     });
     var tableData = [];
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
+    tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
     tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
     tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
     tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));

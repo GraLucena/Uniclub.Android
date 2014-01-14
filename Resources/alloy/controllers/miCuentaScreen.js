@@ -42,8 +42,8 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    var __alloyId25 = [];
-    __alloyId25.push($.__views.list);
+    var __alloyId23 = [];
+    __alloyId23.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -60,7 +60,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "73",
@@ -73,7 +73,7 @@ function Controller() {
         color: "white",
         font: {
             font: "Helvetica",
-            fontSize: "9pt"
+            fontSize: "6pt"
         },
         text: "Mi Cuenta",
         id: "label"
@@ -103,7 +103,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelMisDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -122,7 +122,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -132,6 +132,52 @@ function Controller() {
             fontSize: "6pt"
         },
         text: "Código Tarjeta:",
+        id: "labelDatos"
+    });
+    $.__views.list.add($.__views.labelDatos);
+    $.__views.__alloyId24 = Ti.UI.createLabel({
+        id: "__alloyId24"
+    });
+    $.__views.list.add($.__views.__alloyId24);
+    $.__views.list = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        selectionStyle: "NONE",
+        separatorColor: "e4e4e4",
+        id: "list"
+    });
+    __alloyId23.push($.__views.list);
+    $.__views.labelDatos = Ti.UI.createLabel({
+        left: "30px",
+        height: "50",
+        color: "black",
+        font: {
+            font: "Helvetica",
+            fontSize: "6pt"
+        },
+        text: "Nombre y Apellido:",
+        id: "labelDatos"
+    });
+    $.__views.list.add($.__views.labelDatos);
+    $.__views.__alloyId25 = Ti.UI.createLabel({
+        id: "__alloyId25"
+    });
+    $.__views.list.add($.__views.__alloyId25);
+    $.__views.list = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        selectionStyle: "NONE",
+        separatorColor: "e4e4e4",
+        id: "list"
+    });
+    __alloyId23.push($.__views.list);
+    $.__views.labelDatos = Ti.UI.createLabel({
+        left: "30px",
+        height: "50",
+        color: "black",
+        font: {
+            font: "Helvetica",
+            fontSize: "6pt"
+        },
+        text: "Estado de Cliente:",
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
@@ -145,7 +191,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -154,7 +200,7 @@ function Controller() {
             font: "Helvetica",
             fontSize: "6pt"
         },
-        text: "Nombre y Apellido:",
+        text: "Tipo de Cliente:",
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
@@ -168,7 +214,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -177,7 +223,7 @@ function Controller() {
             font: "Helvetica",
             fontSize: "6pt"
         },
-        text: "Estado de Cliente:",
+        text: "Cédula de Identidad:",
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
@@ -191,7 +237,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -200,7 +246,7 @@ function Controller() {
             font: "Helvetica",
             fontSize: "6pt"
         },
-        text: "Tipo de Cliente:",
+        text: "Fecha de Nacimiento:",
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
@@ -214,7 +260,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -223,7 +269,7 @@ function Controller() {
             font: "Helvetica",
             fontSize: "6pt"
         },
-        text: "Cédula de Identidad:",
+        text: "Lugar de Nacimiento:",
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
@@ -237,7 +283,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -246,7 +292,7 @@ function Controller() {
             font: "Helvetica",
             fontSize: "6pt"
         },
-        text: "Fecha de Nacimiento:",
+        text: "Sexo:",
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
@@ -260,7 +306,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -269,7 +315,7 @@ function Controller() {
             font: "Helvetica",
             fontSize: "6pt"
         },
-        text: "Lugar de Nacimiento:",
+        text: "Nacionalidad:",
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
@@ -283,7 +329,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -292,7 +338,7 @@ function Controller() {
             font: "Helvetica",
             fontSize: "6pt"
         },
-        text: "Sexo:",
+        text: "Estado Civil:",
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
@@ -306,7 +352,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -315,7 +361,7 @@ function Controller() {
             font: "Helvetica",
             fontSize: "6pt"
         },
-        text: "Nacionalidad:",
+        text: "Grado de Instrucción:",
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
@@ -329,7 +375,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -338,7 +384,7 @@ function Controller() {
             font: "Helvetica",
             fontSize: "6pt"
         },
-        text: "Estado Civil:",
+        text: "Profesión:",
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
@@ -352,53 +398,7 @@ function Controller() {
         separatorColor: "e4e4e4",
         id: "list"
     });
-    __alloyId25.push($.__views.list);
-    $.__views.labelDatos = Ti.UI.createLabel({
-        left: "30px",
-        height: "50",
-        color: "black",
-        font: {
-            font: "Helvetica",
-            fontSize: "6pt"
-        },
-        text: "Grado de Instrucción:",
-        id: "labelDatos"
-    });
-    $.__views.list.add($.__views.labelDatos);
-    $.__views.__alloyId36 = Ti.UI.createLabel({
-        id: "__alloyId36"
-    });
-    $.__views.list.add($.__views.__alloyId36);
-    $.__views.list = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        selectionStyle: "NONE",
-        separatorColor: "e4e4e4",
-        id: "list"
-    });
-    __alloyId25.push($.__views.list);
-    $.__views.labelDatos = Ti.UI.createLabel({
-        left: "30px",
-        height: "50",
-        color: "black",
-        font: {
-            font: "Helvetica",
-            fontSize: "6pt"
-        },
-        text: "Profesión:",
-        id: "labelDatos"
-    });
-    $.__views.list.add($.__views.labelDatos);
-    $.__views.__alloyId37 = Ti.UI.createLabel({
-        id: "__alloyId37"
-    });
-    $.__views.list.add($.__views.__alloyId37);
-    $.__views.list = Ti.UI.createTableViewRow({
-        width: Ti.UI.FILL,
-        selectionStyle: "NONE",
-        separatorColor: "e4e4e4",
-        id: "list"
-    });
-    __alloyId25.push($.__views.list);
+    __alloyId23.push($.__views.list);
     $.__views.labelDatos = Ti.UI.createLabel({
         left: "30px",
         height: "50",
@@ -411,20 +411,20 @@ function Controller() {
         id: "labelDatos"
     });
     $.__views.list.add($.__views.labelDatos);
-    $.__views.__alloyId38 = Ti.UI.createLabel({
-        id: "__alloyId38"
+    $.__views.__alloyId36 = Ti.UI.createLabel({
+        id: "__alloyId36"
     });
-    $.__views.list.add($.__views.__alloyId38);
-    $.__views.__alloyId24 = Ti.UI.createTableView({
+    $.__views.list.add($.__views.__alloyId36);
+    $.__views.__alloyId22 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         top: "90",
         separatorStyle: "NONE",
         separatorColor: "#e4e4e4",
-        data: __alloyId25,
-        id: "__alloyId24"
+        data: __alloyId23,
+        id: "__alloyId22"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId24);
+    $.__views.inicioScreen.add($.__views.__alloyId22);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

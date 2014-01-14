@@ -8,44 +8,30 @@ function Controller() {
     var exports = {};
     $.__views.inicioScreen = Ti.UI.createView({
         backgroundColor: "#9C213F",
-        height: "100%",
-        width: "100%",
         id: "inicioScreen"
     });
     $.__views.inicioScreen && $.addTopLevelView($.__views.inicioScreen);
-    $.__views.main = Ti.UI.createView({
-        width: Ti.UI.FILL,
-        backgroundColor: "#9C213F",
-        height: "130px",
-        top: "0",
-        id: "main"
-    });
-    $.__views.inicioScreen.add($.__views.main);
     $.__views.menuBtn = Ti.UI.createImageView({
         left: 7,
         top: 25,
-        width: "65px",
-        height: "65px",
         image: "/menuIcon.png",
         id: "menuBtn"
     });
-    $.__views.main.add($.__views.menuBtn);
+    $.__views.inicioScreen.add($.__views.menuBtn);
     $.__views.logoImg = Ti.UI.createImageView({
         top: 17,
-        right: 130,
+        right: "45%",
         image: "/unicasaIcon.png",
         id: "logoImg"
     });
-    $.__views.main.add($.__views.logoImg);
+    $.__views.inicioScreen.add($.__views.logoImg);
     $.__views.carritoBtn = Ti.UI.createImageView({
         top: 25,
         right: 7,
-        width: "65px",
-        height: "65px",
         image: "/carritoIcon.png",
         id: "carritoBtn"
     });
-    $.__views.main.add($.__views.carritoBtn);
+    $.__views.inicioScreen.add($.__views.carritoBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
@@ -58,8 +44,8 @@ function Controller() {
         barColor: "#e4e4e4",
         showCancel: "false",
         width: Ti.UI.FILL,
-        height: "43",
-        top: "0",
+        height: "70",
+        top: "20",
         hintText: "Palabra Clave"
     });
     $.__views.list.add($.__views.search);
@@ -71,7 +57,7 @@ function Controller() {
     __alloyId3.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
-        height: "100px",
+        height: "73",
         backgroundColor: "#f6923a",
         id: "categoria"
     });
@@ -82,21 +68,21 @@ function Controller() {
         id: "atrasBtn"
     });
     $.__views.categoria.add($.__views.atrasBtn);
-    $.__views.__alloyId4 = Ti.UI.createLabel({
-        text: "Charallave",
-        font: "Helvetica",
-        size: "5pt",
+    $.__views.label = Ti.UI.createLabel({
+        left: "60px",
         color: "white",
-        left: "110px",
-        id: "__alloyId4"
+        font: {
+            font: "Helvetica",
+            fontSize: "6pt"
+        },
+        text: "Charallave",
+        id: "label"
     });
-    $.__views.categoria.add($.__views.__alloyId4);
+    $.__views.categoria.add($.__views.label);
     $.__views.socialBtn = Ti.UI.createImageView({
         image: "/socialWhite.png",
-        right: "50",
+        right: "80",
         top: "15",
-        width: "49px",
-        height: "39px",
         id: "socialBtn"
     });
     $.__views.categoria.add($.__views.socialBtn);
@@ -104,8 +90,6 @@ function Controller() {
         image: "/mailWhite.png",
         right: "20",
         top: "15",
-        width: "49px",
-        height: "39px",
         id: "mailBtn"
     });
     $.__views.categoria.add($.__views.mailBtn);
@@ -115,10 +99,10 @@ function Controller() {
         id: "list"
     });
     __alloyId3.push($.__views.list);
-    $.__views.__alloyId5 = Ti.UI.createImageView({
-        id: "__alloyId5"
+    $.__views.__alloyId4 = Ti.UI.createImageView({
+        id: "__alloyId4"
     });
-    $.__views.list.add($.__views.__alloyId5);
+    $.__views.list.add($.__views.__alloyId4);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
@@ -136,7 +120,7 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "5pt",
             fontWeight: "Bold"
         },
         top: "10",
@@ -149,9 +133,9 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "5pt"
         },
-        top: "30",
+        top: "40",
         left: "60px",
         text: "Dirección: Av. Bolívar cerca del \nBanco Provincial. Charallave",
         id: "info"
@@ -161,10 +145,10 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "5pt",
             fontWeight: "Bold"
         },
-        top: "80",
+        top: "100",
         left: "60px",
         text: "Teléfono:",
         id: "tittle1"
@@ -174,9 +158,9 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "5pt"
         },
-        top: "100",
+        top: "130",
         left: "60px",
         text: "0239-248.03.83 \n0239-248.44.79",
         id: "info1"
@@ -186,10 +170,10 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "5pt",
             fontWeight: "Bold"
         },
-        top: "140",
+        top: "180",
         left: "60px",
         text: "Gerente:",
         id: "tittle2"
@@ -199,9 +183,9 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "5pt"
         },
-        top: "160",
+        top: "200",
         left: "60px",
         text: "Jairo Valbuena",
         id: "info2"
@@ -211,10 +195,10 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "5pt",
             fontWeight: "Bold"
         },
-        top: "180",
+        top: "230",
         left: "60px",
         text: "Horario:",
         id: "tittle3"
@@ -224,9 +208,9 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "5pt"
         },
-        top: "200",
+        top: "260",
         left: "60px",
         text: "Lunes a Viernes: 8:00 am a 8:00 pm \nSábado: 8:00 am a 8:00 pm \nDomingo: 8:00 am a 4:30 pm",
         id: "info3"
@@ -235,8 +219,9 @@ function Controller() {
     $.__views.__alloyId2 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
-        top: "131px",
-        separatorColor: "e4e4e4",
+        top: "90",
+        separatorStyle: "NONE",
+        separatorColor: "#e4e4e4",
         data: __alloyId3,
         id: "__alloyId2"
     });

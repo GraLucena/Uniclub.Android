@@ -38,8 +38,8 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    var __alloyId12 = [];
-    __alloyId12.push($.__views.list);
+    var __alloyId11 = [];
+    __alloyId11.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -56,53 +56,53 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId12.push($.__views.list);
-    $.__views.__alloyId13 = Ti.UI.createView({
+    __alloyId11.push($.__views.list);
+    $.__views.__alloyId12 = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
         height: "300px",
         top: 0,
-        id: "__alloyId13"
+        id: "__alloyId12"
     });
-    $.__views.list.add($.__views.__alloyId13);
-    var __alloyId14 = [];
+    $.__views.list.add($.__views.__alloyId12);
+    var __alloyId13 = [];
     $.__views.img1 = Ti.UI.createImageView({
         image: "/slideImg1.png",
         id: "img1"
     });
-    __alloyId14.push($.__views.img1);
+    __alloyId13.push($.__views.img1);
     $.__views.img2 = Ti.UI.createImageView({
         id: "img2",
         backgroundColor: "#246"
     });
-    __alloyId14.push($.__views.img2);
+    __alloyId13.push($.__views.img2);
     $.__views.img3 = Ti.UI.createImageView({
         id: "img3",
         backgroundColor: "#48b"
     });
-    __alloyId14.push($.__views.img3);
+    __alloyId13.push($.__views.img3);
     $.__views.scrollableView = Ti.UI.createScrollableView({
-        views: __alloyId14,
+        views: __alloyId13,
         id: "scrollableView",
         pagingControlHeight: "10",
         pagingControlColor: "white",
         showPagingControl: "true"
     });
-    $.__views.__alloyId13.add($.__views.scrollableView);
+    $.__views.__alloyId12.add($.__views.scrollableView);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId12.push($.__views.list);
-    $.__views.__alloyId15 = Ti.UI.createView({
+    __alloyId11.push($.__views.list);
+    $.__views.__alloyId14 = Ti.UI.createView({
         backgroundColor: "#dddddd",
         width: Ti.UI.FILL,
         height: "200px",
-        id: "__alloyId15"
+        id: "__alloyId14"
     });
-    $.__views.list.add($.__views.__alloyId15);
+    $.__views.list.add($.__views.__alloyId14);
     $.__views.recetaImg = Ti.UI.createImageView({
         width: "215px",
         height: "156px",
@@ -111,7 +111,7 @@ function Controller() {
         image: "/recetasImg.png",
         id: "recetaImg"
     });
-    $.__views.__alloyId15.add($.__views.recetaImg);
+    $.__views.__alloyId14.add($.__views.recetaImg);
     $.__views.carreraImg = Ti.UI.createImageView({
         width: "215px",
         height: "156px",
@@ -120,14 +120,14 @@ function Controller() {
         image: "/carreraImg.png",
         id: "carreraImg"
     });
-    $.__views.__alloyId15.add($.__views.carreraImg);
+    $.__views.__alloyId14.add($.__views.carreraImg);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId12.push($.__views.list);
+    __alloyId11.push($.__views.list);
     $.__views.preciosUnicos = Ti.UI.createView({
         backgroundColor: "#f79323",
         width: Ti.UI.FILL,
@@ -152,7 +152,7 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId12.push($.__views.list);
+    __alloyId11.push($.__views.list);
     $.__views.rowContainer2 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "200px",
@@ -240,7 +240,7 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId12.push($.__views.list);
+    __alloyId11.push($.__views.list);
     $.__views.rowContainer2 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "200px",
@@ -328,7 +328,7 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId12.push($.__views.list);
+    __alloyId11.push($.__views.list);
     $.__views.rowContainer2 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "200px",
@@ -416,7 +416,7 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId12.push($.__views.list);
+    __alloyId11.push($.__views.list);
     $.__views.rowContainer2 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "200px",
@@ -504,7 +504,7 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId12.push($.__views.list);
+    __alloyId11.push($.__views.list);
     $.__views.rowContainer2 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "200px",
@@ -592,7 +592,7 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId12.push($.__views.list);
+    __alloyId11.push($.__views.list);
     $.__views.rowContainerSocial = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "110px",
@@ -635,16 +635,16 @@ function Controller() {
         id: "youTubeImg"
     });
     $.__views.rowContainerSocial.add($.__views.youTubeImg);
-    $.__views.__alloyId11 = Ti.UI.createTableView({
+    $.__views.__alloyId10 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         top: "90",
         separatorStyle: "NONE",
         separatorColor: "#e4e4e4",
-        data: __alloyId12,
-        id: "__alloyId11"
+        data: __alloyId11,
+        id: "__alloyId10"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId11);
+    $.__views.inicioScreen.add($.__views.__alloyId10);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

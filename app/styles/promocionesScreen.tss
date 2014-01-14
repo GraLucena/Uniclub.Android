@@ -1,35 +1,29 @@
 "#inicioScreen": {
-	backgroundColor: "#9C213F",
-	height : '100%',
-	width : '100%'
-},
-
-"#main":{
-	width : Ti.UI.FILL,
-	backgroundColor : "#9C213F",
-	height:"130px",
-	top:"0"
+	backgroundColor: "#9C213F"
 },
 "#menuBtn":{
 	left : 7,
 	top : 25,
-	width :"65px",
-	height :"65px",
 	image :"/menuIcon.png"
 },
 "#carritoBtn":{
 	top : 25,
-	right: 7,
-	width :"65px",
-	height :"65px",
+	right: 7,	
 	image :"/carritoIcon.png"
 },
 "#logoImg":{
 	top : 17,
-	right : 130,
+	right : "45%",
 	image :"/unicasaIcon.png"
 },
 ".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	top:"90",
+	separatorStyle:"NONE",
+	separatorColor:"#e4e4e4"
+},
+".productosList":{
 	width:Ti.UI.FILL,
 	backgroundColor :"#dddddd",
 	top:"131px",
@@ -41,19 +35,15 @@
 },
 "#categoria":{
 	width:Ti.UI.FILL,
-	height:"100px",
+	height:"73",
 	backgroundColor:"#f6923a",
 },
 "#promocionImg1":{
 	image:"/promocionImg.png",
-	width:"600px",
-	height:"300px",
 	top:"10"
 },
 "#masPromociones":{
 	backgroundColor:"white",
-	width:"600px",
-	height:"100px",
 	top:"15"
 },
 "#label":{
@@ -61,40 +51,43 @@
 	left:"50px",
 	font:{
 		font:"Helvetica",
-		fontSize:"16pt"
+		fontSize:"10pt"
 	}
+},
+"#label2":{
+	left:"40px",
+	color:"white",
+	font:{
+	font:"Helvetica",
+	fontSize:"6pt"
+	},
 },
 "#otrasPromociones":{
 	backgroundColor:"white",
-	width:"600px",
-	height:"200px"
 },
 "#promoImg1":{
 	image:"/promocionImg2.png",
 	left:"50px",
-	top:"10",
-	width:"194px",
-	height:"159px"
+	top:"10"
 },
-"#tittleImg1":{
-	color:"9f273d",
+"#tittleImg":{
+	color:"#9f273d",
 	font:{
 		font:"Helvetica",
-		fontSize:"15pt",
+		fontSize:"5pt",
 		fontWeight:"Bold"
 	},
 	top:"10",
-	left:"280px"
+	left:"200px"
 },
-"#infoImg1":{
+"#infoImg":{
 	color:"black",
 	font:{
 		font:"Helvetica",
-		fontSize:"12pt"
+		fontSize:"5pt"
 	},
 	top:"30",
-	left:"280px",
-	text:"Por cada BsF. 1000,00 \nen tu compra recibe un \ncupón, llénalo..."
+	left:"200px"
 },
 "#verMasBtn":{
 	image:"/verMasBtn.png",
@@ -105,26 +98,4 @@
 	image:"/promocionImg2.png",
 	left:"50px",
 	top:"10",
-	width:"194px",
-	height:"159px"
-},
-"#tittleImg2":{
-	color:"9f273d",
-	font:{
-		font:"Helvetica",
-		fontSize:"15pt",
-		fontWeight:"Bold"
-	},
-	top:"10",
-	left:"280px"
-},
-"#infoImg2":{
-	color:"black",
-	font:{
-		font:"Helvetica",
-		fontSize:"12pt"
-	},
-	top:"30",
-	left:"280px",
-	text:"Por cada BsF. 1000,00 \nen tu compra recibe un \ncupón, llénalo..."
 }

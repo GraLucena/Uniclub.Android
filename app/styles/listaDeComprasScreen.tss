@@ -122,7 +122,7 @@
 "#label1":{
 	font:{
 	font:"Helvetica",
-	fontSize:"8pt",
+	fontSize:"6pt",
 	},
 	color:"white",
 	left:"50px"
@@ -130,7 +130,7 @@
 "#label2":{
 	font:{
 	font:"Helvetica",
-	fontSize:"8pt",
+	fontSize:"4pt",
 	},
 	color:"white",
 	right:"30px"

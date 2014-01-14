@@ -20,58 +20,44 @@ function Controller() {
     var __defers = {};
     $.__views.inicioScreen = Ti.UI.createView({
         backgroundColor: "#9C213F",
-        height: "100%",
-        width: "100%",
         id: "inicioScreen"
     });
     $.__views.inicioScreen && $.addTopLevelView($.__views.inicioScreen);
-    $.__views.main = Ti.UI.createView({
-        width: Ti.UI.FILL,
-        backgroundColor: "#9C213F",
-        height: "130px",
-        top: "0",
-        id: "main"
-    });
-    $.__views.inicioScreen.add($.__views.main);
     $.__views.menuBtn = Ti.UI.createImageView({
         left: 7,
         top: 25,
-        width: "65px",
-        height: "65px",
         image: "/menuIcon.png",
         id: "menuBtn"
     });
-    $.__views.main.add($.__views.menuBtn);
+    $.__views.inicioScreen.add($.__views.menuBtn);
     $.__views.logoImg = Ti.UI.createImageView({
         top: 17,
-        right: 130,
+        right: "45%",
         image: "/unicasaIcon.png",
         id: "logoImg"
     });
-    $.__views.main.add($.__views.logoImg);
+    $.__views.inicioScreen.add($.__views.logoImg);
     $.__views.carritoBtn = Ti.UI.createImageView({
         top: 25,
         right: 7,
-        width: "65px",
-        height: "65px",
         image: "/carritoIcon.png",
         id: "carritoBtn"
     });
-    $.__views.main.add($.__views.carritoBtn);
+    $.__views.inicioScreen.add($.__views.carritoBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
         id: "list"
     });
-    var __alloyId22 = [];
-    __alloyId22.push($.__views.list);
+    var __alloyId21 = [];
+    __alloyId21.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
         showCancel: "false",
         width: Ti.UI.FILL,
-        height: "43",
-        top: "0",
+        height: "70",
+        top: "20",
         hintText: "Palabra Clave"
     });
     $.__views.list.add($.__views.search);
@@ -80,10 +66,10 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId22.push($.__views.list);
+    __alloyId21.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
-        height: "100px",
+        height: "73",
         backgroundColor: "#f6923a",
         id: "categoria"
     });
@@ -94,25 +80,27 @@ function Controller() {
         id: "atrasBtn"
     });
     $.__views.categoria.add($.__views.atrasBtn);
-    $.__views.__alloyId23 = Ti.UI.createLabel({
-        text: "Charallave",
-        font: "Helvetica",
-        size: "5pt",
+    $.__views.label = Ti.UI.createLabel({
+        left: "60px",
         color: "white",
-        left: "110px",
-        id: "__alloyId23"
+        font: {
+            font: "Helvetica",
+            fontSize: "6pt"
+        },
+        text: "Charallave",
+        id: "label"
     });
-    $.__views.categoria.add($.__views.__alloyId23);
+    $.__views.categoria.add($.__views.label);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId22.push($.__views.list);
+    __alloyId21.push($.__views.list);
     $.__views.supermercados = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
-        height: "160px",
+        height: "130px",
         id: "supermercados"
     });
     $.__views.list.add($.__views.supermercados);
@@ -120,7 +108,7 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "6pt",
             fontWeight: "Bold"
         },
         top: "10",
@@ -133,9 +121,9 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
-        top: "30",
+        top: "40",
         left: "60px",
         text: "Dirección: Av. Bolívar cerca del \nBanco Provincial. Charallave",
         id: "info"
@@ -154,11 +142,11 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId22.push($.__views.list);
+    __alloyId21.push($.__views.list);
     $.__views.supermercados = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
-        height: "160px",
+        height: "130px",
         id: "supermercados"
     });
     $.__views.list.add($.__views.supermercados);
@@ -166,7 +154,7 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "6pt",
             fontWeight: "Bold"
         },
         top: "10",
@@ -179,9 +167,9 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "12pt"
+            fontSize: "6pt"
         },
-        top: "30",
+        top: "40",
         left: "60px",
         text: "Dirección: Av. Bolívar",
         id: "info"
@@ -194,15 +182,16 @@ function Controller() {
         id: "verMasBtn"
     });
     $.__views.supermercados.add($.__views.verMasBtn);
-    $.__views.__alloyId21 = Ti.UI.createTableView({
+    $.__views.__alloyId20 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
-        top: "131px",
-        separatorColor: "e4e4e4",
-        data: __alloyId22,
-        id: "__alloyId21"
+        top: "90",
+        separatorStyle: "NONE",
+        separatorColor: "#e4e4e4",
+        data: __alloyId21,
+        id: "__alloyId20"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId21);
+    $.__views.inicioScreen.add($.__views.__alloyId20);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

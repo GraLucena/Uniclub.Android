@@ -38,7 +38,7 @@
 	color:"white",
 	font:{
 	font:"Helvetica",
-	fontSize:"9pt"
+	fontSize:"6pt"
 	},
 },
 "#labelPuntos":{

@@ -37,8 +37,8 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    var __alloyId8 = [];
-    __alloyId8.push($.__views.list);
+    var __alloyId7 = [];
+    __alloyId7.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -54,7 +54,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId8.push($.__views.list);
+    __alloyId7.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "73",
@@ -73,7 +73,7 @@ function Controller() {
         color: "white",
         font: {
             font: "Helvetica",
-            fontSize: "10pt"
+            fontSize: "6pt"
         },
         text: "Carnicería",
         id: "label"
@@ -88,7 +88,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId8.push($.__views.list);
+    __alloyId7.push($.__views.list);
     $.__views.producto = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
@@ -121,7 +121,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId8.push($.__views.list);
+    __alloyId7.push($.__views.list);
     $.__views.precioUnico = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
@@ -149,16 +149,16 @@ function Controller() {
         id: "agregarListaBtn"
     });
     $.__views.precioUnico.add($.__views.agregarListaBtn);
-    $.__views.__alloyId7 = Ti.UI.createTableView({
+    $.__views.__alloyId6 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         top: "90",
         separatorStyle: "NONE",
         separatorColor: "transparent",
-        data: __alloyId8,
-        id: "__alloyId7"
+        data: __alloyId7,
+        id: "__alloyId6"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId7);
+    $.__views.inicioScreen.add($.__views.__alloyId6);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

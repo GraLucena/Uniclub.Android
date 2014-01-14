@@ -83,7 +83,7 @@
 	color:"white",
 	font:{
 	font:"Helvetica",
-	fontSize:"10pt"
+	fontSize:"6pt"
 	},
 }
 

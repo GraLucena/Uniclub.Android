@@ -39,8 +39,8 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    var __alloyId10 = [];
-    __alloyId10.push($.__views.list);
+    var __alloyId9 = [];
+    __alloyId9.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -57,7 +57,7 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId10.push($.__views.list);
+    __alloyId9.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "73",
@@ -70,7 +70,7 @@ function Controller() {
         color: "white",
         font: {
             font: "Helvetica",
-            fontSize: "10pt"
+            fontSize: "6pt"
         },
         text: "Recetas / Varias",
         id: "label"
@@ -88,7 +88,7 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId10.push($.__views.list);
+    __alloyId9.push($.__views.list);
     $.__views.imgReceta = Ti.UI.createImageView({
         image: "/imgReceta.png",
         top: "10",
@@ -101,7 +101,7 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId10.push($.__views.list);
+    __alloyId9.push($.__views.list);
     $.__views.nombreReceta = Ti.UI.createLabel({
         color: "black",
         font: {
@@ -138,7 +138,7 @@ function Controller() {
     $.__views.porcionImg = Ti.UI.createImageView({
         image: "/porcionesImg.png",
         top: "60",
-        right: "130",
+        right: "140",
         id: "porcionImg"
     });
     $.__views.list.add($.__views.porcionImg);
@@ -172,7 +172,7 @@ function Controller() {
         separatorStyle: "NONE",
         id: "list"
     });
-    __alloyId10.push($.__views.list);
+    __alloyId9.push($.__views.list);
     $.__views.infoReceta = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "500px",
@@ -193,15 +193,15 @@ function Controller() {
         id: "datosReceta"
     });
     $.__views.infoReceta.add($.__views.datosReceta);
-    $.__views.__alloyId9 = Ti.UI.createTableView({
+    $.__views.__alloyId8 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         top: "90",
         separatorColor: "transparent",
-        data: __alloyId10,
-        id: "__alloyId9"
+        data: __alloyId9,
+        id: "__alloyId8"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId9);
+    $.__views.inicioScreen.add($.__views.__alloyId8);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

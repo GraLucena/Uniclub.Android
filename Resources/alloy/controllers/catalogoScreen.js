@@ -72,7 +72,7 @@ function Controller() {
         color: "white",
         font: {
             font: "Helvetica",
-            fontSize: "10pt"
+            fontSize: "6pt"
         },
         text: "Carnicería",
         id: "label"
@@ -84,7 +84,7 @@ function Controller() {
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "6pt"
+            fontSize: "4pt"
         },
         text: "Estos precios estan sujetos a cambio",
         id: "label1"
