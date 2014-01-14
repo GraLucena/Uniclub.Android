@@ -105,7 +105,7 @@
 			
 			<TableViewRow id="list">
 				<View id="rowContainerSocial">
-					<Label font="Helvetica" fontWeight="bold"  size="6pt"  top="10" left="10" color="#f79323">Síguenos en</Label>
+					<Label id="siguenos">Síguenos en</Label>
 					<ImageView id="facebookImg"></ImageView>
 					<ImageView id="twitterImg"></ImageView>
 					<ImageView id="youTubeImg"></ImageView>

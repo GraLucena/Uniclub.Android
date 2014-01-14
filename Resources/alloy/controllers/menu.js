@@ -27,7 +27,8 @@ function Controller() {
     var tableView = Ti.UI.createTableView({
         left: 0,
         top: "90",
-        backgroundColor: "#9c213f"
+        backgroundColor: "#9c213f",
+        separatorColor: "white"
     });
     v1.add(tableView);
     var sectionInicio = Ti.UI.createTableViewRow({

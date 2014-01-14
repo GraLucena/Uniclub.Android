@@ -1,40 +1,28 @@
 "#inicioScreen": {
-	backgroundColor: "#9C213F",
-	height : '100%',
-	width : '100%'
-},
-
-"#main":{
-	width : Ti.UI.FILL,
-	backgroundColor : "#9C213F",
-	height:"130px",
-	top:"0"
+	backgroundColor: "#9C213F"
 },
 "#menuBtn":{
 	left : 7,
 	top : 25,
-	width :"65px",
-	height :"65px",
 	image :"/menuIcon.png"
 },
 "#carritoBtn":{
 	top : 25,
-	right: 7,
-	width :"65px",
-	height :"65px",
+	right: 7,	
 	image :"/carritoIcon.png"
 },
 "#logoImg":{
 	top : 17,
-	right : 130,
+	right : "45%",
 	image :"/unicasaIcon.png"
 },
 ".preciosUnicosList":{
 	width:Ti.UI.FILL,
 	backgroundColor :"#dddddd",
-	separatorStyle: "NONE",
-	top:"131px",
-	separatorColor:"e4e4e4"
+	top:"90",
+	separatorStyle:"NONE",
+	separatorColor:"transparent"
+
 },
 "#list":{
 	width:Ti.UI.FILL,
@@ -42,77 +30,60 @@
 },
 "#categoria":{
 	width:Ti.UI.FILL,
-	height:"100px",
+	height:"73",
 	backgroundColor:"#f6923a",
 },
 "#atrasBtn":{
 	left : "10px",
 	image :"/atras.png",
 },
-"#filtrarBtn":{
-	width:"125px",
-	height:"68px",
-	right : "10px",
-	image :"/filtrar.png",
-},
 "#producto":{
 	backgroundColor: "white",
 	width : Ti.UI.FILL,
-	height :"460px"
+	height :"350px"
 	
 },
 "#productoImg":{
-	width:"193px",
-	height:"316px",
+	width:"133px",
+	height:"206px",
 	top:"10",
 	image:"/productoImg.png"
 },
 "#productoLabel1":{
 	font:{
 		font: "Helvetica",
-		fontSize:"18pt"
+		fontSize:"10pt"
 	},
 	left:"20",
-	top:"180",
-	color:"#555454"	
-},
-"#productoLabel2":{
-	font:{
-		font: "Helvetica",
-		fontSize:"18pt"
-	},
-	left:"20",
-	top:"200",
+	top:"220",
 	color:"#555454"	
 },
 "#precioUnico":{
 	backgroundColor: "white",
 	width : Ti.UI.FILL,
-	height :"260px",
+	height :"200px",
 	top:"10"
 },
 "#precioUnicoLabel1":{
 	font:{
 		font: "Helvetica",
-		fontSize:"20pt"
+		fontSize:"9pt",
+		fontWeight:"Bold"
 	},
 	left:"20",
 	top:"10",
-	color:"#black"	
-},
-"#precioUnicoLabel2":{
-	font:{
-		font: "Helvetica",
-		fontSize:"20pt"
-	},
-	left:"20",
-	top:"30",
-	color:"#black"	
+	color:"black"	
 },
 "#agregarListaBtn":{
 	image:"/agregarListaBtn.png",
-	top:"60",
-	width:"450px",
-	height:"96px"
+	top:"100",
+},
+"#label":{
+	left:"60px",
+	color:"white",
+	font:{
+	font:"Helvetica",
+	fontSize:"10pt"
+	},
 }
 

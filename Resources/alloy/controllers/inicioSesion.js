@@ -26,36 +26,36 @@ function Controller() {
     });
     $.__views.container2.add($.__views.uniclubImg);
     inicie ? $.__views.uniclubImg.addEventListener("click", inicie) : __defers["$.__views.uniclubImg!click!inicie"] = true;
-    $.__views.__alloyId20 = Ti.UI.createTextArea({
+    $.__views.__alloyId16 = Ti.UI.createTextArea({
         backgroundColor: "white",
         width: "418px",
         height: "0.6cm",
         borderRadius: "7",
         top: "355",
         hintText: "Cédula",
-        id: "__alloyId20"
+        id: "__alloyId16"
     });
-    $.__views.container2.add($.__views.__alloyId20);
-    $.__views.__alloyId21 = Ti.UI.createTextArea({
+    $.__views.container2.add($.__views.__alloyId16);
+    $.__views.__alloyId17 = Ti.UI.createTextArea({
         backgroundColor: "white",
         width: "418px",
         height: "0.6cm",
         borderRadius: "7",
         top: "413",
         hintText: "Contraseña",
-        id: "__alloyId21"
+        id: "__alloyId17"
     });
-    $.__views.container2.add($.__views.__alloyId21);
-    $.__views.__alloyId22 = Ti.UI.createLabel({
+    $.__views.container2.add($.__views.__alloyId17);
+    $.__views.__alloyId18 = Ti.UI.createLabel({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
         color: "white",
         font: "Helvetica",
         top: "600",
         text: "Olvidó Su Contraseña?",
-        id: "__alloyId22"
+        id: "__alloyId18"
     });
-    $.__views.container2.add($.__views.__alloyId22);
+    $.__views.container2.add($.__views.__alloyId18);
     $.__views.inicioSesionImg = Ti.UI.createImageView({
         top: 505,
         width: "223px",

@@ -20,7 +20,8 @@
 	width:Ti.UI.FILL,
 	backgroundColor :"#dddddd",
 	top:"90",
-	separatorStyle:"NONE"
+	separatorStyle:"NONE",
+	separatorColor:"#e4e4e4"
 },
 ".productosList":{
 	width:Ti.UI.FILL,

@@ -13,44 +13,30 @@ function Controller() {
     var __defers = {};
     $.__views.inicioScreen = Ti.UI.createView({
         backgroundColor: "#9C213F",
-        height: "100%",
-        width: "100%",
         id: "inicioScreen"
     });
     $.__views.inicioScreen && $.addTopLevelView($.__views.inicioScreen);
-    $.__views.main = Ti.UI.createView({
-        width: Ti.UI.FILL,
-        backgroundColor: "#9C213F",
-        height: "130px",
-        top: "0",
-        id: "main"
-    });
-    $.__views.inicioScreen.add($.__views.main);
     $.__views.menuBtn = Ti.UI.createImageView({
         left: 7,
         top: 25,
-        width: "65px",
-        height: "65px",
         image: "/menuIcon.png",
         id: "menuBtn"
     });
-    $.__views.main.add($.__views.menuBtn);
+    $.__views.inicioScreen.add($.__views.menuBtn);
     $.__views.logoImg = Ti.UI.createImageView({
         top: 17,
-        right: 130,
+        right: "45%",
         image: "/unicasaIcon.png",
         id: "logoImg"
     });
-    $.__views.main.add($.__views.logoImg);
+    $.__views.inicioScreen.add($.__views.logoImg);
     $.__views.carritoBtn = Ti.UI.createImageView({
         top: 25,
         right: 7,
-        width: "65px",
-        height: "65px",
         image: "/carritoIcon.png",
         id: "carritoBtn"
     });
-    $.__views.main.add($.__views.carritoBtn);
+    $.__views.inicioScreen.add($.__views.carritoBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
@@ -63,8 +49,8 @@ function Controller() {
         barColor: "#e4e4e4",
         showCancel: "false",
         width: Ti.UI.FILL,
-        height: "43",
-        top: "0",
+        height: "70",
+        top: "20",
         hintText: "Palabra Clave"
     });
     $.__views.list.add($.__views.search);
@@ -76,41 +62,35 @@ function Controller() {
     __alloyId1.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
-        height: "100px",
+        height: "73",
         backgroundColor: "#f6923a",
         id: "categoria"
     });
     $.__views.list.add($.__views.categoria);
-    $.__views.atrasBtn = Ti.UI.createImageView({
-        left: "10px",
-        image: "/atras.png",
-        id: "atrasBtn"
-    });
-    $.__views.categoria.add($.__views.atrasBtn);
-    $.__views.__alloyId2 = Ti.UI.createLabel({
-        text: "Carnicería",
-        font: "Helvetica",
-        size: "5pt",
-        color: "white",
-        left: "110px",
-        id: "__alloyId2"
-    });
-    $.__views.categoria.add($.__views.__alloyId2);
     $.__views.label = Ti.UI.createLabel({
+        left: "40px",
+        color: "white",
+        font: {
+            font: "Helvetica",
+            fontSize: "10pt"
+        },
+        text: "Carnicería",
+        id: "label"
+    });
+    $.__views.categoria.add($.__views.label);
+    $.__views.label1 = Ti.UI.createLabel({
         left: "110px",
         top: "70px",
         color: "black",
         font: {
             font: "Helvetica",
-            fontSize: "10pt"
+            fontSize: "6pt"
         },
         text: "Estos precios estan sujetos a cambio",
-        id: "label"
+        id: "label1"
     });
-    $.__views.categoria.add($.__views.label);
+    $.__views.categoria.add($.__views.label1);
     $.__views.filtrarBtn = Ti.UI.createImageView({
-        width: "125px",
-        height: "68px",
         right: "10px",
         image: "/filtrar.png",
         id: "filtrarBtn"
@@ -131,79 +111,75 @@ function Controller() {
     $.__views.list.add($.__views.rowContainer2);
     $.__views.productoImg = Ti.UI.createImageView({
         image: "/productoImg7.png",
-        width: "96",
-        height: "96",
         left: "20",
         id: "productoImg"
     });
     $.__views.rowContainer2.add($.__views.productoImg);
     infoProducto ? $.__views.productoImg.addEventListener("click", infoProducto) : __defers["$.__views.productoImg!click!infoProducto"] = true;
     $.__views.infoProducto = Ti.UI.createLabel({
-        text: "Chuleta Caramelizada \nPlumrose (Kg)",
         font: {
             font: "Helvetica",
-            fontSize: "16pt",
+            fontSize: "8pt",
             fontWeight: "Bold"
         },
         color: "black",
         right: "10",
         top: "6",
+        text: "Chuleta Caramelizada \nPlumrose (Kg)",
         id: "infoProducto"
     });
     $.__views.rowContainer2.add($.__views.infoProducto);
     $.__views.precioUnico = Ti.UI.createView({
-        backgroundColor: "ff5400",
+        backgroundColor: "#ff5400",
         borderRadius: "4",
-        width: "160",
-        height: "48",
-        top: "50",
-        right: "10",
+        width: "270",
+        height: "80",
+        top: "90",
+        right: "20",
         id: "precioUnico"
     });
     $.__views.rowContainer2.add($.__views.precioUnico);
     $.__views.precioUnicoLabel = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "7pt",
             fontWeight: "Bold"
         },
         color: "black",
         text: "Precio Único",
         top: "4",
-        left: "4",
+        left: "13",
         id: "precioUnicoLabel"
     });
     $.__views.precioUnico.add($.__views.precioUnicoLabel);
     $.__views.precio = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "7pt",
             fontWeight: "Bold"
         },
         color: "white",
-        text: "Bs.F 205,00",
         top: "4",
         right: "4",
+        text: "Bs.F 205,00",
         id: "precio"
     });
     $.__views.precioUnico.add($.__views.precio);
     $.__views.agregarBtn = Ti.UI.createImageView({
         image: "/agregarBtn.png",
-        top: "17",
-        left: "4",
-        width: "30",
-        height: "30",
+        top: "40",
+        left: "8",
         id: "agregarBtn"
     });
     $.__views.precioUnico.add($.__views.agregarBtn);
     $.__views.agregarLista = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "13pt"
+            fontSize: "7pt"
         },
         color: "white",
-        left: "35",
-        top: "25",
+        left: "40",
+        top: "40",
         text: "Agregar a lista",
         id: "agregarLista"
     });
@@ -223,78 +199,74 @@ function Controller() {
     $.__views.list.add($.__views.rowContainer2);
     $.__views.productoImg2 = Ti.UI.createImageView({
         image: "/productoImg6.png",
-        width: "96",
-        height: "96",
         left: "20",
         id: "productoImg2"
     });
     $.__views.rowContainer2.add($.__views.productoImg2);
-    $.__views.infoProducto2 = Ti.UI.createLabel({
-        text: "Costilla Salsa Bbq \nPlumrose (Kg)",
+    $.__views.infoProducto = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "15pt",
+            fontSize: "8pt",
             fontWeight: "Bold"
         },
         color: "black",
         right: "10",
         top: "6",
-        id: "infoProducto2"
+        text: "Costilla Salsa Bbq \nPlumrose (Kg)",
+        id: "infoProducto"
     });
-    $.__views.rowContainer2.add($.__views.infoProducto2);
+    $.__views.rowContainer2.add($.__views.infoProducto);
     $.__views.precioUnico = Ti.UI.createView({
-        backgroundColor: "ff5400",
+        backgroundColor: "#ff5400",
         borderRadius: "4",
-        width: "160",
-        height: "48",
-        top: "50",
-        right: "10",
+        width: "270",
+        height: "80",
+        top: "90",
+        right: "20",
         id: "precioUnico"
     });
     $.__views.rowContainer2.add($.__views.precioUnico);
     $.__views.precioUnicoLabel = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "7pt",
             fontWeight: "Bold"
         },
         color: "black",
         text: "Precio Único",
         top: "4",
-        left: "4",
+        left: "13",
         id: "precioUnicoLabel"
     });
     $.__views.precioUnico.add($.__views.precioUnicoLabel);
-    $.__views.precio2 = Ti.UI.createLabel({
+    $.__views.precio = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "7pt",
             fontWeight: "Bold"
         },
         color: "white",
-        text: "Bs.F 303,00",
         top: "4",
         right: "4",
-        id: "precio2"
+        text: "Bs.F 303,00",
+        id: "precio"
     });
-    $.__views.precioUnico.add($.__views.precio2);
+    $.__views.precioUnico.add($.__views.precio);
     $.__views.agregarBtn = Ti.UI.createImageView({
         image: "/agregarBtn.png",
-        top: "17",
-        left: "4",
-        width: "30",
-        height: "30",
+        top: "40",
+        left: "8",
         id: "agregarBtn"
     });
     $.__views.precioUnico.add($.__views.agregarBtn);
     $.__views.agregarLista = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "13pt"
+            fontSize: "7pt"
         },
         color: "white",
-        left: "35",
-        top: "25",
+        left: "40",
+        top: "40",
         text: "Agregar a lista",
         id: "agregarLista"
     });
@@ -320,72 +292,70 @@ function Controller() {
         id: "productoImg3"
     });
     $.__views.rowContainer2.add($.__views.productoImg3);
-    $.__views.infoProducto3 = Ti.UI.createLabel({
-        text: "Costilla de Pollo \nPlumrose (Kg)",
+    $.__views.infoProducto = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "15pt",
+            fontSize: "8pt",
             fontWeight: "Bold"
         },
         color: "black",
         right: "10",
         top: "6",
-        id: "infoProducto3"
+        text: "Costilla de Pollo \nPlumrose (Kg)",
+        id: "infoProducto"
     });
-    $.__views.rowContainer2.add($.__views.infoProducto3);
+    $.__views.rowContainer2.add($.__views.infoProducto);
     $.__views.precioUnico = Ti.UI.createView({
-        backgroundColor: "ff5400",
+        backgroundColor: "#ff5400",
         borderRadius: "4",
-        width: "160",
-        height: "48",
-        top: "50",
-        right: "10",
+        width: "270",
+        height: "80",
+        top: "90",
+        right: "20",
         id: "precioUnico"
     });
     $.__views.rowContainer2.add($.__views.precioUnico);
     $.__views.precioUnicoLabel = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "7pt",
             fontWeight: "Bold"
         },
         color: "black",
         text: "Precio Único",
         top: "4",
-        left: "4",
+        left: "13",
         id: "precioUnicoLabel"
     });
     $.__views.precioUnico.add($.__views.precioUnicoLabel);
-    $.__views.precio3 = Ti.UI.createLabel({
+    $.__views.precio = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "13pt",
+            fontSize: "7pt",
             fontWeight: "Bold"
         },
         color: "white",
-        text: "Bs.F 303,00",
         top: "4",
         right: "4",
-        id: "precio3"
+        text: "Bs.F 303,00",
+        id: "precio"
     });
-    $.__views.precioUnico.add($.__views.precio3);
+    $.__views.precioUnico.add($.__views.precio);
     $.__views.agregarBtn = Ti.UI.createImageView({
         image: "/agregarBtn.png",
-        top: "17",
-        left: "4",
-        width: "30",
-        height: "30",
+        top: "40",
+        left: "8",
         id: "agregarBtn"
     });
     $.__views.precioUnico.add($.__views.agregarBtn);
     $.__views.agregarLista = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
-            fontSize: "13pt"
+            fontSize: "7pt"
         },
         color: "white",
-        left: "35",
-        top: "25",
+        left: "40",
+        top: "40",
         text: "Agregar a lista",
         id: "agregarLista"
     });
@@ -393,8 +363,8 @@ function Controller() {
     $.__views.__alloyId0 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
-        top: "131px",
-        separatorColor: "e4e4e4",
+        top: "90",
+        separatorColor: "#e4e4e4",
         data: __alloyId1,
         id: "__alloyId0"
     });

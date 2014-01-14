@@ -51,8 +51,8 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    var __alloyId4 = [];
-    __alloyId4.push($.__views.list);
+    var __alloyId3 = [];
+    __alloyId3.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -68,7 +68,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId4.push($.__views.list);
+    __alloyId3.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "100px",
@@ -82,15 +82,15 @@ function Controller() {
         id: "atrasBtn"
     });
     $.__views.categoria.add($.__views.atrasBtn);
-    $.__views.__alloyId5 = Ti.UI.createLabel({
+    $.__views.__alloyId4 = Ti.UI.createLabel({
         text: "Charallave",
         font: "Helvetica",
         size: "5pt",
         color: "white",
         left: "110px",
-        id: "__alloyId5"
+        id: "__alloyId4"
     });
-    $.__views.categoria.add($.__views.__alloyId5);
+    $.__views.categoria.add($.__views.__alloyId4);
     $.__views.socialBtn = Ti.UI.createImageView({
         image: "/socialWhite.png",
         right: "50",
@@ -114,17 +114,17 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId4.push($.__views.list);
-    $.__views.__alloyId6 = Ti.UI.createImageView({
-        id: "__alloyId6"
+    __alloyId3.push($.__views.list);
+    $.__views.__alloyId5 = Ti.UI.createImageView({
+        id: "__alloyId5"
     });
-    $.__views.list.add($.__views.__alloyId6);
+    $.__views.list.add($.__views.__alloyId5);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId4.push($.__views.list);
+    __alloyId3.push($.__views.list);
     $.__views.supermercados = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
@@ -232,15 +232,15 @@ function Controller() {
         id: "info3"
     });
     $.__views.supermercados.add($.__views.info3);
-    $.__views.__alloyId3 = Ti.UI.createTableView({
+    $.__views.__alloyId2 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         top: "131px",
         separatorColor: "e4e4e4",
-        data: __alloyId4,
-        id: "__alloyId3"
+        data: __alloyId3,
+        id: "__alloyId2"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId3);
+    $.__views.inicioScreen.add($.__views.__alloyId2);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

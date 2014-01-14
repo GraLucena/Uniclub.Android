@@ -4,11 +4,6 @@ $.menuBtn.addEventListener('click', function(e) {
 
 function infoProducto() {
 	var win = Alloy.createController('infoProducto').getView();
-	
-	
-
-	
-   	//win.animate(slide_it_right);
 	$.inicioScreen.add(win);
 }
 

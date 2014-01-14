@@ -53,7 +53,10 @@
 	width:Ti.UI.FILL,
 	backgroundColor :"#dddddd",
 	top:"90",
-	separatorStyle:"NONE"
+	separatorStyle:"NONE",
+	separatorColor:"#e4e4e4"
+
+
 },
 "#list":{
 	width:Ti.UI.FILL,
@@ -68,29 +71,33 @@
 },
 "#rowContainerSocial":{
 	width:Ti.UI.FILL,
-	height:"151px",
+	height:"110px",
 	backgroundColor:"white",
 	top: "25px"
 },
+"#siguenos":{
+	font:{
+	font:"Helvetica",
+	fontWeight:"bold",
+	fontSize:"6pt",
+	},
+	top:"10",
+	left:"10",
+	color:"#f79323"
+},
 "#facebookImg":{
-	width:"52px",
-	height:"52px",
 	top: "40",
 	left :"10",
 	image :"/facebook.png"
 },
 "#twitterImg":{
-	width:"52px",
-	height:"52px",
 	top: "40",
-	left :"50",
+	left :"70",
 	image :"/twitter.png"
 },
 "#youTubeImg":{
-	width:"52px",
-	height:"52px",
 	top: "40",
-	left :"90",
+	left :"130",
 	image :"/youTube.png"
 },
 "#preciosUnicos":{
