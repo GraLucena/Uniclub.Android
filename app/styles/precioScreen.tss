@@ -2,25 +2,25 @@
 	backgroundColor: "#9C213F"
 },
 "#menuBtn":{
-	left : 7,
-	top : 25,
+	left : "3%",
+	top : "3%",
 	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : "3%",
+	right: "3%",	
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : "3%",
+	right : "44%",
+	image :"/unicasaIcon.png"
 },
 "#view":{
 	width:Ti.UI.FILL,
 	backgroundColor :"#bebcbc",
 	top:"90",
 	//separatorStyle:"NONE"
-},
-"#carritoBtn":{
-	top : 25,
-	right: 7,	
-	image :"/carritoIcon.png"
-},
-"#logoImg":{
-	top : 17,
-	right : "45%",
-	image :"/unicasaIcon.png"
 },
 "#palabraClave":{
 	image: "/palabraClaveBtn.png",

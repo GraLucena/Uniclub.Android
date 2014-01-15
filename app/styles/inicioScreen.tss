@@ -1,31 +1,25 @@
-".container" : {
-  backgroundColor :"white",
-  orientationModes: [Ti.UI.PORTRAIT, Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT, Ti.UI.UPSIDE_PORTRAIT]
-},
-
 "#inicioScreen": {
 	backgroundColor: "#9C213F"
 },
 "#menuBtn":{
-	left : 7,
-	top : 25,
+	left : "3%",
+	top : "3%",
 	image :"/menuIcon.png"
 },
 "#carritoBtn":{
-	top : 25,
-	right: 7,	
+	top : "3%",
+	right: "3%",	
 	image :"/carritoIcon.png"
 },
 "#logoImg":{
-	top : 17,
-	right : "45%",
+	top : "3%",
+	right : "44%",
 	image :"/unicasaIcon.png"
 },
 ".promociones":{
 	backgroundColor :"white",
 	width :Ti.UI.FILL,
 	height: "300px",
-	top : 0
 },
 "#img1":{
 	image :"/slideImg1.png"
@@ -36,17 +30,13 @@
 	height : "200px"	 
 }
 "#recetaImg":{
-	width:"215px",
-	height:"156px",
-	top: "22px",
-	left :"15px",
+	top: "13%",
+	left :"2%",
 	image :"/recetasImg.png"
 },
 "#carreraImg":{
-	width:"215px",
-	height:"156px",
-	top: "22px",
-	right :"15px",
+	top: "13%",
+	right :"2%",
 	image :"/carreraImg.png"
 },
 ".preciosUnicosList":{
@@ -173,19 +163,19 @@
 },
 "#productoImg2":{
 	image:"/productoImg2.png",
-	left:"40"
+	left:"60"
 },
 "#productoImg3":{
 	image:"/productoImg3.png",
-	left:"40"
+	left:"60"
 },
 "#productoImg4":{
 	image:"/productoImg4.png",
-	left:"40"
+	left:"60"
 },
 "#productoImg5":{
 	image:"/productoNoImg.png",
-	left:"40"
+	left:"60"
 }
 
 

@@ -12,22 +12,22 @@ function Controller() {
     });
     $.__views.inicioScreen && $.addTopLevelView($.__views.inicioScreen);
     $.__views.menuBtn = Ti.UI.createImageView({
-        left: 7,
-        top: 25,
+        left: "3%",
+        top: "3%",
         image: "/menuIcon.png",
         id: "menuBtn"
     });
     $.__views.inicioScreen.add($.__views.menuBtn);
     $.__views.logoImg = Ti.UI.createImageView({
-        top: 17,
-        right: "45%",
+        top: "3%",
+        right: "44%",
         image: "/unicasaIcon.png",
         id: "logoImg"
     });
     $.__views.inicioScreen.add($.__views.logoImg);
     $.__views.carritoBtn = Ti.UI.createImageView({
-        top: 25,
-        right: 7,
+        top: "3%",
+        right: "3%",
         image: "/carritoIcon.png",
         id: "carritoBtn"
     });
@@ -44,9 +44,7 @@ function Controller() {
         id: "search",
         barColor: "#e4e4e4",
         showCancel: "false",
-        width: Ti.UI.FILL,
-        height: "70",
-        top: "20",
+        top: "5%",
         hintText: "Palabra Clave"
     });
     $.__views.list.add($.__views.search);
@@ -61,7 +59,6 @@ function Controller() {
         backgroundColor: "white",
         width: Ti.UI.FILL,
         height: "300px",
-        top: 0,
         id: "__alloyId12"
     });
     $.__views.list.add($.__views.__alloyId12);
@@ -104,19 +101,15 @@ function Controller() {
     });
     $.__views.list.add($.__views.__alloyId14);
     $.__views.recetaImg = Ti.UI.createImageView({
-        width: "215px",
-        height: "156px",
-        top: "22px",
-        left: "15px",
+        top: "13%",
+        left: "2%",
         image: "/recetasImg.png",
         id: "recetaImg"
     });
     $.__views.__alloyId14.add($.__views.recetaImg);
     $.__views.carreraImg = Ti.UI.createImageView({
-        width: "215px",
-        height: "156px",
-        top: "22px",
-        right: "15px",
+        top: "13%",
+        right: "2%",
         image: "/carreraImg.png",
         id: "carreraImg"
     });
@@ -250,7 +243,7 @@ function Controller() {
     $.__views.list.add($.__views.rowContainer2);
     $.__views.productoImg2 = Ti.UI.createImageView({
         image: "/productoImg2.png",
-        left: "40",
+        left: "60",
         id: "productoImg2"
     });
     $.__views.rowContainer2.add($.__views.productoImg2);
@@ -338,7 +331,7 @@ function Controller() {
     $.__views.list.add($.__views.rowContainer2);
     $.__views.productoImg3 = Ti.UI.createImageView({
         image: "/productoImg3.png",
-        left: "40",
+        left: "60",
         id: "productoImg3"
     });
     $.__views.rowContainer2.add($.__views.productoImg3);
@@ -426,7 +419,7 @@ function Controller() {
     $.__views.list.add($.__views.rowContainer2);
     $.__views.productoImg4 = Ti.UI.createImageView({
         image: "/productoImg4.png",
-        left: "40",
+        left: "60",
         id: "productoImg4"
     });
     $.__views.rowContainer2.add($.__views.productoImg4);
@@ -514,7 +507,7 @@ function Controller() {
     $.__views.list.add($.__views.rowContainer2);
     $.__views.productoImg5 = Ti.UI.createImageView({
         image: "/productoNoImg.png",
-        left: "40",
+        left: "60",
         id: "productoImg5"
     });
     $.__views.rowContainer2.add($.__views.productoImg5);

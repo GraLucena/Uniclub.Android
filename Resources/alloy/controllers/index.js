@@ -29,20 +29,16 @@ function Controller() {
     });
     $.__views.__alloyId5.add($.__views.unicasaLogo);
     $.__views.invitadoBtn = Ti.UI.createImageView({
-        top: 600,
-        width: "169px",
-        height: "56px",
-        left: 60,
+        top: "80%",
+        left: "10%",
         image: "/invitadoBtn.png",
         id: "invitadoBtn"
     });
     $.__views.__alloyId5.add($.__views.invitadoBtn);
     registroUsuario ? $.__views.invitadoBtn.addEventListener("click", registroUsuario) : __defers["$.__views.invitadoBtn!click!registroUsuario"] = true;
     $.__views.uniclubBtn = Ti.UI.createImageView({
-        top: 600,
-        width: "169px",
-        height: "56px",
-        right: 60,
+        top: "80%",
+        right: "10%",
         image: "/uniclubBtn.png",
         id: "uniclubBtn"
     });

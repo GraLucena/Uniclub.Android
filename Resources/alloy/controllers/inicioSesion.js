@@ -18,9 +18,7 @@ function Controller() {
     });
     $.__views.container2 && $.addTopLevelView($.__views.container2);
     $.__views.uniclubImg = Ti.UI.createImageView({
-        top: 150,
-        width: "428px",
-        height: "169px",
+        top: "20%",
         image: "/uniclubIcon.png",
         id: "uniclubImg"
     });
@@ -28,20 +26,20 @@ function Controller() {
     inicie ? $.__views.uniclubImg.addEventListener("click", inicie) : __defers["$.__views.uniclubImg!click!inicie"] = true;
     $.__views.__alloyId15 = Ti.UI.createTextArea({
         backgroundColor: "white",
-        width: "418px",
-        height: "0.6cm",
+        width: "70%",
+        height: "8%",
         borderRadius: "7",
-        top: "355",
+        top: "50%",
         hintText: "Cédula",
         id: "__alloyId15"
     });
     $.__views.container2.add($.__views.__alloyId15);
     $.__views.__alloyId16 = Ti.UI.createTextArea({
         backgroundColor: "white",
-        width: "418px",
-        height: "0.6cm",
+        width: "70%",
+        height: "8%",
         borderRadius: "7",
-        top: "413",
+        top: "58.1%",
         hintText: "Contraseña",
         id: "__alloyId16"
     });
@@ -51,15 +49,13 @@ function Controller() {
         height: Ti.UI.SIZE,
         color: "white",
         font: "Helvetica",
-        top: "600",
+        top: "80%",
         text: "Olvidó Su Contraseña?",
         id: "__alloyId17"
     });
     $.__views.container2.add($.__views.__alloyId17);
     $.__views.inicioSesionImg = Ti.UI.createImageView({
-        top: 505,
-        width: "223px",
-        height: "56px",
+        top: "70%",
         image: "/inicioSesionIcon.png",
         id: "inicioSesionImg"
     });

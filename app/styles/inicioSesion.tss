@@ -3,15 +3,11 @@
 	
 },
 "#inicioSesionImg":{
-	top : 505,
-	width:"223px",
-	height :"56px",
+	top : "70%",
 	image :"/inicioSesionIcon.png"
 },
 "#uniclubImg":{
-	top : 150,
-	width : "428px",
-	height : "169px",
+	top : "20%",
 	image :"/uniclubIcon.png"
 }
 ".LabelOlvido": {
@@ -19,22 +15,22 @@
 	height: Ti.UI.SIZE,
 	color: "white",
 	font : "Helvetica",
-	top : "600"
+	top : "80%"
 } 
 ".TextoUsuario":{
 	backgroundColor : "white",
-	width : "418px",
-	height : "0.6cm",
+	width : "70%",
+	height : "8%",
 	borderRadius : "7",
-	top : "355"
+	top : "50%"
 
 }
 ".TextoClave":{
 	backgroundColor : "white",
-	width : "418px",
-	height : "0.6cm",
+	width : "70%",
+	height : "8%",
 	borderRadius : "7",	
-	top : "413"
+	top : "58.1%"
 }
 
 

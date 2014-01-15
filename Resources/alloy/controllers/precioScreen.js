@@ -39,22 +39,22 @@ function Controller() {
     });
     $.__views.inicioScreen && $.addTopLevelView($.__views.inicioScreen);
     $.__views.menuBtn = Ti.UI.createImageView({
-        left: 7,
-        top: 25,
+        left: "3%",
+        top: "3%",
         image: "/menuIcon.png",
         id: "menuBtn"
     });
     $.__views.inicioScreen.add($.__views.menuBtn);
     $.__views.logoImg = Ti.UI.createImageView({
-        top: 17,
-        right: "45%",
+        top: "3%",
+        right: "44%",
         image: "/unicasaIcon.png",
         id: "logoImg"
     });
     $.__views.inicioScreen.add($.__views.logoImg);
     $.__views.carritoBtn = Ti.UI.createImageView({
-        top: 25,
-        right: 7,
+        top: "3%",
+        right: "3%",
         image: "/carritoIcon.png",
         id: "carritoBtn"
     });
@@ -70,9 +70,7 @@ function Controller() {
         id: "search",
         barColor: "#e4e4e4",
         showCancel: "false",
-        width: Ti.UI.FILL,
-        height: "70",
-        top: "20",
+        top: "5%",
         hintText: "Palabra Clave"
     });
     $.__views.view.add($.__views.search);

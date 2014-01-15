@@ -4,18 +4,18 @@
 
 },
 "#menuBtn":{
-	left : 7,
-	top : 25,
+	left : "3%",
+	top : "3%",
 	image :"/menuIcon.png"
 },
 "#carritoBtn":{
-	top : 25,
-	right: 7,	
+	top : "3%",
+	right: "3%",	
 	image :"/carritoIcon.png"
 },
 "#logoImg":{
-	top : 17,
-	right : "45%",
+	top : "3%",
+	right : "44%",
 	image :"/unicasaIcon.png"
 },
 ".preciosUnicosList":{
@@ -45,7 +45,7 @@
 	color:"white",
 	font:{
 	font:"Helvetica",
-	fontSize:"6pt"
+	fontSize:"9pt"
 	},
 },
 "#imgReceta":{

@@ -3,17 +3,13 @@
 	backgroundImage:'Default.png',
 },
 "#invitadoBtn":{
-	top : 600,
-	width : "169px",
-	height : "56px",
-	left : 60,
+	top : "80%",
+	left : "10%",
 	image : "/invitadoBtn.png"
 },
 "#uniclubBtn":{
-	top : 600,
-	width : "169px",
-	height : "56px",
-	right : 60,
+	top : "80%",
+	right : "10%",
 	image : "/uniclubBtn.png"
 }
 
