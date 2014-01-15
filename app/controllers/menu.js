@@ -938,6 +938,7 @@ tableView.addEventListener('click', function(e) {
 				if (e.row.children[0].text == 'Carnicería') {
 					var catalogoScreen = Alloy.createController('catalogoScreen').getView();
 					$.drawermenu.drawermainview.add(catalogoScreen);
+					$.inicioScreen.hide();
 					
 				}
 			});

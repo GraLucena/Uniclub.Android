@@ -2,7 +2,7 @@ function Controller() {
     function inicie() {
         var win = Alloy.createController("menu").getView();
         win.open();
-        $.container2.setVisible(false);
+        $.container2.hide();
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "inicioSesion";
