@@ -1,5 +1,7 @@
 <Alloy>
+	
 	<View id='inicioScreen'>						
+		
 		<View id="main">
 			<ImageView id="menuBtn" ></ImageView>
 			<ImageView id="logoImg"></ImageView>

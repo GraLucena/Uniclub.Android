@@ -1,54 +1,52 @@
 <Alloy>
-<View id='inicioScreen'>
-								
+	
+	<View id='inicioScreen'>
+									
+		<ImageView id="menuBtn" ></ImageView>
+		<ImageView id="logoImg"></ImageView>
+		<ImageView id="carritoBtn"></ImageView>	
 			
-				<ImageView id="menuBtn" ></ImageView>
-				<ImageView id="logoImg"></ImageView>
-				<ImageView id="carritoBtn"></ImageView>	
-			
-			<TableView class="preciosUnicosList">
+		<TableView class="preciosUnicosList">
 											
 			<TableViewRow id="list">
 				<SearchBar id="search" barColor="#e4e4e4" showCancel="false" top="5%" hintText="Palabra Clave" />
 			</TableViewRow>
 			
 			<TableViewRow id="list">
-    			<View id="categoria">
-    				
+    			<View id="categoria">	
     				<Label id="label">Pasillo 1</Label>
     			</View>	
     		</TableViewRow>
     		
     		<TableViewRow id="list">
-					<View id="productos">
-						<Label id="listaProductos">Galletas</Label>
-					</View>
-    			</TableViewRow>
+				<View id="productos">
+					<Label id="listaProductos">Galletas</Label>
+				</View>
+    		</TableViewRow>
     			
-    			<TableViewRow id="list">
-					<View id="productos">
-						<Label id="listaProductos">Cereales</Label>
-					</View>
-    			</TableViewRow>
+    		<TableViewRow id="list">
+				<View id="productos">
+					<Label id="listaProductos">Cereales</Label>
+				</View>
+    		</TableViewRow>
     			
-    			<TableViewRow id="list">
-					<View id="productos">
-						<Label id="listaProductos">Leche en Polvo</Label>
-					</View>
-    			</TableViewRow>
+    		<TableViewRow id="list">
+				<View id="productos">
+					<Label id="listaProductos">Leche en Polvo</Label>
+				</View>
+    		</TableViewRow>
     			
-    			<TableViewRow id="list">
-					<View id="productos">
-						<Label id="listaProductos">Granola</Label>
-					</View>
-    			</TableViewRow>
+    		<TableViewRow id="list">
+				<View id="productos">
+					<Label id="listaProductos">Granola</Label>
+				</View>
+    		</TableViewRow>
     		
     		<TableViewRow id="list">
-					<View id="productos">
-						<Label id="listaProductos">Almíbar</Label>
-					</View>
-    			</TableViewRow>
-    		
+				<View id="productos">
+					<Label id="listaProductos">Almíbar</Label>
+				</View>
+    		</TableViewRow>
     		
     	</TableView>
 	

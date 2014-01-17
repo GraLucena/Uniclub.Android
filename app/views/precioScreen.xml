@@ -1,18 +1,15 @@
 <Alloy>
 	<View id='inicioScreen'>						
 			
-				<ImageView id="menuBtn" ></ImageView>
-				<ImageView id="logoImg"></ImageView>
-				<ImageView id="carritoBtn"></ImageView>	
+		<ImageView id="menuBtn" ></ImageView>
+		<ImageView id="logoImg"></ImageView>
+		<ImageView id="carritoBtn"></ImageView>	
 			
-			
-				<View id="view">
-				<SearchBar id="search" barColor="#e4e4e4" showCancel="false" top="5%" hintText="Palabra Clave" />
-				
-				<ImageView id="palabraClave"></ImageView>
-				<ImageView id="codigoBarra" onClick="openCamera"></ImageView>
-				
-			</View>
+		<View id="view">
+			<SearchBar id="search" barColor="#e4e4e4" showCancel="false" top="5%" hintText="Palabra Clave" />
+			<ImageView id="palabraClave"></ImageView>
+			<ImageView id="codigoBarra" onClick="openCamera"></ImageView>
+		</View>
 			
 	</View>
 </Alloy>

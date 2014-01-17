@@ -1,13 +1,12 @@
 <Alloy>
 	
 	<View id='inicioScreen'>
-								
+	
+		<ImageView id="menuBtn" ></ImageView>
+		<ImageView id="logoImg"></ImageView>
+		<ImageView id="carritoBtn"></ImageView>	
 			
-				<ImageView id="menuBtn" ></ImageView>
-				<ImageView id="logoImg"></ImageView>
-				<ImageView id="carritoBtn"></ImageView>	
-			
-					<TableView class="preciosUnicosList">
+		<TableView class="preciosUnicosList">
 											
 			<TableViewRow id="list">
 				<SearchBar id="search" barColor="#e4e4e4" showCancel="false" top="5%" hintText="Palabra Clave" />
@@ -32,8 +31,8 @@
     	
 			<TableViewRow id="list">
 				<View id="preciosUnicos"> 
-						<Label id="preciosUnicosLabel">Precios Únicos</Label>	
-					</View>
+					<Label id="preciosUnicosLabel">Precios Únicos</Label>	
+				</View>
 			</TableViewRow>
 			
 			<TableViewRow id="list">
@@ -101,8 +100,6 @@
 				</View>
 			</TableViewRow>
 			
-			
-			
 			<TableViewRow id="list">
 				<View id="rowContainerSocial">
 					<Label id="siguenos">Síguenos en</Label>
@@ -111,14 +108,8 @@
 					<ImageView id="youTubeImg"></ImageView>
 				</View>
 			</TableViewRow>
-
-
-    		
-						
+									
 		</TableView>
-			
-					
 
-	
 	</View>
 </Alloy>
