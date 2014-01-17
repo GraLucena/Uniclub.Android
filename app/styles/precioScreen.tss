@@ -20,17 +20,13 @@
 	width:Ti.UI.FILL,
 	backgroundColor :"#bebcbc",
 	top:"90",
-	//separatorStyle:"NONE"
 },
 "#palabraClave":{
 	image: "/palabraClaveBtn.png",
 	top:"230",
-	width:"410px",
-	height:"104px"
+
 },
 "#codigoBarra":{
 	image: "/codigoBarraBtn.png",
-	width:"410px",
-	height:"104px",
 	top:"360"
 }

@@ -4,12 +4,12 @@
 },
 "#invitadoBtn":{
 	top : "80%",
-	left : "10%",
+	left : "15%",
 	image : "/invitadoBtn.png"
 },
 "#uniclubBtn":{
 	top : "80%",
-	right : "10%",
+	right : "15%",
 	image : "/uniclubBtn.png"
 }
 

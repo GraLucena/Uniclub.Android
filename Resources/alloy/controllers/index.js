@@ -30,7 +30,7 @@ function Controller() {
     $.__views.__alloyId5.add($.__views.unicasaLogo);
     $.__views.invitadoBtn = Ti.UI.createImageView({
         top: "80%",
-        left: "10%",
+        left: "15%",
         image: "/invitadoBtn.png",
         id: "invitadoBtn"
     });
@@ -38,7 +38,7 @@ function Controller() {
     registroUsuario ? $.__views.invitadoBtn.addEventListener("click", registroUsuario) : __defers["$.__views.invitadoBtn!click!registroUsuario"] = true;
     $.__views.uniclubBtn = Ti.UI.createImageView({
         top: "80%",
-        right: "10%",
+        right: "15%",
         image: "/uniclubBtn.png",
         id: "uniclubBtn"
     });

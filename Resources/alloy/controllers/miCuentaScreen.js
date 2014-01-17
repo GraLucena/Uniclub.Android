@@ -71,14 +71,14 @@ function Controller() {
         color: "white",
         font: {
             font: "Helvetica",
-            fontSize: "9pt"
+            fontSize: "6pt"
         },
         text: "Mi Cuenta",
         id: "label"
     });
     $.__views.categoria.add($.__views.label);
     $.__views.misPuntos = Ti.UI.createImageView({
-        right: "140px",
+        right: "120px",
         image: "/misPuntosImg.png",
         id: "misPuntos"
     });
@@ -89,7 +89,7 @@ function Controller() {
         top: "19",
         font: {
             font: "Helvetica",
-            fontSize: "9pt"
+            fontSize: "7pt"
         },
         text: "15.000",
         id: "labelPuntos"
@@ -108,7 +108,7 @@ function Controller() {
         color: "#999999",
         font: {
             font: "Helvetica",
-            fontSize: "8pt"
+            fontSize: "7pt"
         },
         text: "Mis Datos",
         id: "labelMisDatos"

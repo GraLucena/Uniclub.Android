@@ -69,23 +69,20 @@ function Controller() {
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
+        height: "73",
         showCancel: "false",
-        top: "5%",
+        top: "2%",
         hintText: "Palabra Clave"
     });
     $.__views.view.add($.__views.search);
     $.__views.palabraClave = Ti.UI.createImageView({
         image: "/palabraClaveBtn.png",
         top: "230",
-        width: "410px",
-        height: "104px",
         id: "palabraClave"
     });
     $.__views.view.add($.__views.palabraClave);
     $.__views.codigoBarra = Ti.UI.createImageView({
         image: "/codigoBarraBtn.png",
-        width: "410px",
-        height: "104px",
         top: "360",
         id: "codigoBarra"
     });
