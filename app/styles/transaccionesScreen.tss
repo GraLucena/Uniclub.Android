@@ -88,11 +88,17 @@
 	text:"Saldo \nFinal",
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
 },
+"#calendarImg":{
+	image :"/calendarBtn.png"
+},
+"#mesImg":{
+	image :"/mesBtn.png"
+},
 "#label":{
-	left:"40px",
-	color:"white",
+	
 	font:{
-	font:"Helvetica",
-	fontSize:"9pt"
+		font:"Helvetica",
+		fontSize:"6pt",
 	},
+	color:"white"
 }

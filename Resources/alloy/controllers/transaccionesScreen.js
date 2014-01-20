@@ -163,16 +163,67 @@ function Controller() {
     });
     $.__views.list.add($.__views.categoria);
     $.__views.label = Ti.UI.createLabel({
-        left: "40px",
-        color: "white",
         font: {
             font: "Helvetica",
-            fontSize: "9pt"
+            fontSize: "6pt"
         },
+        color: "white",
         text: "Mis Transacciones",
-        id: "label"
+        id: "label",
+        left: "2%"
     });
     $.__views.categoria.add($.__views.label);
+    $.__views.label = Ti.UI.createLabel({
+        font: {
+            font: "Helvetica",
+            fontSize: "6pt"
+        },
+        color: "white",
+        text: "Mes",
+        id: "label",
+        left: "40%"
+    });
+    $.__views.categoria.add($.__views.label);
+    $.__views.mesImg = Ti.UI.createImageView({
+        image: "/mesBtn.png",
+        id: "mesImg",
+        left: "50%"
+    });
+    $.__views.categoria.add($.__views.mesImg);
+    $.__views.label = Ti.UI.createLabel({
+        font: {
+            font: "Helvetica",
+            fontSize: "6pt"
+        },
+        color: "white",
+        text: "Desde",
+        id: "label",
+        right: "30%"
+    });
+    $.__views.categoria.add($.__views.label);
+    $.__views.calendarImg = Ti.UI.createImageView({
+        image: "/calendarBtn.png",
+        id: "calendarImg",
+        right: "22%"
+    });
+    $.__views.categoria.add($.__views.calendarImg);
+    $.__views.label = Ti.UI.createLabel({
+        font: {
+            font: "Helvetica",
+            fontSize: "6pt"
+        },
+        color: "white",
+        text: "Hasta",
+        id: "label",
+        right: "10%"
+    });
+    $.__views.categoria.add($.__views.label);
+    $.__views.calendarImg = Ti.UI.createImageView({
+        image: "/calendarBtn.png",
+        id: "calendarImg",
+        right: "2%"
+    });
+    $.__views.categoria.add($.__views.calendarImg);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",

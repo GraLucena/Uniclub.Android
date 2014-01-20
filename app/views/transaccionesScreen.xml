@@ -14,7 +14,13 @@
 			
 			<TableViewRow id="list">
     			<View id="categoria">   				
-    				<Label id="label">Mis Transacciones</Label>   				
+    				<Label id="label" left="2%">Mis Transacciones</Label>
+    				<Label id="label" left="40%">Mes</Label>   		
+    				<ImageView id="mesImg" left="50%"></ImageView>	   	
+    				<Label id="label" right="30%">Desde</Label>   		
+    				<ImageView id="calendarImg" right="22%"></ImageView>		
+    				<Label id="label" right="10%">Hasta</Label>   	
+    				<ImageView id="calendarImg" right="2%"></ImageView>				
     			</View>	
     		</TableViewRow>
     		
