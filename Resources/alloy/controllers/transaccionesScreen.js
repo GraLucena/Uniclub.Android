@@ -136,7 +136,6 @@ function Controller() {
     $.__views.inicioScreen.add($.__views.carritoBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     var __alloyId44 = [];
@@ -151,7 +150,6 @@ function Controller() {
     $.__views.list.add($.__views.search);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId44.push($.__views.list);
@@ -226,7 +224,6 @@ function Controller() {
     $.__views.categoria.add($.__views.calendarImg);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId44.push($.__views.list);

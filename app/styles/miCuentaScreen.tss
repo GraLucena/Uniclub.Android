@@ -25,7 +25,6 @@
 },
 "#list":{
 	width:Ti.UI.FILL,
-	selectionStyle:"NONE",
 	separatorColor:"e4e4e4"
 },
 "#categoria":{

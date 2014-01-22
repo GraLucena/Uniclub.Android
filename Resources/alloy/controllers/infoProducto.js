@@ -34,7 +34,6 @@ function Controller() {
     $.__views.inicioScreen.add($.__views.carritoBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     var __alloyId7 = [];
@@ -49,7 +48,6 @@ function Controller() {
     $.__views.list.add($.__views.search);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId7.push($.__views.list);
@@ -83,7 +81,6 @@ function Controller() {
     $.__views.categoria.add($.__views.filtrarBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId7.push($.__views.list);
@@ -116,7 +113,6 @@ function Controller() {
     $.__views.producto.add($.__views.productoLabel1);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId7.push($.__views.list);

@@ -22,13 +22,10 @@
 	width:Ti.UI.FILL,
 	backgroundColor :"#dddddd",
 	top:"90",
-	//separatorStyle:"NONE",
 	separatorColor:"transparent"
 },
 "#list":{
-	width:Ti.UI.FILL,
-	selectionStyle:"NONE",
-	 separatorStyle:"NONE"
+	width:Ti.UI.FILL
 
 },
 "#categoria":{

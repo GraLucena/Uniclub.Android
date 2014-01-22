@@ -39,7 +39,6 @@ function Controller() {
     $.__views.inicioScreen.add($.__views.carritoBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     var __alloyId42 = [];
@@ -54,7 +53,6 @@ function Controller() {
     $.__views.list.add($.__views.search);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId42.push($.__views.list);
@@ -84,7 +82,6 @@ function Controller() {
     $.__views.categoria.add($.__views.filtrarBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId42.push($.__views.list);
@@ -177,7 +174,6 @@ function Controller() {
     $.__views.recetas.add($.__views.porcion);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId42.push($.__views.list);
@@ -270,7 +266,6 @@ function Controller() {
     $.__views.recetas.add($.__views.porcion);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId42.push($.__views.list);
@@ -363,7 +358,6 @@ function Controller() {
     $.__views.recetas.add($.__views.porcion);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId42.push($.__views.list);

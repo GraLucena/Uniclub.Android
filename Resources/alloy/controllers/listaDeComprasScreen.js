@@ -34,7 +34,6 @@ function Controller() {
     $.__views.inicioScreen.add($.__views.carritoBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     var __alloyId19 = [];
@@ -49,7 +48,6 @@ function Controller() {
     $.__views.list.add($.__views.search);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId19.push($.__views.list);
@@ -96,7 +94,6 @@ function Controller() {
     $.__views.categoria.add($.__views.label);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId19.push($.__views.list);
@@ -146,7 +143,6 @@ function Controller() {
     $.__views.productos.add($.__views.eliminarBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId19.push($.__views.list);
@@ -196,7 +192,6 @@ function Controller() {
     $.__views.productos.add($.__views.eliminarBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId19.push($.__views.list);
@@ -246,7 +241,6 @@ function Controller() {
     $.__views.productos.add($.__views.eliminarBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId19.push($.__views.list);

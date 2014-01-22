@@ -38,7 +38,6 @@ function Controller() {
     $.__views.main.add($.__views.carritoBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -54,7 +53,6 @@ function Controller() {
     $.__views.list.add($.__views.search);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -97,7 +95,6 @@ function Controller() {
     $.__views.categoria.add($.__views.labelPuntos);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -116,7 +113,6 @@ function Controller() {
     $.__views.list.add($.__views.labelMisDatos);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -139,7 +135,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId24);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -162,7 +157,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId25);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -185,7 +179,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId26);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -208,7 +201,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId27);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -231,7 +223,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId28);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -254,7 +245,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId29);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -277,7 +267,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId30);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -300,7 +289,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId31);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -323,7 +311,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId32);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -346,7 +333,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId33);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -369,7 +355,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId34);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });
@@ -392,7 +377,6 @@ function Controller() {
     $.__views.list.add($.__views.__alloyId35);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         separatorColor: "e4e4e4",
         id: "list"
     });

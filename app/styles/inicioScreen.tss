@@ -49,9 +49,7 @@
 
 },
 "#list":{
-	width:Ti.UI.FILL,
-	selectionStyle:"NONE",
-	separatorStyle:"NONE"
+	width:Ti.UI.FILL
 
 },
 "#rowContainer2":{

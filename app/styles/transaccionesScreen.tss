@@ -24,8 +24,7 @@
 	separatorColor:"#e4e4e4"
 },
 "#list":{
-	width:Ti.UI.FILL,
-	selectionStyle:"NONE"
+	width:Ti.UI.FILL
 },
 "#categoria":{
 	width:Ti.UI.FILL,

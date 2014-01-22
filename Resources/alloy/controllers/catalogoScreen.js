@@ -39,7 +39,6 @@ function Controller() {
     $.__views.inicioScreen.add($.__views.carritoBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     var __alloyId1 = [];
@@ -54,7 +53,6 @@ function Controller() {
     $.__views.list.add($.__views.search);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId1.push($.__views.list);
@@ -96,7 +94,6 @@ function Controller() {
     $.__views.categoria.add($.__views.filtrarBtn);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId1.push($.__views.list);
@@ -184,7 +181,6 @@ function Controller() {
     $.__views.precioUnico.add($.__views.agregarLista);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId1.push($.__views.list);
@@ -271,7 +267,6 @@ function Controller() {
     $.__views.precioUnico.add($.__views.agregarLista);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
-        selectionStyle: "NONE",
         id: "list"
     });
     __alloyId1.push($.__views.list);
