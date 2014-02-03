@@ -7,8 +7,9 @@ function infoProducto() {
 	$.inicioScreen.add(win);
 };
 
+
 function agregarALista(){
 	
 	var listaDeComprasScreen4 = Alloy.createController('listaDeComprasScreen4').getView();
 	$.inicioScreen.add(listaDeComprasScreen4);
-};
+}

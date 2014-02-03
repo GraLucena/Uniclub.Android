@@ -1,9 +1,12 @@
 function Controller() {
+<<<<<<< HEAD
     function eliminarProducto() {
         alert("se eliminara este producto de su lista?");
         var listaDeComprasScreen = Alloy.createController("listaDeComprasScreen").getView();
         $.inicioScreen.add(listaDeComprasScreen);
     }
+=======
+>>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "listaDeComprasScreen1";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -11,7 +14,10 @@ function Controller() {
     arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
+<<<<<<< HEAD
     var __defers = {};
+=======
+>>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
     $.__views.inicioScreen = Ti.UI.createView({
         backgroundColor: "#9C213F",
         id: "inicioScreen"
@@ -196,7 +202,10 @@ function Controller() {
         id: "eliminarBtn"
     });
     $.__views.productos.add($.__views.eliminarBtn);
+<<<<<<< HEAD
     eliminarProducto ? $.__views.eliminarBtn.addEventListener("click", eliminarProducto) : __defers["$.__views.eliminarBtn!click!eliminarProducto"] = true;
+=======
+>>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         id: "list"
@@ -253,7 +262,10 @@ function Controller() {
     $.menuBtn.addEventListener("click", function() {
         Ti.App.fireEvent("menuBtn");
     });
+<<<<<<< HEAD
     __defers["$.__views.eliminarBtn!click!eliminarProducto"] && $.__views.eliminarBtn.addEventListener("click", eliminarProducto);
+=======
+>>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
     _.extend($, exports);
 }
 
