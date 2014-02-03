@@ -36,8 +36,8 @@ function Controller() {
         width: Ti.UI.FILL,
         id: "list"
     });
-    var __alloyId40 = [];
-    __alloyId40.push($.__views.list);
+    var __alloyId46 = [];
+    __alloyId46.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -50,7 +50,7 @@ function Controller() {
         width: Ti.UI.FILL,
         id: "list"
     });
-    __alloyId40.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "73",
@@ -73,7 +73,7 @@ function Controller() {
         width: Ti.UI.FILL,
         id: "list"
     });
-    __alloyId40.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.promocionImg1 = Ti.UI.createImageView({
         image: "/promocionImg.png",
         top: "10",
@@ -84,7 +84,7 @@ function Controller() {
         width: Ti.UI.FILL,
         id: "list"
     });
-    __alloyId40.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.masPromociones = Ti.UI.createView({
         backgroundColor: "white",
         top: "15",
@@ -106,7 +106,7 @@ function Controller() {
         width: Ti.UI.FILL,
         id: "list"
     });
-    __alloyId40.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.otrasPromociones = Ti.UI.createView({
         backgroundColor: "white",
         id: "otrasPromociones"
@@ -155,7 +155,7 @@ function Controller() {
         width: Ti.UI.FILL,
         id: "list"
     });
-    __alloyId40.push($.__views.list);
+    __alloyId46.push($.__views.list);
     $.__views.otrasPromociones = Ti.UI.createView({
         backgroundColor: "white",
         id: "otrasPromociones"
@@ -200,16 +200,16 @@ function Controller() {
         id: "verMasBtn"
     });
     $.__views.otrasPromociones.add($.__views.verMasBtn);
-    $.__views.__alloyId39 = Ti.UI.createTableView({
+    $.__views.__alloyId45 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         top: "90",
         separatorStyle: "NONE",
         separatorColor: "#e4e4e4",
-        data: __alloyId40,
-        id: "__alloyId39"
+        data: __alloyId46,
+        id: "__alloyId45"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId39);
+    $.__views.inicioScreen.add($.__views.__alloyId45);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

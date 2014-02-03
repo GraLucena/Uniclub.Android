@@ -3,6 +3,10 @@ function Controller() {
         var win = Alloy.createController("infoProducto").getView();
         $.inicioScreen.add(win);
     }
+    function agregarALista() {
+        var listaDeComprasScreen4 = Alloy.createController("listaDeComprasScreen4").getView();
+        $.inicioScreen.add(listaDeComprasScreen4);
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "catalogoScreen";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -167,6 +171,7 @@ function Controller() {
         id: "agregarBtn"
     });
     $.__views.precioUnico.add($.__views.agregarBtn);
+    agregarALista ? $.__views.agregarBtn.addEventListener("click", agregarALista) : __defers["$.__views.agregarBtn!click!agregarALista"] = true;
     $.__views.agregarLista = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
@@ -368,6 +373,7 @@ function Controller() {
         Ti.App.fireEvent("menuBtn");
     });
     __defers["$.__views.productoImg!click!infoProducto"] && $.__views.productoImg.addEventListener("click", infoProducto);
+    __defers["$.__views.agregarBtn!click!agregarALista"] && $.__views.agregarBtn.addEventListener("click", agregarALista);
     _.extend($, exports);
 }
 

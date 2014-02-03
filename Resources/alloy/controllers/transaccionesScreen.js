@@ -138,8 +138,8 @@ function Controller() {
         width: Ti.UI.FILL,
         id: "list"
     });
-    var __alloyId44 = [];
-    __alloyId44.push($.__views.list);
+    var __alloyId50 = [];
+    __alloyId50.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -152,7 +152,7 @@ function Controller() {
         width: Ti.UI.FILL,
         id: "list"
     });
-    __alloyId44.push($.__views.list);
+    __alloyId50.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "73",
@@ -226,7 +226,7 @@ function Controller() {
         width: Ti.UI.FILL,
         id: "list"
     });
-    __alloyId44.push($.__views.list);
+    __alloyId50.push($.__views.list);
     $.__views.columnas = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "73",
@@ -294,26 +294,26 @@ function Controller() {
         id: "saldo"
     });
     $.__views.columnas.add($.__views.saldo);
-    $.__views.__alloyId43 = Ti.UI.createTableView({
+    $.__views.__alloyId49 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         top: "90",
         separatorStyle: "NONE",
         separatorColor: "#e4e4e4",
-        data: __alloyId44,
-        id: "__alloyId43"
+        data: __alloyId50,
+        id: "__alloyId49"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId43);
-    $.__views.__alloyId45 = Ti.UI.createView({
+    $.__views.inicioScreen.add($.__views.__alloyId49);
+    $.__views.__alloyId51 = Ti.UI.createView({
         top: "330",
-        id: "__alloyId45"
+        id: "__alloyId51"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId45);
+    $.__views.inicioScreen.add($.__views.__alloyId51);
     $.__views.myTable = Ti.UI.createTableView({
         id: "myTable",
         separatorColor: "#e4e4e4"
     });
-    $.__views.__alloyId45.add($.__views.myTable);
+    $.__views.__alloyId51.add($.__views.myTable);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {
