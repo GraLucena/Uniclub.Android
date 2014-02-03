@@ -1,0 +1,137 @@
+"#inicioScreen": {
+	backgroundColor: "#9C213F"
+},
+"#menuBtn":{
+	left : "3%",
+	top : "3%",
+	image :"/menuIcon.png"
+},
+"#carritoBtn":{
+	top : "3%",
+	right: "3%",	
+	image :"/carritoIcon.png"
+},
+"#logoImg":{
+	top : "3%",
+	right : "44%",
+	image :"/unicasaIcon.png"
+},
+".preciosUnicosList":{
+	width:Ti.UI.FILL,
+	backgroundColor :"#dddddd",
+	top:"90",
+	separatorStyle:"NONE",
+	separatorColor:"#e4e4e4"
+
+},
+"#list":{
+	width:Ti.UI.FILL
+},
+"#productos":{
+	backgroundColor :"e4e4e4",
+	width:Ti.UI.FILL,
+	height : "215px"
+},
+"#categoria":{
+	width:Ti.UI.FILL,
+	height:"73",
+	backgroundColor:"#f6923a",
+},
+"#label":{
+	left:"50px",
+	top:"70px", 
+	color:"white",
+	font:{
+	font:"Helvetica",
+	fontSize:"5pt"
+	},
+},
+"#productos":{
+	backgroundColor :"white",
+	width:Ti.UI.FILL,
+	height : "150px"
+},
+"#productoImg1":{
+	image:"/productoImg7.png",
+	left:"10px"
+},
+"#productoInfo":{
+	font:{
+		font: "Helvetica",
+		fontSize:"7pt",
+	},
+	left:"100px",
+	top:"30",
+	color:"#555454"
+},
+"#productoPrecio":{
+	font:{
+		font: "Helvetica",
+		fontSize:"7pt",
+
+	},
+	right:"20px",
+	top:"30",
+	color:"black"
+},
+"#eliminarBtn":{
+	image:"/eliminarBtn.png",
+	top:"70",
+	right:"30px"
+},
+"#productoImg2":{
+	image:"/brownieImg.png",
+	left:"10px"
+},
+"#productoImg3":{
+	image:"/productoImg2.png",
+	left:"10px"
+},
+"#resumenLista":{
+	backgroundColor:"white",
+	top:"10",
+	height:"140px"
+},
+"#checkImg":{
+	image:"/checkImg.png",
+	left:"5",
+	top:"50"
+	
+},
+"#selecionadoLabel":{
+	color:"#9c213f",
+	left:"36",
+	font:{
+		font: "Helvetica",
+		fontSize:"7pt",
+
+	},
+	text:"Seleccionado (0)"
+},
+"#estimadoLabel":{
+	color:"#9c213f",
+	right:"10",
+	font:{
+		font: "Helvetica",
+		fontSize:"7pt",
+
+	},
+	text:"Est. Total: Bs.F 320,60"
+},
+"#label1":{
+	font:{
+	font:"Helvetica",
+	fontSize:"9pt",
+	},
+	color:"white",
+	left:"50px"
+},
+"#label2":{
+	font:{
+	font:"Helvetica",
+	fontSize:"4pt",
+	},
+	color:"white",
+	right:"30px"
+}
+

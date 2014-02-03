@@ -1,4 +1,8 @@
 function Controller() {
+    function agregarALista() {
+        var listaDeComprasScreen3 = Alloy.createController("listaDeComprasScreen3").getView();
+        $.inicioScreen.add(listaDeComprasScreen3);
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "inicioScreen";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -6,6 +10,7 @@ function Controller() {
     arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
+    var __defers = {};
     $.__views.inicioScreen = Ti.UI.createView({
         backgroundColor: "#9C213F",
         id: "inicioScreen"
@@ -291,6 +296,7 @@ function Controller() {
         id: "agregarBtn"
     });
     $.__views.precioUnico.add($.__views.agregarBtn);
+    agregarALista ? $.__views.agregarBtn.addEventListener("click", agregarALista) : __defers["$.__views.agregarBtn!click!agregarALista"] = true;
     $.__views.agregarLista = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
@@ -623,6 +629,7 @@ function Controller() {
     $.menuBtn.addEventListener("click", function() {
         Ti.App.fireEvent("menuBtn");
     });
+    __defers["$.__views.agregarBtn!click!agregarALista"] && $.__views.agregarBtn.addEventListener("click", agregarALista);
     _.extend($, exports);
 }
 

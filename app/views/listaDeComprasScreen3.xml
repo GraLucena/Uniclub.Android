@@ -21,7 +21,6 @@
     		</TableViewRow>
     		
     		
-    			
     		<TableViewRow id="list">
 				<View id="productos">
 					<ImageView id="productoImg2"></ImageView>
@@ -31,7 +30,15 @@
 				</View>
     		</TableViewRow>
     	
-    	
+    		<TableViewRow id="list">
+				<View id="productos">
+					<ImageView id="productoImg3"></ImageView>
+					<Label id="productoInfo">Galleta Chocolate \nCosta 140 (gr)</Label>		
+					<Label id="productoPrecio">BsF. 18,70</Label>
+					<ImageView id="eliminarBtn"></ImageView>
+				</View>
+    		</TableViewRow>
+    			
     		<TableViewRow id="list">
 				<View id="resumenLista">
 					<ImageView id="checkImg"></ImageView>

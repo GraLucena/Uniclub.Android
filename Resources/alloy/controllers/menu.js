@@ -746,7 +746,6 @@ function Controller() {
                 if ("Carnicería" == e.row.children[0].text) {
                     var catalogoScreen = Alloy.createController("catalogoScreen").getView();
                     $.drawermenu.drawermainview.add(catalogoScreen);
-                    $.inicioScreen.hide();
                 }
             });
         } else if ("Lista de Compras" == e.row.children[0].text) {

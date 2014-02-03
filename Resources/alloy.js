@@ -13,6 +13,7 @@ function processStyle(controller, proxy, classes, opts, defaults) {
     proxy.apiName && (opts.apiName = proxy.apiName);
     proxy.id && (opts.id = proxy.id);
     proxy.applyProperties(exports.createStyle(controller, opts, defaults));
+    proxy.classes = classes;
 }
 
 function isTabletFallback() {
@@ -29,7 +30,7 @@ exports.Backbone = Backbone;
 
 var DEFAULT_WIDGET = "widget";
 
-var IDENTITY_TRANSFORM = void 0;
+var IDENTITY_TRANSFORM = Ti.UI.create2DMatrix();
 
 var RESET = {
     bottom: null,
@@ -51,16 +52,25 @@ var RESET = {
     enabled: true,
     horizontalWrap: true,
     zIndex: 0,
-    backgroundColor: null,
+    backgroundColor: "transparent",
     font: null,
     visible: true,
-    color: null,
-    transform: null,
-    backgroundGradient: {},
-    borderColor: "transparent",
+    color: "#000",
+    transform: IDENTITY_TRANSFORM,
+    backgroundGradient: null,
+    borderColor: null,
     borderRadius: null,
     borderWidth: null
 };
+
+RESET = _.extend(RESET, {
+    backgroundDisabledColor: null,
+    backgroundDisabledImage: null,
+    backgroundFocusedColor: null,
+    backgroundFocusedImage: null,
+    focusable: false,
+    keepScreenOn: false
+});
 
 exports.M = function(name, modelDesc, migrations) {
     var config = (modelDesc || {}).config || {};
@@ -218,7 +228,8 @@ exports.createCollection = function(name, args) {
 };
 
 exports.isTablet = function() {
-    return false;
+    var psc = Ti.Platform.Android.physicalSizeCategory;
+    return psc === Ti.Platform.Android.PHYSICAL_SIZE_CATEGORY_LARGE || psc === Ti.Platform.Android.PHYSICAL_SIZE_CATEGORY_XLARGE;
 }();
 
 exports.isHandheld = !exports.isTablet;
@@ -238,3 +249,7 @@ exports.Collections.instance = function(name) {
 };
 
 exports.CFG = require("alloy/CFG");
+
+exports.Android = {};
+
+exports.Android.menuItemCreateArgs = [ "itemId", "groupId", "title", "order", "actionView", "checkable", "checked", "enabled", "icon", "showAsAction", "titleCondensed", "visible" ];

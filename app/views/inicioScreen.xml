@@ -55,7 +55,7 @@
 					<View id="precioUnico">
 						<Label id="precioUnicoLabel"></Label>
 						<Label id="precio">Bs.F 18,70</Label>
-						<ImageView id="agregarBtn"></ImageView>
+						<ImageView id="agregarBtn" onClick="agregarALista"></ImageView>
 						<Label id="agregarLista"></Label>						
 					</View>					
 				</View>
