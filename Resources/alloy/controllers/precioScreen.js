@@ -1,30 +1,4 @@
 function Controller() {
-    function openCamera() {
-        Titanium.Media.showCamera({
-            success: function(event) {
-                Ti.API.debug("Our type was: " + event.mediaType);
-                if (event.mediaType == Ti.Media.MEDIA_TYPE_PHOTO) {
-                    var imageView = Ti.UI.createImageView({
-                        width: win.width,
-                        height: win.height,
-                        image: event.media
-                    });
-                    win.add(imageView);
-                } else alert("got the wrong type back =" + event.mediaType);
-            },
-            cancel: function() {},
-            error: function(error) {
-                var a = Titanium.UI.createAlertDialog({
-                    title: "Camera"
-                });
-                error.code == Titanium.Media.NO_CAMERA ? a.setMessage("Please run this test on device") : a.setMessage("Unexpected error: " + error.code);
-                a.show();
-            },
-            saveToPhotoGallery: true,
-            allowEditing: true,
-            mediaTypes: [ Ti.Media.MEDIA_TYPE_VIDEO, Ti.Media.MEDIA_TYPE_PHOTO ]
-        });
-    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "precioScreen";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -32,7 +6,6 @@ function Controller() {
     arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
-    var __defers = {};
     $.__views.inicioScreen = Ti.UI.createView({
         backgroundColor: "#9C213F",
         id: "inicioScreen"
@@ -87,13 +60,66 @@ function Controller() {
         id: "codigoBarra"
     });
     $.__views.view.add($.__views.codigoBarra);
-    openCamera ? $.__views.codigoBarra.addEventListener("click", openCamera) : __defers["$.__views.codigoBarra!click!openCamera"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {
         Ti.App.fireEvent("menuBtn");
     });
-    __defers["$.__views.codigoBarra!click!openCamera"] && $.__views.codigoBarra.addEventListener("click", openCamera);
+    var scanditsdk = require("com.mirasense.scanditsdk");
+    var picker;
+    var window = Titanium.UI.createWindow({
+        title: "Scandit SDK",
+        navBarHidden: true
+    });
+    var openScanner = function() {
+        picker = scanditsdk.createView({
+            width: "100%",
+            height: "100%"
+        });
+        picker.init("I3t/Go2qEeOCFqhCZaL59sFCdmahtkwacKUSdaeYSrU", 0);
+        picker.showSearchBar(true);
+        picker.showToolBar(true);
+        picker.setSuccessCallback(function(e) {
+            alert("success (" + e.symbology + "): " + e.barcode);
+        });
+        picker.setCancelCallback(function() {
+            closeScanner();
+        });
+        window.add(picker);
+        window.addEventListener("open", function() {
+            picker.setOrientation(window.orientation);
+            picker.setSize(Ti.Platform.displayCaps.platformWidth, Ti.Platform.displayCaps.platformHeight);
+            picker.startScanning();
+        });
+        window.open();
+    };
+    var closeScanner = function() {
+        if (null != picker) {
+            picker.stopScanning();
+            window.remove(picker);
+        }
+        window.close();
+    };
+    Ti.Gesture.addEventListener("orientationchange", function(e) {
+        window.orientationModes = [ Titanium.UI.PORTRAIT, Titanium.UI.UPSIDE_PORTRAIT, Titanium.UI.LANDSCAPE_LEFT, Titanium.UI.LANDSCAPE_RIGHT ];
+        if (null != picker) {
+            picker.setOrientation(e.orientation);
+            picker.setSize(Ti.Platform.displayCaps.platformWidth, Ti.Platform.displayCaps.platformHeight);
+        }
+    });
+    var button = Titanium.UI.createButton({
+        width: 200,
+        height: 80,
+        title: "start scanner"
+    });
+    button.addEventListener("click", function() {
+        openScanner();
+    });
+    var rootWindow = Titanium.UI.createWindow({
+        backgroundColor: "#000"
+    });
+    rootWindow.add(button);
+    rootWindow.open();
     _.extend($, exports);
 }
 

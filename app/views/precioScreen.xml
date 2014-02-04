@@ -10,7 +10,7 @@
 			<SearchBar id="search" barColor="#e4e4e4" height="73" showCancel="false" top="2%" hintText="Palabra Clave" />
 
 			<ImageView id="palabraClave"></ImageView>
-			<ImageView id="codigoBarra" onClick="openCamera"></ImageView>
+			<ImageView id="codigoBarra"></ImageView>
 		</View>
 			
 	</View>

@@ -1,12 +1,9 @@
 function Controller() {
-<<<<<<< HEAD
     function eliminarProducto() {
         alert("se eliminara este producto de su lista?");
         var listaDeComprasScreen1 = Alloy.createController("listaDeComprasScreen1").getView();
         $.inicioScreen.add(listaDeComprasScreen1);
     }
-=======
->>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "listaDeComprasScreen4";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -14,10 +11,7 @@ function Controller() {
     arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
-<<<<<<< HEAD
     var __defers = {};
-=======
->>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
     $.__views.inicioScreen = Ti.UI.createView({
         backgroundColor: "#9C213F",
         id: "inicioScreen"
@@ -165,21 +159,12 @@ function Controller() {
         id: "productos"
     });
     $.__views.list.add($.__views.productos);
-<<<<<<< HEAD
     $.__views.productoImg3 = Ti.UI.createImageView({
         image: "/productoImg2.png",
         left: "10px",
         id: "productoImg3"
     });
     $.__views.productos.add($.__views.productoImg3);
-=======
-    $.__views.productoImg1 = Ti.UI.createImageView({
-        image: "/productoImg7.png",
-        left: "10px",
-        id: "productoImg1"
-    });
-    $.__views.productos.add($.__views.productoImg1);
->>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
     $.__views.productoInfo = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
@@ -188,11 +173,7 @@ function Controller() {
         left: "100px",
         top: "30",
         color: "#555454",
-<<<<<<< HEAD
         text: "Galleta Chocolate \nCosta 140 (gr)",
-=======
-        text: "Chuleta Caramelizada \nPlumrose (Kg)",
->>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
         id: "productoInfo"
     });
     $.__views.productos.add($.__views.productoInfo);
@@ -204,11 +185,7 @@ function Controller() {
         right: "20px",
         top: "30",
         color: "black",
-<<<<<<< HEAD
         text: "BsF. 18,70",
-=======
-        text: "BsF. 205,00",
->>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
         id: "productoPrecio"
     });
     $.__views.productos.add($.__views.productoPrecio);
@@ -231,21 +208,12 @@ function Controller() {
         id: "productos"
     });
     $.__views.list.add($.__views.productos);
-<<<<<<< HEAD
     $.__views.productoImg1 = Ti.UI.createImageView({
         image: "/productoImg7.png",
         left: "10px",
         id: "productoImg1"
     });
     $.__views.productos.add($.__views.productoImg1);
-=======
-    $.__views.productoImg3 = Ti.UI.createImageView({
-        image: "/productoImg2.png",
-        left: "10px",
-        id: "productoImg3"
-    });
-    $.__views.productos.add($.__views.productoImg3);
->>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
     $.__views.productoInfo = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
@@ -254,11 +222,7 @@ function Controller() {
         left: "100px",
         top: "30",
         color: "#555454",
-<<<<<<< HEAD
         text: "Chuleta Caramelizada \nPlumrose (Kg)",
-=======
-        text: "Galleta Chocolate \nCosta 140 (gr)",
->>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
         id: "productoInfo"
     });
     $.__views.productos.add($.__views.productoInfo);
@@ -270,11 +234,7 @@ function Controller() {
         right: "20px",
         top: "30",
         color: "black",
-<<<<<<< HEAD
         text: "BsF. 205,00",
-=======
-        text: "BsF. 18,70",
->>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
         id: "productoPrecio"
     });
     $.__views.productos.add($.__views.productoPrecio);
@@ -285,10 +245,7 @@ function Controller() {
         id: "eliminarBtn"
     });
     $.__views.productos.add($.__views.eliminarBtn);
-<<<<<<< HEAD
     eliminarProducto ? $.__views.eliminarBtn.addEventListener("click", eliminarProducto) : __defers["$.__views.eliminarBtn!click!eliminarProducto"] = true;
-=======
->>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         id: "list"
@@ -345,10 +302,7 @@ function Controller() {
     $.menuBtn.addEventListener("click", function() {
         Ti.App.fireEvent("menuBtn");
     });
-<<<<<<< HEAD
     __defers["$.__views.eliminarBtn!click!eliminarProducto"] && $.__views.eliminarBtn.addEventListener("click", eliminarProducto);
-=======
->>>>>>> 2b62bd2ebcc83bfeb508162959a860f2386f08ff
     _.extend($, exports);
 }
 
